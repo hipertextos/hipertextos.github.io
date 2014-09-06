@@ -1,57 +1,88 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
-
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-
-    <meta name="author" content="{{ site.name }}" />
-    <meta name="description" content="{{ site.description }}">
-
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
-
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-          
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-          
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
-    </div>
-
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
-
-    {% include analytics.html %}
-  </body>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<!-- Metadata: Basic -->
+		<title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="{{ site.description }}">
+		<meta name="keys" content="{{ site.name }}">
+		<meta name="author" content="PageAuthor">
+		<!-- Metadata: GeoTags -->
+		<meta name="geo.region" content="{{ geolocation.region }}">
+		<meta name="geo.placename" content="{{ geolocation.placename }}">
+		<meta name="geo.position" content="{{ geolocation.langitudelongitude }}">
+		<meta name="ICBM" content="{{ geolocation.langitudelongitude }}">
+		<!-- Screen styles -->
+		<link href="{{ site.baseurl }}/src/css/styles.css" rel="stylesheet" media="screen">
+		<link href="{{ site.baseurl }}/src/css/anime.css" rel="stylesheet" media="screen">
+		<!-- Print styles -->
+		<link href="{{ site.baseurl }}/src/css/print.css" rel="stylesheet" media="print">
+		<!--[if lt IE 9]><script src="{{ site.baseurl }}/src/js/html5shiv.js"></script><![endif]-->
+		<!-- If JS disabled -->
+		<noscript><link href="{{ site.baseurl }}/src/css/noscript.css" rel="stylesheet" media="screen"></noscript>
+		<!-- Site Feed -->
+		<link rel="alternate" type="application/rss+xml" title="rss" href="{{ site.baseurl }}/feed.xml">
+		<!-- Page Icons -->
+		<link rel="shortcut icon" href="{{ site.baseurl }}/src/ics/favicon.ico">
+		<link rel="apple-touch-icon" sizes="57x57" href="{{ site.baseurl }}/src/ics/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="{{ site.baseurl }}/src/ics/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="{{ site.baseurl }}/src/ics/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="{{ site.baseurl }}/src/ics/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="{{ site.baseurl }}/src/ics/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="{{ site.baseurl }}/src/ics/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="{{ site.baseurl }}/src/ics/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="{{ site.baseurl }}/src/ics/apple-touch-icon-152x152.png">
+		<link rel="icon" type="image/png" href="{{ site.baseurl }}/src/ics/favicon-196x196.png" sizes="196x196">
+		<link rel="icon" type="image/png" href="{{ site.baseurl }}/src/ics/favicon-160x160.png" sizes="160x160">
+		<link rel="icon" type="image/png" href="{{ site.baseurl }}/src/ics/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="{{ site.baseurl }}/src/ics/favicon-16x16.png" sizes="16x16">
+		<link rel="icon" type="image/png" href="{{ site.baseurl }}/src/ics/favicon-32x32.png" sizes="32x32">
+		<meta name="msapplication-TileColor" content="#dddddd">
+		<meta name="msapplication-TileImage" content="{{ site.baseurl }}/src/ics/mstile-144x144.png">
+		<meta name="msapplication-config" content="{{ site.baseurl }}/src/ics/browserconfig.xml">
+	</head>
+	<body>
+  
+	<nav id="side-menu" class="nav-side universe fixed top scrollable closed">
+		<h4>Menu</h4>
+		<div class="">
+			<h5 class="thin">{{ site.name }}</h5>
+			<ul>
+				<li><a href="{{ site.baseurl }}" title="Home">Home</a></li>
+				<li><a href="{{ site.baseurl }}" title="About">About</a></li>
+			</ul>
+		</div>
+	</nav>
+	
+	<div class="fixed top s">
+		<a class="button-icon circled flat orange open-side-menu symbol-iching-heaven"></a>
+	</div>
+	
+			<main id="content">
+				<div class="content">
+				
+					{{ content }}
+				
+					<hr>
+				</div><!-- /.content -->
+			</main>
+			
+		<footer id="footer" class="universe">
+			{% include svg-icons.html %}
+			<hr>
+			<h5><a href="{{ site.baseurl }}" title="{{ site.name }}">{{ site.name }}</a></h5>
+			<p class="s symbol-copyright">2014 {{ site.name }} <a href="http://opensource.org/licenses/MIT" title="Terms">MIT license</a></p>
+		</footer>
+				
+		</div><!-- /#page -->
+   
+		<!-- Scripts
+		================================================== -->
+		<script src="{{ site.baseurl }}/src/js/jquery.js" type="text/javascript"></script>
+		<script src="{{ site.baseurl }}/src/js/jquery.components.js" type="text/javascript"></script>
+		<script src="{{ site.baseurl }}/src/js/jquery.injectables.js" type="text/javascript"></script>
+		{% include analytics.html %}
+		
+	</body>
 </html>

@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<!-- Metadata: Basic -->
+		<title>Hipertextos Framework: Scripts</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Hipertextos Code & Content Writers">
+		<meta name="keys" content="Copywriting and Web developement">
+		<meta name="author" content="Hipertextos">
+		<!-- Metadata: GeoTags -->
+		<meta name="geo.region" content="ES-CT">
+		<meta name="geo.placename" content="Barcelona">
+		<meta name="geo.position" content="41.426812;2.234972">
+		<meta name="ICBM" content="41.426812;2.234972">
+		<!-- Screen styles -->
+		<link href="../src/css/styles.css" rel="stylesheet" media="screen">
+		<link href="../src/css/anime.css" rel="stylesheet" media="screen">
+		<!-- Print styles -->
+		<link href="../src/css/print.css" rel="stylesheet" media="print">
+		<!--[if lt IE 9]><script src="../src/js/html5shiv.js"></script><![endif]-->
+		<!-- If JS disabled -->
+		<noscript><link href="../src/css/noscript.css" rel="stylesheet" media="screen"></noscript>
+		<!-- Site Feed -->
+		<link rel="alternate" type="application/rss+xml" title="rss" href="http://articles.hipertextos.net/feeds/posts/default">
+		<!-- Page Icons -->
+		<link rel="shortcut icon" href="../src/ics/favicon.ico">
+		<link rel="apple-touch-icon" sizes="57x57" href="../src/ics/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="../src/ics/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="../src/ics/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="../src/ics/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="../src/ics/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="../src/ics/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="../src/ics/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="../src/ics/apple-touch-icon-152x152.png">
+		<link rel="icon" type="image/png" href="../src/ics/favicon-196x196.png" sizes="196x196">
+		<link rel="icon" type="image/png" href="../src/ics/favicon-160x160.png" sizes="160x160">
+		<link rel="icon" type="image/png" href="../src/ics/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="../src/ics/favicon-16x16.png" sizes="16x16">
+		<link rel="icon" type="image/png" href="../src/ics/favicon-32x32.png" sizes="32x32">
+		<meta name="msapplication-TileColor" content="#dddddd">
+		<meta name="msapplication-TileImage" content="../src/ics/mstile-144x144.png">
+		<meta name="msapplication-config" content="../src/ics/browserconfig.xml">
+	</head>
+	<body>
+  
+  	<!-- Dialogs -->
+  	<section class="dialog" id="warning1"><h4>Warning 1</h4><a class="button-close" href="#warning1">X</a></section>
+	<section class="dialog-block closed flat violet" id="dialog-1"><p>.dialog + flat +color</p><button class="button-close">X</button></section>
+	<section class="dialog-block fullscreen closed flat soft-orange" id="dialog-2"><p>.dialog + flat +color</p><button class="button-close">X</button></section>
+	<section class="dialog-block top closed flat soft-red" id="dialog-3"><p>.dialog + flat +color</p><button class="button-close">X</button></section>
+	<section class="dialog-block bottom closed flat soft-green" id="dialog-4"><p>.dialog + flat +color</p><button class="button-close">X</button></section>
+	<section class="dialog-block closed flat violet" id="dialog-5"><p>.dialog + flat +color</p><button class="button-close">X</button></section>
+	<section class="dialog-block closed flat black" id="dialog-6"><p>.dialog + flat +color</p><button class="button-close">X</button></section>
+	<section class="dialog-block closed flat hard-grey rounded" id="dialog-7"><p>.dialog + flat +color</p><button class="button-close">X</button></section>
+	<section class="dialog-block closed flat soft-asphalt rounded" id="dialog-8"><p>.dialog + flat +color</p><button class="button-close">X</button></section>
+
+	<nav id="side-menu" class="nav-side universe inset violet fixed top scrollable closed">
+		<h4>Menu</h4>
+		<div class="jcollapser">
+			<h5 class="jtrigger thin">Hipertextos</h5>
+			<ul class="jcollapsed">
+				<li><a href="index.html" title="Home">Home</a></li>
+				<li><a href="http://articles.hipertextos.net" title="Hipertextosblog">Blog</a></li>
+				<li><a href="services.html" title="Hipertextos services">Services</a></li>
+				<li><a href="iching.html" title="Hipertextos phylosophy">Phylosophy</a></li>
+				<li><a href="profile.html" title="Profile">About</a></li>
+			</ul>
+			<h5 class="jtrigger thin">Framework</h5>
+			<ul class="jcollapsed">
+				<li><a href="framework.html" title="Index">Index</a></li>
+				<li><a href="pages.html" title="HTML5 starter">Pages</a></li>
+				<li><a href="styles.html" title="CSS base">Styles</a></li>
+				<li><a href="scripts.html" title="Simple jQuery">Scripts</a></li>
+				<li><a href="icons.html" title="SVG icons injected with jQuery">Icons</a></li>
+				<li><a href="anime.html" title="Animations library">Anime</a></li>
+				<li><a href="download.html" title="Download Hipertextos Framework">Download</a></li>
+			</ul>
+			<h5 class="jtrigger thin">Scripts</h5>
+			<div class="jcollapsed closed">
+				<div id="intoc"></div>
+				<hr>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="fixed left top s">
+		<a class="button-icon circled flat violet open-side-menu symbol-iching-heaven"></a>
+	</div>
+	
+	<!-- Page content -->
+	<div class="page" id="page">
+	
+		<header class="header-cover universe thin flat violet">
+			<h1 class="intoc xxg anm-zoomInDown">Scripts</h1>
+			<p class="xxl anm-scaleUp">jQuery simple components</p>
+			<p class="xl anm-zoomInUp delay-500">hipertextos framework</p>
+			<div class="button-group">
+				<a class="button-icon flat violet circled symbol-bottom" href="#content"></a>
+			</div>
+		</header>
+		
+		<main id="content">
+			<div class="content">
+						
+				<section>
+					<header class="flat violet">
+						<h2>Javascript components and injectables</h2>
+						<p class="lead">A few great scripts to work with hipertextos styles.css.</p>
+					</header>
+					<div class="container">
+						<pre>
+&lt;!-- jquery.injectables.js and jquery.components.js needs styles.css and jQuery to work --&gt;
+&lt;link href=&quot;../src/css/styles.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;
+
+&lt;script src=&quot;../src/js/jquery.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../src/js/jquery.components.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../src/js/jquery.injectables.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+						</pre>
+					</div>
+				</section>
+						
+				<article class="code-sample">
+					<header class="flat violet">
+						<h6><a class="symbol-js" href="../src/js/jquery.components.js">../src/js/jquery.components.js</a></h6>
+						<h3 class="intoc symbol-firstquartermoon">Collapsers</h3>
+					</header>
+					<h4 class="section-title flat violet">Simple show/hide with .jcollapser</h4>
+					<div class="code-result">
+						<h5 class="title symbol-gear">Sample</h5>
+						<!-- Result -->
+						<div class="jcollapser">
+							<h4 class="jtrigger">.jtrigger</h4>
+							<p class="jcollapsed">.jcollapsed</p>
+						</div>
+						<hr>
+					</div>
+					<div class="code-get">
+						<h5 class="title symbol-scissors">Markup</h5>
+							<pre contentEditable="true">
+&lt;!-- Snippets --&gt;
+&lt;div class=&quot;jcollapser&quot;&gt;
+	&lt;h4 class=&quot;jtrigger&quot;&gt;.jtrigger&lt;/h4&gt;
+	&lt;p class=&quot;jcollapsed&quot;&gt;.jcollapsed&lt;/p&gt;
+&lt;/div&gt;
+							</pre>
+					</div>						
+					<h4 class="section-title flat violet">Accordion with .jcollapser</h4>
+					<div class="code-result">
+						<h5 class="title symbol-gear">Sample</h5>
+						<!-- Result -->
+						<div class="jcollapser">
+							<h4 class="jtrigger title">.jtrigger</h4>
+							<p class="jcollapsed">.jcollapsed</p>
+							<h4 class="jtrigger title">.jtrigger</h4>
+							<p class="jcollapsed">.jcollapsed</p>
+							<h4 class="jtrigger title">.jtrigger</h4>
+							<p class="jcollapsed">.jcollapsed</p>
+						</div>
+						<hr>
+					</div>
+					<div class="code-get">
+						<h5 class="title symbol-scissors">Markup</h5>
+							<pre contentEditable="true">
+&lt;!-- Snippets --&gt;
+&lt;div class=&quot;jcollapser&quot;&gt;
+	&lt;h4 class=&quot;jtrigger title&quot;&gt;.jtrigger&lt;/h4&gt;
+	&lt;p class=&quot;jcollapsed&quot;&gt;.jcollapsed&lt;/p&gt;
+	&lt;h4 class=&quot;jtrigger title&quot;&gt;.jtrigger&lt;/h4&gt;
+	&lt;p class=&quot;jcollapsed&quot;&gt;.jcollapsed&lt;/p&gt;
+	&lt;h4 class=&quot;jtrigger title&quot;&gt;.jtrigger&lt;/h4&gt;
+	&lt;p class=&quot;jcollapsed&quot;&gt;.jcollapsed&lt;/p&gt;
+&lt;/div&gt;
+							</pre>
+					</div>						
+					<h4 class="section-title flat violet">Collapsing elements with .idcollapser</h4>
+					<div class="code-result">
+						<h5 class="title symbol-gear">Sample</h5>
+						<!-- Result -->
+						<div class="layout">
+							<div class="thumb-2">
+								<nav>
+									<ul>
+										<li><a class="idtrigger" href="#panel1">.idtrigger 1</a></li>
+										<li><a class="idtrigger" href="#panel2">.idtrigger 2</a></li>
+										<li><a class="idtrigger" href="#panel3">.idtrigger 3</a></li>
+									</ul>
+								</nav>
+							</div>
+							<div class="thumb-10">
+								<section class="idpanel level-10 flat violet closed" id="panel1">.idpanel 1</section>
+								<section class="idpanel level-10 flat violet" id="panel2">.idpanel 2</section>
+								<section class="idpanel level-10 flat violet" id="panel3">.idpanel 3</section>
+							</div>
+							<hr>
+						</div>
+					</div>
+					<div class="code-get">
+						<h5 class="title symbol-scissors">Markup</h5>
+							<pre contentEditable="true">
+&lt;!-- Snippets --&gt;
+&lt;div class=&quot;layout&quot;&gt;
+	&lt;div class=&quot;thumb-2&quot;&gt;
+		&lt;nav&gt;
+			&lt;ul&gt;
+				&lt;li&gt;&lt;a class=&quot;idtrigger&quot; href=&quot;#panel1&quot;&gt;.idtrigger 1&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a class=&quot;idtrigger&quot; href=&quot;#panel2&quot;&gt;.idtrigger 2&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a class=&quot;idtrigger&quot; href=&quot;#panel3&quot;&gt;.idtrigger 3&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/nav&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;thumb-10&quot;&gt;
+		&lt;section class=&quot;idpanel level-10 flat violet closed&quot; id=&quot;panel1&quot;&gt;.idpanel 1&lt;/section&gt;
+		&lt;section class=&quot;idpanel level-10 flat violet&quot; id=&quot;panel2&quot;&gt;.idpanel 2&lt;/section&gt;
+		&lt;section class=&quot;idpanel level-10 flat violet&quot; id=&quot;panel3&quot;&gt;.idpanel 3&lt;/section&gt;
+	&lt;/div&gt;
+	&lt;hr&gt;
+&lt;/div&gt;
+							</pre>
+					</div>						
+					<h4 class="section-title flat violet">Tabs with .idcollapser</h4>
+					<div class="code-result">
+						<h5 class="title symbol-gear">Sample</h5>
+						<!-- Result -->
+						<div>
+							<span class="idtrigger tab" href="#id1">.idtrigger 1</span>
+							<span class="idtrigger tab" href="#id2">.idtrigger 2</span>
+							<span class="idtrigger tab" href="#id3">.idtrigger 3</span>
+							<section class="idpanel closed" id="id1">.idpanel 1</section>
+							<section class="idpanel" id="id2">.idpanel 2</section>
+							<section class="idpanel" id="id3">.idpanel 3</section>
+						</div>
+					</div>
+					<div class="code-get">
+						<h5 class="title symbol-scissors">Markup</h5>
+							<pre contentEditable="true">
+&lt;!-- Snippets --&gt;
+&lt;div&gt;
+	&lt;span class=&quot;idtrigger tab&quot; href=&quot;#id1&quot;&gt;.idtrigger 1&lt;/span&gt;
+	&lt;span class=&quot;idtrigger tab&quot; href=&quot;#id2&quot;&gt;.idtrigger 2&lt;/span&gt;
+	&lt;span class=&quot;idtrigger tab&quot; href=&quot;#id3&quot;&gt;.idtrigger 3&lt;/span&gt;
+	&lt;section class=&quot;idpanel closed&quot; id=&quot;id1&quot;&gt;.idpanel 1&lt;/section&gt;
+	&lt;section class=&quot;idpanel&quot; id=&quot;id2&quot;&gt;.idpanel 2&lt;/section&gt;
+	&lt;section class=&quot;idpanel&quot; id=&quot;id3&quot;&gt;.idpanel 3&lt;/section&gt;
+&lt;/div&gt;
+							</pre>
+					</div>						
+					<h4 class="section-title flat violet">Tabs with data-tabs attribute</h4>
+					<div class="code-result">
+						<h5 class="title symbol-gear">Sample</h5>
+						<!-- Result -->
+						<div class="tabs">
+							<nav>
+								<a class="tab" data-tab="tabnumber1">Tab 1</a>
+								<a class="tab" data-tab="tabnumber2">Tab 2</a>
+								<a class="tab" data-tab="tabnumber3">Tab 3</a>
+							</nav>
+							<section class="tabnumber1">
+								<h4>Tab 1</h4>
+							</section>
+							<section class="tabnumber2">
+								<h4>Tab 2</h4>
+							</section>
+							<section class="tabnumber3">
+								<h4>Tab 3</h4>
+							</section>
+						</div>
+					</div>
+					<div class="code-get">
+						<h5 class="title symbol-scissors">Markup</h5>
+							<pre contentEditable="true">
+&lt;!-- Snippets --&gt;
+&lt;div class=&quot;tabs&quot;&gt;
+	&lt;nav&gt;
+		&lt;a class=&quot;tab&quot; data-tab=&quot;tabnumber1&quot;&gt;Tab 1&lt;/a&gt;
+		&lt;a class=&quot;tab&quot; data-tab=&quot;tabnumber2&quot;&gt;Tab 2&lt;/a&gt;
+		&lt;a class=&quot;tab&quot; data-tab=&quot;tabnumber3&quot;&gt;Tab 3&lt;/a&gt;
+	&lt;/nav&gt;
+	&lt;section class=&quot;tabnumber1&quot;&gt;
+		&lt;h4&gt;Tab 1&lt;/h4&gt;
+	&lt;/section&gt;
+	&lt;section class=&quot;tabnumber2&quot;&gt;
+		&lt;h4&gt;Tab 2&lt;/h4&gt;
+	&lt;/section&gt;
+	&lt;section class=&quot;tabnumber3&quot;&gt;
+		&lt;h4&gt;Tab 3&lt;/h4&gt;
+	&lt;/section&gt;
+&lt;/div&gt;
+							</pre>
+					</div>						
+					<h4 class="section-title flat violet">.dropmenu and .popmenu</h4>
+					<div class="code-result">
+						<h5 class="title symbol-gear">Sample</h5>
+						<!-- Result -->
+						<div class="button-group">
+							<a class="droptrigger">Launch .dropmenu</a>
+							<ul class="dropmenu">
+								<li><a href="#" title="Link 1">Link 1</a></li>
+								<li><a href="#" title="Link 2">Link 2</a></li>
+								<li><a href="#" title="Link 3">Link 3</a></li>
+							</ul>
+						</div>
+						<div class="button-group">
+							<a class="poptrigger">Launch .popmenu</a>
+							<ul class="popmenu">
+								<li><a href="#" title="Link 1">Link 1</a></li>
+								<li><a href="#" title="Link 2">Link 2</a></li>
+								<li><a href="#" title="Link 3">Link 3</a></li>
+							</ul>
+						</div>
+						<hr>
+
+					</div>
+					<div class="code-get">
+						<h5 class="title symbol-scissors">Markup</h5>
+							<pre contentEditable="true">
+&lt;!-- Snippets --&gt;
+&lt;div class=&quot;button-group&quot;&gt;
+	&lt;a class=&quot;droptrigger&quot;&gt;Launch .dropmenu&lt;/a&gt;
+	&lt;ul class=&quot;dropmenu&quot;&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot; title=&quot;Link 1&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot; title=&quot;Link 2&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot; title=&quot;Link 3&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;button-group&quot;&gt;
+	&lt;a class=&quot;poptrigger&quot;&gt;Launch .popmenu&lt;/a&gt;
+	&lt;ul class=&quot;popmenu&quot;&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot; title=&quot;Link 1&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot; title=&quot;Link 2&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot; title=&quot;Link 3&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+							</pre>
+					</div>						
+					<h4 class="section-title flat violet">.dialog</h4>
+					<div class="code-result">
+						<h5 class="title symbol-gear">Sample</h5>
+						<!-- Result -->
+						<a class="button button-modal" href="#warning1">Open dialog</a>
+						<hr>
+					</div>
+					<div class="code-get">
+						<h5 class="title symbol-scissors">Markup</h5>
+							<pre contentEditable="true">
+&lt;!-- Snippets --&gt;
+&lt;a class=&quot;button button-modal&quot; href=&quot;#warning1&quot;&gt;Open dialog&lt;/a&gt;
+&lt;section class=&quot;dialog&quot; id=&quot;warning1&quot;&gt;&lt;h4&gt;Warning 1&lt;/h4&gt;&lt;a class=&quot;button-close&quot; href=&quot;#warning1&quot;&gt;X&lt;/a&gt;&lt;/section&gt;
+							</pre>
+					</div>
+					<h4 class="section-title flat violet">Custom dialogs</h4>
+					<p>With a few lines of code it's possible build custom dialogs with different animations.</p>
+					<div class="code-result">
+						<h5 class="title symbol-gear">Sample</h5>
+						<!-- Result -->
+						<button id="launch-dialog-1" class="flat violet rounded">Launch dialog 1</button>
+						<button id="launch-dialog-2" class="flat soft-orange rounded">Launch dialog 2</button>
+						<button id="launch-dialog-3" class="flat soft-red rounded">Launch dialog 3</button>
+						<button id="launch-dialog-4" class="flat soft-green rounded">Launch dialog 4</button>
+						<button id="launch-dialog-5" class="flat violet rounded">Launch dialog 5 with overlay</button>
+						<button id="launch-dialog-6" class="flat black rounded">Launch dialog 6 with overlay</button>
+						<button id="launch-dialog-7" class="flat hard-grey rounded">Launch dialog 7 with overlay</button>
+						<button id="launch-dialog-8" class="flat violet rounded">Launch dialog 8 with overlay</button>
+					</div>
+					<div class="code-get">
+						<h5 class="title symbol-scissors">Markup</h5>
+							<pre contentEditable="true">
+&lt;!-- Snippets --&gt;
+&lt;button id=&quot;launch-dialog-1&quot; class=&quot;flat violet rounded&quot;&gt;Launch dialog 1&lt;/button&gt;
+&lt;button id=&quot;launch-dialog-2&quot; class=&quot;flat soft-orange rounded&quot;&gt;Launch dialog 2&lt;/button&gt;
+&lt;button id=&quot;launch-dialog-3&quot; class=&quot;flat soft-red rounded&quot;&gt;Launch dialog 3&lt;/button&gt;
+&lt;button id=&quot;launch-dialog-4&quot; class=&quot;flat soft-green rounded&quot;&gt;Launch dialog 4&lt;/button&gt;
+&lt;button id=&quot;launch-dialog-5&quot; class=&quot;flat violet rounded&quot;&gt;Launch dialog 5 with overlay&lt;/button&gt;
+&lt;button id=&quot;launch-dialog-6&quot; class=&quot;flat black rounded&quot;&gt;Launch dialog 6 with overlay&lt;/button&gt;
+&lt;button id=&quot;launch-dialog-7&quot; class=&quot;flat hard-grey rounded&quot;&gt;Launch dialog 7 with overlay&lt;/button&gt;
+&lt;button id=&quot;launch-dialog-8&quot; class=&quot;flat violet rounded&quot;&gt;Launch dialog 8 with overlay&lt;/button&gt;
+
+&lt;section class=&quot;dialog-regular closed flat violet&quot; id=&quot;dialog-1&quot;&gt;&lt;p&gt;.dialog + flat +color&lt;/p&gt;&lt;button class=&quot;button-close&quot;&gt;X&lt;/button&gt;&lt;/section&gt;
+&lt;section class=&quot;dialog-full closed flat soft-orange&quot; id=&quot;dialog-2&quot;&gt;&lt;p&gt;.dialog + flat +color&lt;/p&gt;&lt;button class=&quot;button-close&quot;&gt;X&lt;/button&gt;&lt;/section&gt;
+&lt;section class=&quot;dialog-top closed flat soft-red&quot; id=&quot;dialog-3&quot;&gt;&lt;p&gt;.dialog + flat +color&lt;/p&gt;&lt;button class=&quot;button-close&quot;&gt;X&lt;/button&gt;&lt;/section&gt;
+&lt;section class=&quot;dialog-bottom closed flat soft-green&quot; id=&quot;dialog-4&quot;&gt;&lt;p&gt;.dialog + flat +color&lt;/p&gt;&lt;button class=&quot;button-close&quot;&gt;X&lt;/button&gt;&lt;/section&gt;
+&lt;section class=&quot;dialog-regular closed flat violet&quot; id=&quot;dialog-5&quot;&gt;&lt;p&gt;.dialog + flat +color&lt;/p&gt;&lt;button class=&quot;button-close&quot;&gt;X&lt;/button&gt;&lt;/section&gt;
+&lt;section class=&quot;dialog-regular closed flat black&quot; id=&quot;dialog-6&quot;&gt;&lt;p&gt;.dialog + flat +color&lt;/p&gt;&lt;button class=&quot;button-close&quot;&gt;X&lt;/button&gt;&lt;/section&gt;
+&lt;section class=&quot;dialog-regular closed flat hard-grey rounded&quot; id=&quot;dialog-7&quot;&gt;&lt;p&gt;.dialog + flat +color&lt;/p&gt;&lt;button class=&quot;button-close&quot;&gt;X&lt;/button&gt;&lt;/section&gt;
+&lt;section class=&quot;dialog-regular closed flat soft-asphalt rounded&quot; id=&quot;dialog-8&quot;&gt;&lt;p&gt;.dialog + flat +color&lt;/p&gt;&lt;button class=&quot;button-close&quot;&gt;X&lt;/button&gt;&lt;/section&gt;
+
+&lt;script&gt;
+$(function() {
+
+	$(&quot;#launch-dialog-1&quot;).click(function(){
+		$(&quot;#dialog-1&quot;).toggleClass(&quot;closed anime anm-moveFromTop&quot;);
+	});
+	$(&quot;#launch-dialog-2&quot;).click(function(){
+		$(&quot;#dialog-2&quot;).toggleClass(&quot;closed anime anm-bounce&quot;);
+	});
+	$(&quot;#launch-dialog-3&quot;).click(function(){
+		$(&quot;#dialog-3&quot;).toggleClass(&quot;closed anime anm-tada&quot;);
+	});
+	$(&quot;#launch-dialog-4&quot;).click(function(){
+		$(&quot;#dialog-4&quot;).toggleClass(&quot;closed anime anm-fadeIn&quot;);
+	});
+	$(&quot;#launch-dialog-5&quot;).click(function(){
+		$(&quot;#dialog-5&quot;).toggleClass(&quot;closed anime anm-scaleUpDown&quot;);
+		$(&quot;.overlay&quot;).toggleClass(&quot;closed anime anm-scaleUp&quot;);
+	});
+	$(&quot;#launch-dialog-6&quot;).click(function(){
+		$(&quot;.overlay&quot;).toggleClass(&quot;closed anime anm-fadeIn&quot;);
+		$(&quot;#dialog-6&quot;).toggleClass(&quot;closed anime anm-moveFromTop&quot;);
+	});
+	$(&quot;#launch-dialog-7&quot;).click(function(){
+		$(&quot;#dialog-7&quot;).toggleClass(&quot;closed anime anm-moveFromBottom&quot;);
+		$(&quot;.overlay&quot;).toggleClass(&quot;closed anime anm-fadeIn&quot;);
+	});
+	$(&quot;#launch-dialog-8&quot;).click(function(){
+		$(&quot;#dialog-8&quot;).toggleClass(&quot;closed anime anm-moveFromLeft&quot;);
+		$(&quot;.overlay&quot;).toggleClass(&quot;closed anime anm-fadeIn&quot;);
+	});
+	$(&quot;#dialog-1 .button-close&quot;).click(function(){
+		$(&quot;#dialog-1&quot;).toggleClass(&quot;closed anime anm-moveFromTop&quot;);
+	});
+	$(&quot;#dialog-2 .button-close&quot;).click(function(){
+		$(&quot;#dialog-2&quot;).toggleClass(&quot;closed anime anm-bounce&quot;);
+	});
+	$(&quot;#dialog-3 .button-close&quot;).click(function(){
+		$(&quot;#dialog-3&quot;).toggleClass(&quot;closed anime anm-tada&quot;);
+	});
+	$(&quot;#dialog-4 .button-close&quot;).click(function(){
+		$(&quot;#dialog-4&quot;).toggleClass(&quot;closed anime anm-fadeIn&quot;);
+	});
+	$(&quot;#dialog-5 .button-close&quot;).click(function(){
+		$(&quot;#dialog-5&quot;).toggleClass(&quot;closed anime anm-scaleUpDown&quot;);
+		$(&quot;.overlay&quot;).toggleClass(&quot;closed anime anm-scaleUp&quot;);
+	});
+	$(&quot;#dialog-6 .button-close&quot;).click(function(){
+		$(&quot;#dialog-6&quot;).toggleClass(&quot;closed anime anm-flash&quot;);
+		$(&quot;.overlay&quot;).toggleClass(&quot;closed anime anm-fadeIn&quot;);
+	});
+	$(&quot;#dialog-7 .button-close&quot;).click(function(){
+		$(&quot;#dialog-7&quot;).toggleClass(&quot;closed anime anm-moveFromBottom&quot;);
+		$(&quot;.overlay&quot;).toggleClass(&quot;closed anime anm-fadeIn&quot;);
+	});
+	$(&quot;#dialog-8 .button-close&quot;).click(function(){
+		$(&quot;#dialog-8&quot;).toggleClass(&quot;closed anime anm-moveFromLeft delay200&quot;);
+		$(&quot;.overlay&quot;).toggleClass(&quot;closed anime anm-fadeIn&quot;);
+	});
+});
+&lt;/script&gt;
+							</pre>
+					</div>
+					<hr>					
+				</article>
+				
+				<article class="code-sample">
+					<header class="flat violet">
+						<h6><a class="symbol-js" href="../src/js/jquery.components.js">../src/js/jquery.components.js</a></h6>
+						<h3 class="intoc symbol-flag">Alerts</h3>
+					</header>
+					<h4 class="section-title flat violet">.alert</h4>
+					<p>Autodestroy on click!</p>
+					<div class="code-result">
+						<h5 class="title symbol-gear">Sample</h5>
+						<!-- Result -->
+						<section class="alert"><button class="button-close">x</button><h4>Simple .alert</h4></section>
+						<section class="alert stripped-x red"><button class="button-close">x</button><h4>Simple .alert with color</h4></section>
+					</div>
+					<div class="code-get">
+						<h5 class="title symbol-scissors">Markup</h5>
+							<pre contentEditable="true">
+&lt;!-- Snippets --&gt;
+&lt;section class=&quot;alert&quot;&gt;&lt;button class=&quot;button-close&quot;&gt;x&lt;/button&gt;&lt;h4&gt;Simple .alert&lt;/h4&gt;&lt;/section&gt;
+&lt;section class=&quot;alert stripped-x red&quot;&gt;&lt;button class=&quot;button-close&quot;&gt;x&lt;/button&gt;&lt;h4&gt;Simple .alert with color&lt;/h4&gt;&lt;/section&gt;
+							</pre>
+					</div>
+					<hr>					
+				</article>
+				
+				<article class="code-sample">
+					<header class="flat violet">
+						<h6><a class="symbol-js" href="../src/js/jquery.components.js">../src/js/jquery.components.js</a></h6>
+						<h3 class="intoc symbol-hyperlink">Effects for links</h3>
+					</header>
+					<h4 class="section-title flat violet">Smooth scroll</h4>
+					<div class="code-result">
+						<h5 class="title symbol-gear">Sample</h5>
+						<!-- Result -->
+						<a href="#next-section" title="Smooth scroll demo">Move to next anchor</a>
+						<hr>
+					</div>
+					<div class="code-get">
+						<h5 class="title symbol-scissors">Markup</h5>
+							<pre contentEditable="true">
+&lt;!-- Snippets --&gt;
+&lt;a href=&quot;#next-section&quot; title=&quot;Smooth scroll demo&quot;&gt;Move to next anchor&lt;/a&gt;
+							</pre>
+					</div>
+					<h4 class="section-title flat violet" id="next-section">.current link</h4>
+					<p>Add .current class to links to current page. It is generated by scripts.js file.</p>
+					<div class="code-result">
+						<h5 class="title symbol-gear">Sample</h5>
+						<!-- Result -->
+						<a class="button" href="scripts.html">.button</a>
+						<hr>
+					</div>
+					<div class="code-get">
+						<h5 class="title symbol-scissors">Markup</h5>
+							<pre contentEditable="true">
+&lt;!-- Snippets --&gt;
+&lt;a class=&quot;button&quot; href=&quot;[CURRENT-URL]&quot;&gt;.button&lt;/a&gt;
+							</pre>
+					</div>
+					<h4 class="section-title flat violet">.working button</h4>
+					<p>Activity indicator inside a button. When click shows indicator before next page will be loaded.</p>
+					
+					<div class="code-result">
+						<h5 class="title symbol-gear">Sample</h5>
+						<!-- Result -->
+						<a class="button prework" href="http://hipertextos.net">.prework .button</a>
+						<hr>
+					</div>
+					<div class="code-get">
+						<h5 class="title symbol-scissors">Markup</h5>
+							<pre contentEditable="true">
+&lt;!-- Snippets --&gt;
+&lt;a class=&quot;button prework&quot; href=&quot;http://hipertextos.net&quot;&gt;.prework .button&lt;/a&gt;
+							</pre>
+					</div>
+					<h4 class="section-title flat violet">.tip</h4>
+					
+					<div class="code-result">
+						<h5 class="title symbol-gear">Sample</h5>
+						<!-- Result -->
+						<a href="#" class="tip" title="Tip demo">Tip</a>
+						<hr>
+					</div>
+					<div class="code-get">
+						<h5 class="title symbol-scissors">Markup</h5>
+							<pre contentEditable="true">
+&lt;!-- Snippets --&gt;
+&lt;a href=&quot;#&quot; class=&quot;tip&quot; title=&quot;Tip demo&quot;&gt;Tip&lt;/a&gt;
+							</pre>
+					</div>
+					<h4 class="section-title flat violet">#toTop button</h4>
+					<p>You can see the button on bottom right of this page. It is generated by scripts.js file.</p>
+					<div class="code-result">
+
+					</div>
+					<div class="code-get">
+						<h5 class="title symbol-scissors">Markup</h5>
+							<pre contentEditable="true">
+&lt;!-- Snippets --&gt;
+This snippet is added to your body:
+&lt;a href=&quot;#page&quot; class=&quot;button-icon l circled unify symbol-top&quot; id=&quot;toTop&quot;&gt;&lt;/a&gt;
+							</pre>
+					</div>
+					<hr>					
+				</article>
+				
+				<article class="code-sample">
+					<header class="flat violet">
+						<h6><a class="symbol-js" href="../src/js/jquery.components.js">../src/js/jquery.components.js</a></h6>
+						<h3 class="intoc symbol-airplane">Navigation</h3>
+					</header>
+					<h4 class="section-title flat violet">#nav-collapse</h4>
+					<p class="lead">Navigation bar collapses on small screens. Then you can click to show or hide.</p>
+					<div class="code-result">
+						<h5 class="title symbol-gear">Sample</h5>
+						<!-- Result -->
+						<nav class="metal">
+							<div class="content">
+								<a href="#nav-toggle" id="nav-toggle" class="toggle"><span class="symbol-list"></span></a>
+								<div id="nav-collapse">
+									<a href="#" title="Link title">Link</a>
+									<a href="#" title="Link title">Link</a>
+									<a href="#" title="Link title">Link</a>
+									<a href="#" title="Link title">Link</a>
+								</div>
+							</div>
+						</nav>
+						<hr>
+					</div>
+					<div class="code-get">
+						<h5 class="title symbol-scissors">Markup</h5>
+							<pre contentEditable="true">
+&lt;!-- Snippets --&gt;
+&lt;nav class=&quot;metal&quot;&gt;
+	&lt;div class=&quot;content&quot;&gt;
+		&lt;a href=&quot;#nav-toggle&quot; id=&quot;nav-toggle&quot; class=&quot;toggle&quot;&gt;&lt;span class=&quot;symbol-list&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+		&lt;div id=&quot;nav-collapse&quot;&gt;
+			&lt;a href=&quot;#&quot; title=&quot;Link title&quot;&gt;Link&lt;/a&gt;
+			&lt;a href=&quot;#&quot; title=&quot;Link title&quot;&gt;Link&lt;/a&gt;
+			&lt;a href=&quot;#&quot; title=&quot;Link title&quot;&gt;Link&lt;/a&gt;
+			&lt;a href=&quot;#&quot; title=&quot;Link title&quot;&gt;Link&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/nav&gt;
+							</pre>
+					</div>
+					
+					<hr>					
+				</article>
+
+				<article class="code-sample">
+					<header class="flat violet">
+						<h6><a class="symbol-js" href="../src/js/jquery.components.js">../src/js/jquery.components.js</a></h6>
+						<h3 class="intoc symbol-airplane">Alert on end scroll</h3>
+					</header>
+					<h4 class="section-title flat violet">#footer</h4>
+					<p class="lead">Page footer alerts you when scroll is finished.</p>
+					<div class="code-result">
+						<h5 class="title symbol-gear">Sample</h5>
+						<!-- Result -->
+						<div class="button-centered"><a href="#footer" class="button xl flat violet" title="Scroll down">View demo scrolling down</a></div>
+						<hr>
+					</div>
+					<div class="code-get">
+						<h5 class="title symbol-scissors">Markup</h5>
+							<pre contentEditable="true">
+&lt;!-- Snippets --&gt;
+&lt;footer id=&quot;footer&quot;&gt;
+	...
+&lt;/footer&gt;
+							</pre>
+					</div>
+					
+					<hr>					
+				</article>
+
+				<article class="code-sample">
+					<header class="flat violet">
+						<h6><a class="symbol-css" href="../src/js/jquery.injectables.js">../src/js/jquery.injectables.js</a></h6>
+						<h3 class="intoc symbol-flag">the injectables</h3>
+						<p>Useful HTML snippets injectables with jQuery.</p>
+					</header>
+					<h4 class="section-title flat violet intoc">.sharing-list</h4>
+					<div class="code-result">
+						<h5 class="title symbol-gear">Sample</h5>
+						<!-- Result -->
+						<div class="sharing-list"></div>
+					</div>
+					<div class="code-get">
+  <pre>&lt;div class=&quot;sharing-list&quot;&gt;&lt;/div&gt; </pre>
+					</div>
+					<h4 class="section-title flat violet intoc">.sharing-buttons</h4>
+					<div class="code-result">
+						<h5 class="title symbol-gear">Sample</h5>
+						<!-- Result -->
+						<div class="sharing-buttons"></div>
+					</div>
+					<div class="code-get">
+  <pre>&lt;div class=&quot;sharing-buttons&quot;&gt;&lt;/div&gt;</pre>
+					</div>
+					<h4 class="section-title flat violet intoc">.translating-list</h4>
+					<div class="code-result">
+						<h5 class="title symbol-gear">Sample</h5>
+						<!-- Result -->
+						<div class="translating-list"></div>
+					</div>
+					<div class="code-get">
+ <pre> &lt;div class=&quot;translating-list&quot;&gt;&lt;/div&gt;</pre>
+					</div>
+					<h4 class="section-title flat violet intoc">.translating-buttons</h4>
+					<div class="code-result">
+						<h5 class="title symbol-gear">Sample</h5>
+						<!-- Result -->
+						<div class="translating-buttons"></div>
+					</div>
+					<div class="code-get">
+ <pre>&lt;div class=&quot;translating-buttons&quot;&gt;&lt;/div&gt;</pre>
+					</div>
+					<hr>					
+				</article>
+
+				<article class="code-sample">
+					<header class="flat violet">
+						<h6><a class="symbol-css" href="../src/js/jquery.views.js">../src/js/jquery.views.js</a></h6>
+						<h3 class="intoc symbol-flag">Custom views</h3>
+						<p>A simple way to create customizable views for menus and content.</p>
+					</header>
+					<h4 class="section-title flat violet intoc">.sharing-list</h4>
+					<div class="code-result">
+						<h5 class="title symbol-gear">Sample</h5>
+						<!-- Result -->
+						<div class="button-centered"><a href="scripts-views.html" class="button xl flat violet" title="Custom views samble">Demo and HTML markup</a></div>
+					</div>
+					<div class="code-get">
+<pre contentEditable="true">&lt;script src=&quot;../src/js/jquery.views.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</pre>
+					</div>
+					<hr>					
+				</article>
+
+				<hr>
+			</div><!-- /.content -->
+		</main>
+		
+		<footer id="footer" class="universe">
+			<h5><a href="http://hipertextos.net" title="www.hipertextos.net">www.hipertextos.net</a></h5>
+			<p class="s symbol-copyright">2014 Hipertextos <a href="http://opensource.org/licenses/MIT" title="Terms">MIT license</a></p>
+		</footer>
+				
+	</div><!-- /#page -->
+   
+    <!-- Scripts
+    ================================================== -->
+    <script src="../src/js/jquery.js" type="text/javascript"></script>
+    <script src="../src/js/jquery.components.js" type="text/javascript"></script>
+    <script src="../src/js/jquery.injectables.js" type="text/javascript"></script>
+    <script src="../src/js/jquery.toc.js" type="text/javascript"></script>
+    <script type="text/javascript">
+		$('#intoc').toc({
+			'selectors': '.intoc'
+		});
+
+		$(function() {
+			$("#launch-dialog-1").click(function(){
+				$("#dialog-1").toggleClass("closed anime anm-moveFromTop");
+			});
+			$("#launch-dialog-2").click(function(){
+				$("#dialog-2").toggleClass("closed anime anm-bounce");
+			});
+			$("#launch-dialog-3").click(function(){
+				$("#dialog-3").toggleClass("closed anime anm-tada");
+			});
+			$("#launch-dialog-4").click(function(){
+				$("#dialog-4").toggleClass("closed anime anm-fadeIn");
+			});
+			$("#launch-dialog-5").click(function(){
+				$("#dialog-5").toggleClass("closed anime anm-scaleUpDown");
+				$(".overlay").toggleClass("closed glass-dark anime anm-scaleUp");
+			});
+			$("#launch-dialog-6").click(function(){
+				$(".overlay").toggleClass("closed anime anm-fadeIn");
+				$("#dialog-6").toggleClass("closed glass-dark anime anm-moveFromTop");
+			});
+			$("#launch-dialog-7").click(function(){
+				$("#dialog-7").toggleClass("closed anime anm-moveFromBottom");
+				$(".overlay").toggleClass("closed glass-dark anime anm-fadeIn");
+			});
+			$("#launch-dialog-8").click(function(){
+				$("#dialog-8").toggleClass("closed anime anm-moveFromLeft");
+				$(".overlay").toggleClass("closed glass-dark anime anm-fadeIn");
+			});
+			$("#dialog-1 .button-close").click(function(){
+				$("#dialog-1").toggleClass("closed anime anm-moveFromTop");
+			});
+			$("#dialog-2 .button-close").click(function(){
+				$("#dialog-2").toggleClass("closed anime anm-bounce");
+			});
+			$("#dialog-3 .button-close").click(function(){
+				$("#dialog-3").toggleClass("closed anime anm-tada");
+			});
+			$("#dialog-4 .button-close").click(function(){
+				$("#dialog-4").toggleClass("closed anime anm-fadeIn");
+			});
+			$("#dialog-5 .button-close").click(function(){
+				$("#dialog-5").toggleClass("closed anime anm-scaleUpDown");
+				$(".overlay").toggleClass("closed glass-dark anime anm-scaleUp");
+			});
+			$("#dialog-6 .button-close").click(function(){
+				$("#dialog-6").toggleClass("closed anime anm-flash");
+				$(".overlay").toggleClass("closed glass-dark anime anm-fadeIn");
+			});
+			$("#dialog-7 .button-close").click(function(){
+				$("#dialog-7").toggleClass("closed anime anm-moveFromBottom");
+				$(".overlay").toggleClass("closed glass-dark anime anm-fadeIn");
+			});
+			$("#dialog-8 .button-close").click(function(){
+				$("#dialog-8").toggleClass("closed anime anm-moveFromLeft delay200");
+				$(".overlay").toggleClass("closed glass-dark anime anm-fadeIn");
+			});
+		});
+    </script>
+  </body>
+</html>
+							
