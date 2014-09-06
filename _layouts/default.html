@@ -48,10 +48,7 @@
 		<h4>Menu</h4>
 		<div class="">
 			<h5 class="thin">{{ site.name }}</h5>
-			<ul>
-				<li><a href="{{ site.baseurl }}" title="Home">Home</a></li>
-				<li><a href="{{ site.baseurl }}/about.html" title="About">About</a></li>
-			</ul>
+			{% include navigation.html %}
 		</div>
 	</nav>
 	
