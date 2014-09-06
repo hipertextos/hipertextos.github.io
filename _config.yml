@@ -6,10 +6,10 @@
 name: hipertextos
 
 # Short bio or description (displayed in the header)
-description: Code & content writers
+description: Code projects
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/hipertextos/jekyll-now/master/src/ics/hipertextos.png
+avatar: https://code.hipertextos.net/src/ics/hipertextos.png
 
 #
 # Flags below are optional
