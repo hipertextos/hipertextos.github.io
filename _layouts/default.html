@@ -9,10 +9,10 @@
 		<meta name="keys" content="{{ site.name }}">
 		<meta name="author" content="PageAuthor">
 		<!-- Metadata: GeoTags -->
-		<meta name="geo.region" content="{{ geolocation.region }}">
-		<meta name="geo.placename" content="{{ geolocation.placename }}">
-		<meta name="geo.position" content="{{ geolocation.langitudelongitude }}">
-		<meta name="ICBM" content="{{ geolocation.langitudelongitude }}">
+		<meta name="geo.region" content="{{ site.region }}">
+		<meta name="geo.placename" content="{{ site.placename }}">
+		<meta name="geo.position" content="{{ site.langitudelongitude }}">
+		<meta name="ICBM" content="{{ site.langitudelongitude }}">
 		<!-- Screen styles -->
 		<link href="{{ site.baseurl }}/src/css/styles.css" rel="stylesheet" media="screen">
 		<link href="{{ site.baseurl }}/src/css/anime.css" rel="stylesheet" media="screen">
@@ -64,7 +64,7 @@
 		<header class="header-cover universe thin">
 			<h1 class="xxg anm-zoomInDown delay-500">{{ site.name }}</h1>
 			<p class="xl anm-scaleUp delay-500">{{ site.description }}</p>			
-			<p class="anm-scaleUp delay-1000">{{ geolocation.placename }}</p>
+			<p class="anm-scaleUp delay-1000">{{ site.placename }}</p>
 		</header>
 		
 		<main id="content">

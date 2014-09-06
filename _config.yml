@@ -29,11 +29,10 @@ footer-links:
   twitter: hipertextos
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
 
-#Your Geolocation metadata
-geolocation:
-  region: Catalunya
-  placename: Barcelona
-  langitudelongitude: 41.426812;2.234972
+# Your Geolocation metadata
+region: Catalunya
+placename: Barcelona
+langitudelongitude: 41.426812;2.234972
 
 # Your disqus shortname, entering this will enable commenting on posts
 disqus: 
