@@ -44,7 +44,7 @@
 	</head>
 	<body>
   
-	<nav id="side-menu" class="nav-side universe inset grey fixed top scrollable closed">
+	<nav id="side-menu" class="nav-side universe lines grey  fixed top scrollable closed">
 		<h4>Menu</h4>
 		<div class="">
 			<h5 class="thin">{{ site.name }}</h5>
@@ -56,11 +56,17 @@
 	</nav>
 	
 	<div class="fixed top s">
-		<a class="button-icon circled inset grey open-side-menu symbol-iching-heaven"></a>
+		<a class="button-icon circled lines grey open-side-menu symbol-iching-heaven"></a>
 	</div>
 	
 	<div class="page" id="page">
 	
+		<header class="header-cover universe thin">
+			<h1 class="xxg anm-zoomInDown delay-500">{{ site.name }}</h1>
+			<p class="xl anm-scaleUp delay-500">{{ site.description }}</p>			
+			<p class="anm-scaleUp delay-1000">{{ geolocation.placename }}</p>
+		</header>
+		
 		<main id="content">
 			<div class="content">
 			

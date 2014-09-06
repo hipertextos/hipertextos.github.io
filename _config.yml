@@ -31,9 +31,9 @@ footer-links:
 
 #Your Geolocation metadata
 geolocation:
-  region: 
-  placename: 
-  langitudelongitude: 
+  region: Catalunya
+  placename: Barcelona
+  langitudelongitude: 41.426812;2.234972
 
 # Your disqus shortname, entering this will enable commenting on posts
 disqus: 
