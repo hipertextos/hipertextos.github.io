@@ -61,7 +61,13 @@
 	
 	<div class="page" id="page">
 	
-				{{ content }}
+		<header class="header-banner no-margin flat grey universe thin">
+			<h1 class="xg anm-zoomInDown delay-500">{{ page.title }}</h1>
+			<p class="l anm-scaleUp delay-500">{{ site.description }}</p>			
+			<p class="anm-scaleUp delay-1000">{{ site.placename }}</p>
+		</header>
+		
+		{{ content }}
 			
 		<footer id="footer" class="universe">
 			{% include svg-icons.html %}
