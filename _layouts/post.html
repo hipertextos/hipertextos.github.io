@@ -1,18 +1,19 @@
 ---
 layout: default
 ---
-				<article class="post">
+				<article class="post universe thin">
 				  
 					<h3>{{ page.title }}</h3>
 
 					<div class="date">
 					Written on {{ page.date | date: "%B %e, %Y" }}
 					</div>
-
+					<hr>
 					<div class="entry">
 					{{ content }}
 					</div>
-
-				  {% include disqus.html disqus_identifier=page.disqus_identifier %}
+					<hr>
+					
+					{% include disqus.html disqus_identifier=page.disqus_identifier %}
 				</article>			
 
