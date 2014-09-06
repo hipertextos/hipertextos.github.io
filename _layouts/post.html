@@ -1,14 +1,11 @@
 ---
 layout: default
 ---
-				<article class="post universe thin">
+				<article class="universe thin">
 				  
-					<h3>{{ page.title }}</h3>
+					<h2>{{ page.title }}</h2>
 
-					<div class="date">
-					Written on {{ page.date | date: "%B %e, %Y" }}
-					</div>
-					<hr>
+					<p class="l">Written on {{ page.date | date: "%B %e, %Y" }}</p>
 					<div class="entry">
 					{{ content }}
 					</div>
