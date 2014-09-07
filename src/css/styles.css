@@ -1468,6 +1468,9 @@ nav .toggle svg {
 		display: inline-block;
 		width: auto;
 	}
+	.nav-side {
+		box-shadow: 0 0 .25em rgba(0,0,0,.5);
+	}
 }
 
 /* ------------------------------------------------------------  Links & buttons */
@@ -1903,7 +1906,7 @@ footer {
 @media (max-width: 1280px) {
 	.header-cover {
 		height: 56em; 
-		padding: 8em 0 0;
+		padding: 7em 0 0;
 	}
 	.header-slider {
 		height: 42em;
