@@ -3,10 +3,12 @@ layout: post
 title: Hipertextos Framework (v0.8)
 ---
 
-CSS the old way. No pre-processors, no less, no sass. Just CSS and a little bit of javascript. Simple and effective.
-
 
 # Back to basics
+
+CSS the old way. No pre-processors, no less, no sass. Just CSS and a little bit of javascript. Simple and effective.
+
+##Definition
 
 Hipertextos is a Framework or web component library to build pages and sites with HTML5 and CSS. You can use Hipertextos as a resource in your projects or just to learn a different way to build the most common web components.
 
