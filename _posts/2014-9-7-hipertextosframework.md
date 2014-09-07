@@ -18,7 +18,7 @@ Get more than less.
 
 *  Focus on content
 *  Write semantic HTML
-*  Assume device* agnostic developement
+*  Assume device-agnostic developement
 *  Get rapid prototyping
 *  Stop fighting against presentational classes
 *  Avoid preprocessors: no LESS, no SASS
