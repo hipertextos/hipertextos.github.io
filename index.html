@@ -4,15 +4,17 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts %}
-    <article class="post">    
+    <article class="universe thin">    
       
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+		<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 
-      <div class="entry">
-        {{ post.content | truncatewords:40}}
-      </div>
-      
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+		<div class="entry">
+			{{ post.content | truncatewords:40}}
+		</div>
+		<div class="button-centered">
+			<a href="{{ site.baseurl }}{{ post.url }}" class="button lines grey">Read More</a>
+		</div>
+	
     </article>
   {% endfor %}
 </div>
