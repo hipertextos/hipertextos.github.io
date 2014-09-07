@@ -167,6 +167,7 @@ $(function() {
 	$(".open-side-menu").click(function(e) {
 		$("#side-menu").toggleClass('closed left anm-moveFromLeft delay-500');
     	$("#page").toggleClass('page-side toright anm-fadeIn delay-500');
+    	$(".open-side-menu").toggleClass('symbol-iching-heaven symbol-delete');
 	});
 	
 	// Alert on end scroll
