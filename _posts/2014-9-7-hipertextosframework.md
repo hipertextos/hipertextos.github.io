@@ -64,3 +64,5 @@ hipertextos includes
 ## License
   
 This framework is distributed under a MIT license. SVG icons included are distributed under a CC By 3.0 license.
+
+<div class="button-centered"><a href="http://code.hipertextos.net/docs/framework.html" title="Hipertextos framework">Framework</a></div>
