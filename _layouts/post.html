@@ -2,14 +2,13 @@
 layout: default
 ---
 				<article class="anm-zoomInLeft">
-				  
-					<h2 class="universe thin">{{ page.title }}</h2>
-
-					<p class="universe thin l">Written on {{ page.date | date: "%B %e, %Y" }}</p>
+				  	<header>
+						<h2 class="universe thin">{{ page.title }}</h2>
+						<p class="universe thin l">Written on {{ page.date | date: "%B %e, %Y" }}</p>
+					</header>
 					<div class="entry">
 					{{ content }}
 					</div>
 					<hr>
-					
 					{% include disqus.html disqus_identifier=page.disqus_identifier %}
 				</article>
