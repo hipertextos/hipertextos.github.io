@@ -15,6 +15,8 @@ avatar: https://code.hipertextos.net/src/ics/hipertextos.png
 # Flags below are optional
 #
 
+author: hipertextos
+
 # Includes an icon in the footer for each username you enter
 footer-links:
   googleplus: EdHipertextos
