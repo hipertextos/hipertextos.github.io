@@ -1,7 +1,9 @@
 ---
 layout: post
-title: Hipercss (hipertextos framework v0.9)
+title: Hipercss
 ---
+
+Hipercss is the hipertextos framework version 0.9.
 
 CSS the old way. No pre-processors, no less, no sass. Just CSS and (if you want) a little bit of javascript. Simple and effective.
 
