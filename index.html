@@ -3,7 +3,19 @@ layout: default
 title: hipertextos code
 ---
 
-<div class="cell-8 pushed-2 posts">
+<div class="cell-2 hidden-phone">
+	<div class="white-space xl"></div>
+	<div class="button-centered">
+		<a class="button-icon circled lines grey anm-zoomInLeft delay-100" href="http://hipertextos.net/docs/framework.html" title="Hipertextos framework">Framework</a><br>
+		<a class="button-icon circled lines green anm-zoomInLeft delay-200" href="http://hipertextos.net/docs/pages.html" title="Hipertextos pages">pages</a><br>
+		<a class="button-icon circled lines blue anm-zoomInLeft delay-300" href="http://hipertextos.net/docs/styles.html" title="Hipertextos styles">styles</a><br>
+		<a class="button-icon circled lines violet anm-zoomInLeft delay-400" href="http://hipertextos.net/docs/effecss.html" title="Hipertextos effecss">effecss</a><br>
+		<a class="button-icon circled lines orange anm-zoomInLeft delay-500" href="http://hipertextos.net/docs/anime.html" title="Hipertextos anime">anime</a><br>
+		<a class="button-icon circled lines red anm-zoomInLeft delay-600" href="http://hipertextos.net/docs/icons.html" title="Hipertextos icons">icons</a><br>
+		<a class="button-icon circled lines yellow anm-zoomInLeft delay-700" href="http://hipertextos.net/docs/download.html" title="Hipertextos get">get</a><br>
+	</div>
+</div>
+<div class="cell-8 posts">
   {% for post in site.posts %}
     <article class="universe thin anm-zoomInUp delay-1000">    
       
@@ -19,3 +31,12 @@ title: hipertextos code
     </article>
   {% endfor %}
 </div>
+<div class="cell-2">
+	<div class="white-space xl"></div>
+	<div class="button-centered">
+		<a href="http://twitter.com/?status={{ site.baseurl }}" class="button-icon lines soft-blue anm-zoomInRight delay-200" title="Comparteix a Twitter">Tw</a><br class="hidden-phone">
+		<a href="http://www.facebook.com/sharer.php?u={{ site.baseurl }}&t={{ site.name }}" class="button-icon lines blue anm-zoomInRight delay-300" title="Comparteix a Facebook">Fb</a><br class="hidden-phone">
+		<a href="https://plusone.google.com/_/+1/confirm?hl=en&url={{ site.baseurl }}" class="button-icon lines red anm-zoomInRight delay-400" title="Comparteix a Google +">G+</a>
+	</div>
+</div>
+<hr>
