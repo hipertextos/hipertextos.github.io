@@ -3,14 +3,14 @@ layout: default
 title: hipertextos code
 ---
 
-<div class="cell-6 pushed-3 posts">
+<div class="cell-8 pushed-2 posts">
   {% for post in site.posts %}
     <article class="universe thin anm-zoomInUp delay-1000">    
       
 		<h2 class="title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
 		<div class="entry">
-			{{ post.content | truncatewords:30}}
+			{{ post.content | truncatewords:20}}
 		</div>
 		<div class="button-centered">
 			<a href="{{ site.baseurl }}{{ post.url }}" class="button lines grey">Read More</a>
