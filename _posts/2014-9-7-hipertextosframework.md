@@ -1,20 +1,19 @@
 ---
 layout: post
-title: Hipertextos Framework (v0.8)
+title: Hipercss (hipertextos framework v0.9)
 ---
 
+CSS the old way. No pre-processors, no less, no sass. Just CSS and (if you want) a little bit of javascript. Simple and effective.
 
-# Back to basics
+##Back to basics
 
-CSS the old way. No pre-processors, no less, no sass. Just CSS and a little bit of javascript. Simple and effective.
-
-##Definition
-
-Hipertextos is a Framework or web component library to build pages and sites with HTML5 and CSS. You can use Hipertextos as a resource in your projects or just to learn a different way to build the most common web components.
+Hipercss is a Framework or web component library to build pages and sites with HTML5 and CSS. You can use Hipertextos as a resource in your projects or just to learn a different way to build the most common web components.
 
 ##Philosophy
 
+Simple is better.
 Get more than less.
+I want it red, not danger
 
 ##Objectives
 
@@ -26,7 +25,7 @@ Get more than less.
 *  Avoid preprocessors: no LESS, no SASS
 *  Stop building cloned sites
 
-# How to
+## How to
 
 * Write simple HTML
 * Know semantic sense of HTML tags
@@ -38,9 +37,7 @@ Get more than less.
 
 ## Features
 
-I want it red, not danger
-
-Hipertextos focus in
+Hipercss focus in
 
 * HTML tags
 * A better header and metadata
@@ -51,7 +48,7 @@ Hipertextos focus in
 * Smart use of CSS features
 * Smart jQuery and CSS's combination
 
-hipertextos includes
+Hipercss includes
 
 * Sample favicons
 * Common features included in most frameworks
