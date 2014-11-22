@@ -44,3 +44,30 @@
 		<meta name="msapplication-config" content="{{ site.baseurl }}/src/ics/browserconfig.xml">
 	</head>
 	<body>
+  
+	{% include navigation.html %}
+	
+	<div class="page" id="page">
+	
+		{% include header.html %}
+		
+		<main id="content">
+			<div class="content">
+			
+				{{ content }}
+			
+				<hr>
+			</div><!-- /.content -->
+		</main>
+			
+		{% include footer.html %}
+				
+		</div><!-- /#page -->
+   
+		<!-- Scripts
+		================================================== -->
+
+		{% include analytics.html %}
+		
+	</body>
+</html>
