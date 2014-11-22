@@ -13,18 +13,14 @@ layout: default
 					<a class="button-icon circled lines yellow anm-zoomInLeft delay-700" href="http://hipertextos.net/docs/download.html" title="Hipertextos get">get</a><br>
 				</div>
 			</div>
-			<div class="cell-8">
-				<article class="anm-zoomInUp">
-				  	<header>
-						<h2 class="universe thin">{{ page.title }}</h2>
-						<p class="universe thin l">Written on {{ page.date | date: "%B %e, %Y" }}</p>
-					</header>
-					<div class="entry">
+			<div class="cell-8 anm-zoomInUp">
+				<div class="date">
+					<p class="universe title">Written on {{ page.date | date: "%B %e, %Y" }}</p>
+				</div>
+				<div class="entry">
 					{{ content }}
-					</div>
-					<hr>
-					{% include disqus.html disqus_identifier=page.disqus_identifier %}
-				</article>
+				</div>
+				<hr>
 			</div>
 			<div class="cell-2">
 				<div class="white-space xl"></div>
