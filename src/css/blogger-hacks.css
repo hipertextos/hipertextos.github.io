@@ -1,5 +1,13 @@
 /* Blogger hacks */
 
+/* Images */
+
+article .article-body img {
+	float: left;
+	margin: 1em;
+	width: 40%:
+}
+
 /* Blogger labels */
 
 .blogger-labels {
