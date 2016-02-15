@@ -1,0 +1,169 @@
+/* Blogger hacks */
+
+/* Blogger labels */
+
+.blogger-labels {
+	display: block;
+	clear: both;
+	color: #333;
+	font-size: 0;
+	margin: 12px 0 0;
+	text-align: center;
+}
+.blogger-labels:before {
+	border-bottom: 1px solid #999;
+	display: block;
+	content: 'Temes';
+	font-size: 16px;
+	margin: 16px;
+}
+.blogger-labels a {
+	background: #666;
+	border-radius: .5em;
+	color: #ffffff !important;
+	font-size: 16px;
+	margin: 0 .25em;
+	padding: .25em 1em;
+	text-decoration: none !important;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	hyphens: none;
+}
+.blogger-labels a:hover {
+	background: #dd0000;
+}
+.post .blogger-labels {
+	display: none;
+}
+
+/* Twitter timeline */
+
+.twitter-timeline {
+	display: block;
+	margin: 0 auto;
+}
+
+/* Responsive hacks */
+
+@media (max-width: 768px) {
+	footer {
+		text-align: center;
+	}
+}
+
+/* Scroll-slide */
+
+.scroll-slide {
+	height: 480px;
+	width: 100%;
+	white-space: nowrap;
+	overflow-y: hidden;
+	overflow-x: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+.scroll-slide * {
+	display: inline;
+}
+.scroll-slide img {
+	height: 480px;
+	width: auto;
+}
+
+/* Prev/next */
+
+.prev-next,
+.prev-next .blog-paging-control-container  {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: em 0 1em;
+	width: 100%;
+}
+.prev-next .blog-paging-control-container .blog-paging-control,
+.prev-next .blog-paging-control-container .blog-paging-control:after {
+	display: block;
+	height: 2em;
+	width: 2em;
+	position: absolute;
+	text-decoration: none;
+	top: -.25em;
+	z-index: 1;
+}
+.prev-next .blog-paging-control-container .blog-paging-control:nth-child(1),
+.prev-next .blog-paging-control-container .blog-paging-control:nth-child(2) {
+	visibility: hidden;
+}
+.prev-next .blog-paging-control-container .blog-paging-control:nth-child(1) {
+	left: 1em; right: auto;
+}
+.prev-next .blog-paging-control-container .blog-paging-control:nth-child(2),
+.prev-next .blog-paging-control-container .blog-paging-control:only-child {
+	right: .5em; left: auto;
+}
+.prev-next .blog-paging-control-container .blog-paging-control:nth-child(1):after,
+.prev-next .blog-paging-control-container .blog-paging-control:nth-child(2):after {
+	border: .2em solid #ffffff;
+	border-radius: 50%;
+	color: #ffffff;
+	display: block;
+	font-size: 1.1em;
+	font-weight: bold;
+	height: 2em;
+	width: 2em;
+	visibility: visible;
+}
+.prev-next .blog-paging-control-container .blog-paging-control:nth-child(1):after {
+	content: '<';
+}
+.prev-next .blog-paging-control-container .blog-paging-control:nth-child(2):after,
+.prev-next .blog-paging-control-container .blog-paging-control:only-child:after {
+	content: '>';
+}
+
+.pagination {
+	margin: 3em auto 1em;
+}
+.pagination a {
+	visibility: hidden;
+}
+.pagination a:after {
+	border: thick solid #ccc;
+	border-radius: 2em;
+	color: #bbb;
+	margin-left: -5em;
+	padding: .75em 1em;
+	visibility: visible;
+}
+.pagination a:nth-child(1):after {
+	content: '< Següent';
+}
+.pagination a:nth-child(2):after,
+.pagination a:only-child:after {
+	content: ' Anterior >';
+}
+.pagination a:hover:after {
+	background: #ee0000;
+	border: thick solid #eee;
+	color: #fff;
+}
+
+/* Cookies info */
+
+#cookieChoiceInfo {
+	background-color: rgba(0,0,0,0.5) !important;
+	top: auto !important;
+	bottom: 0px !important;
+}
+#cookieChoiceInfo .cookie-choices-text {
+	color: #fff;
+	font-size: 14px !important;
+	line-height: 1em !important;
+}
+.cookie-choices-button {
+	border: thin solid #fff;
+	border-radius: 24px !important;
+	font-size: 10px !important;
+	padding: 8px !important;
+}
+
+/* www.comunistes.cat */
