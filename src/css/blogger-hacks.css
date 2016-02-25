@@ -2,14 +2,23 @@
 
 /* Images */
 
+article .article-body {
+	margin: 1em 0;
+}
 article .article-body img {
+	border: thin solid #aaa;
 	float: left;
-	margin: 1em;
-	width: 25%;
+	margin: 0 1em;
+	object-fit: cover;
+	width: 10em;
+	height: 10em;
 }
 
 /* Blogger labels */
 
+article .blogger-labels {
+	display: none;
+}
 .blogger-labels {
 	display: block;
 	clear: both;
@@ -26,8 +35,8 @@ article .article-body img {
 	margin: 16px;
 }
 .blogger-labels a {
-	background: #666;
-	border-radius: .5em;
+	background: #999;
+	border-radius: 2em;
 	color: #ffffff !important;
 	font-size: 16px;
 	margin: 0 .25em;
@@ -158,6 +167,7 @@ article .article-body img {
 /* Cookies info */
 
 #cookieChoiceInfo {
+	background-color: #999;
 	background-color: rgba(0,0,0,0.5) !important;
 	top: auto !important;
 	bottom: 0px !important;
@@ -173,5 +183,3 @@ article .article-body img {
 	font-size: 10px !important;
 	padding: 8px !important;
 }
-
-/* www.comunistes.cat */
