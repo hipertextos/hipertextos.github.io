@@ -13,6 +13,13 @@ article .article-body img {
 	width: 10em;
 	height: 10em;
 }
+article .article-content img {
+	border: thin solid #aaa;
+	display: block;
+	margin: 1em;
+	width: 80%;
+	height: auto;
+}
 
 /* Blogger labels */
 
