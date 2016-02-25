@@ -16,7 +16,7 @@ article .article-body img {
 article .article-content img {
 	border: thin solid #aaa;
 	display: block;
-	margin: 1em;
+	margin: 1em auto;
 	width: 80%;
 	height: auto;
 }
