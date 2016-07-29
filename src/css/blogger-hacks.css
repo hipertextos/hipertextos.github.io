@@ -158,7 +158,7 @@ article .blogger-labels {
 	visibility: visible;
 }
 .pagination a:nth-child(1):after {
-	content: 'Següent';
+	content: 'Posterior';
 }
 .pagination a:nth-child(2):after,
 .pagination a:only-child:after {
