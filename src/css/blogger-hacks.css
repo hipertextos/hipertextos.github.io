@@ -158,11 +158,11 @@ article .blogger-labels {
 	visibility: visible;
 }
 .pagination a:nth-child(1):after {
-	content: '< Pàgina següent';
+	content: 'SegŸent';
 }
 .pagination a:nth-child(2):after,
 .pagination a:only-child:after {
-	content: ' Pàgina anterior >';
+	content: ' Anterior >';
 }
 .pagination a:after,
 .prev-next .blog-paging-control-container .blog-paging-control:after {
