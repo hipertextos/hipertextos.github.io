@@ -166,8 +166,8 @@ article .blogger-labels {
 }
 .pagination a:after,
 .prev-next .blog-paging-control-container .blog-paging-control:after {
-	background: #000;
-	color: #fff;
+	background: #fff;
+	color: #000;
 }
 .pagination a:hover:after,
 .prev-next .blog-paging-control-container .blog-paging-control:hover:after {
