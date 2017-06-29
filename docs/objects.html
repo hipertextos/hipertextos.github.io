@@ -1,0 +1,2034 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<!-- Metadata: Basic -->
+		<title>Objects</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="CSS image effects">
+		<meta name="keywords" content="Copywriting Web design Barcelona">
+		<meta name="author" content="Hipertextos">
+		<!-- Metadata: GeoTags -->
+		<meta name="geo.region" content="ES-CT">
+		<meta name="geo.placename" content="Barcelona">
+		<meta name="geo.position" content="41.426812;2.234972">
+		<meta name="ICBM" content="41.426812;2.234972">
+		<!-- Screen styles -->
+		<link href="../src/css/styles.css" rel="stylesheet" media="screen">
+		<link href="../src/css/anime.css" rel="stylesheet" media="screen">
+		<!-- Print styles -->
+		<link href="../src/css/print.css" rel="stylesheet" media="print">
+		<!--[if lt IE 9]><script src="../src/js/html5shiv.js"></script><![endif]-->
+		<!-- If iexplorer :( -->
+		<!--[if lt IE 9]><script src="../src/js/html5shiv.js"></script><![endif]-->
+		<!--[if IE]><link rel="stylesheet" type="text/css" href="../src/css/iexplorer.css" /><![endif]-->
+		<noscript><link href="../src/css/noscript.css" rel="stylesheet" media="screen"></noscript>
+		<!-- Page Icons -->
+		<link rel="shortcut icon" href="../src/ics/favicon.ico">
+		<link rel="apple-touch-icon" sizes="57x57" href="../src/ics/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="../src/ics/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="../src/ics/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="../src/ics/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="../src/ics/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="../src/ics/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="../src/ics/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="../src/ics/apple-touch-icon-152x152.png">
+		<link rel="icon" type="image/png" href="../src/ics/favicon-196x196.png" sizes="196x196">
+		<link rel="icon" type="image/png" href="../src/ics/favicon-160x160.png" sizes="160x160">
+		<link rel="icon" type="image/png" href="../src/ics/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="../src/ics/favicon-16x16.png" sizes="16x16">
+		<link rel="icon" type="image/png" href="../src/ics/favicon-32x32.png" sizes="32x32">
+		<meta name="msapplication-TileColor" content="#dddddd">
+		<meta name="msapplication-TileImage" content="../src/ics/mstile-144x144.png">
+		<meta name="msapplication-config" content="../src/ics/browserconfig.xml">
+	</head>
+	<body>
+
+	  	<section class="jdialog closed" id="warning1"><h4>Warning 1</h4><a class="button-close" href="#warning1">X</a></section>
+  		<input class="open-dialog" id="modal-one" type="checkbox" hidden>
+  		<section class="dialog" id="warning2"><h4>Warning 2</h4><label class="button-close" for="modal-one" aria-hidden="true">X</label></section>
+
+  		<div class="page" id="page">
+			<nav class="universe thin nav-inline">
+				<div class="content">
+						<a href="index.html" class="current-parent anm-moveFromLeftFade delay-500" title="Hipertextos">Hipertextos</a>
+						<a href="http://articles.hipertextos.net" class="anm-moveFromTopFade delay-500" title="Blog">Blog</a>
+						<a href="http://code.hipertextos.net" class="anm-moveFromBottomFade delay-500" title="Code">Code</a>
+				</div>
+			</nav>
+			<header class="header-cover flat violet universe">
+				<div class="content">
+					<h1 class="g anm-zoomInDown">Objects</h1>
+					<h6 class="l anm-scaleUpDown">CSS components library</h6>
+					<hr>
+					<div class="button-centered xm">
+						<a class="button lines white anm-scaleUp delay-2000" href="framework.html" title="Framework index">HiperCSS framework</a>
+						<br>
+						<a class="button-icon circled flat green anm-moveFromLeftFade delay-1000" href="pages.html">pages</a>
+						<a class="button-icon circled flat turquoise anm-moveFromBottomFade delay-1000" href="styles.html">styles</a>
+						<a class="button-icon circled flat blue anm-moveFromTopFade delay-1000" href="skins.html">skins</a>
+						<a class="button-icon circled flat violet anm-moveFromBottomFade delay-1000" href="objects.html">objects</a>
+						<br class="visible-phone">
+						<a class="button-icon circled flat magenta anm-moveFromTopFade delay-1000" href="effects.html">effects</a>
+						<a class="button-icon circled flat red anm-moveFromBottomFade delay-1000" href="icons.html">icons</a>
+						<a class="button-icon circled flat orange anm-moveFromTopFade delay-1000" href="anime.html">anime</a>
+						<a class="button-icon circled flat yellow anm-moveFromRightFade delay-1000" href="download.html">get</a>
+					</div>
+					<hr>
+				</div>
+			</header>
+
+			<main id="content">
+				<div class="content">
+					
+					<div id="thetoc">
+						<div class="jcollapser universe">
+							<h4 class="jtrigger">Table of content<span class="caret"></span></h4>
+							<nav class="jcollapsed closed"><div id="intoc"></div><hr></nav>
+						</div>
+					</div>
+										
+					<section>
+						<header class="flat violet">
+							<h2>Components without dependencies</h2>
+							<p class="lead">Simple components on pure CSS or with a bit of jquery.</p>
+						</header>
+						<div class="container">
+							<pre>
+	&lt;link href=&quot;../src/css/styles.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;
+							</pre>
+						</div>
+					</section>
+				
+					<article class="code-sample">
+						<header class="flat violet">
+							<h6><a class="symbol-css" href="../src/css/styles.css">../src/css/styles.css</a></h6>
+							<h3 class="intoc symbol-list">Responsive menu: collapse on small screens</h3>
+							<p></p>
+						</header>
+						<h4 class="section-title flat violet">Pure CSS using checkboxes</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Sample</h5>
+							<!-- Result -->
+							<nav>
+								<input class="toggletrigger" type="checkbox" id="mob-nav" name="mob-nav" aria-hidden="true" hidden>
+								<label for="mob-nav" class="toggle">Menú <span class="caret"></span></label>
+								<div class="togglecollapsed">
+									<a href="url" title="title">Item</a>
+									<a href="url" title="title">Item</a>
+									<a href="url" title="title">Item</a>
+									<a href="url" title="title">Item</a>
+									<a href="url" title="title">Item</a>
+								</div>
+							</nav>
+							<p class="lines red">Resize the window to see the effect</p>
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+	&lt;nav&gt; 
+		&lt;input class=&quot;toggletrigger&quot; type=&quot;checkbox&quot; id=&quot;mob-nav&quot; name=&quot;mob-nav&quot; aria-hidden=&quot;true&quot; hidden&gt; 
+		&lt;label for=&quot;mob-nav&quot; class=&quot;toggle&quot;&gt;Men&uacute; &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/label&gt; 
+		&lt;div class=&quot;togglecollapsed&quot;&gt; 
+			&lt;a href=&quot;url&quot; title=&quot;title&quot;&gt;Item&lt;/a&gt; 
+			...
+		 &lt;/div&gt; 
+	&lt;/nav&gt;
+								</pre>
+						</div>
+						<hr>
+						<h4 class="section-title flat violet">With a bit of jQuery</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Sample</h5>
+							<!-- Result -->
+							<nav>
+								<label class="toggle">Menú <span class="caret"></span></label>
+								<div id="nav-collapse">
+									<a href="url" title="title">Item</a>
+									<a href="url" title="title">Item</a>
+									<a href="url" title="title">Item</a>
+									<a href="url" title="title">Item</a>
+									<a href="url" title="title">Item</a>
+								</div>
+							</nav>
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+&lt;nav&gt;
+	&lt;label&nbsp;class=&quot;toggle&quot;&gt;Men&uacute;&nbsp;&lt;span&nbsp;class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/label&gt;
+	&lt;div&nbsp;id=&quot;nav-collapse&quot;&gt;
+		&lt;a&nbsp;href=&quot;url&quot;&nbsp;title=&quot;title&quot;&gt;Item&lt;/a&gt;
+		&lt;a&nbsp;href=&quot;url&quot;&nbsp;title=&quot;title&quot;&gt;Item&lt;/a&gt;
+		&lt;a&nbsp;href=&quot;url&quot;&nbsp;title=&quot;title&quot;&gt;Item&lt;/a&gt;
+		&lt;a&nbsp;href=&quot;url&quot;&nbsp;title=&quot;title&quot;&gt;Item&lt;/a&gt;
+		&lt;a&nbsp;href=&quot;url&quot;&nbsp;title=&quot;title&quot;&gt;Item&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/nav&gt;
+&lt;script&gt;
+	// Collapse horizontal nav in small devices
+	$('#nav-collapse').toggleClass('nav-collapsed');
+	$('nav .toggle').click(function(){
+		$('#nav-collapse').toggleClass('nav-collapsed');
+	});
+&lt;/script&gt;
+								</pre>
+						</div>
+						<hr>
+					</article>
+
+					<article class="code-sample">
+						<header class="flat violet">
+							<h6><a class="symbol-css" href="../src/css/styles.css">../src/css/styles.css</a></h6>
+							<h3 class="intoc symbol-hyperlink">Tooltips in links & buttons</h3>
+							<p></p>
+						</header>
+						<h4 class="section-title flat violet">Tips on hover</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Demo</h5>
+							<a href="#" class="tip-top" data-tooltip="Pure CSS tooltips">.tip-top</a>
+							<a href="#" class="tip-bottom" data-tooltip="Pure CSS tooltips">.tip-bottom</a>
+							<a href="#" class="tip-left" data-tooltip="Pure CSS tooltips">.tip-left</a>
+							<a href="#" class="tip-right" data-tooltip="Pure CSS tooltips">.tip-right</a>
+							<hr>
+							<h6 class="title">Tips in buttons and dark tips</h6>
+							<a href="#" class="button tip-dark tip-top" data-tooltip="Pure CSS tooltips">.tip-top</a>
+							<a href="#" class="button tip-dark tip-bottom" data-tooltip="Pure CSS tooltips">.tip-bottom</a>
+							<a href="#" class="button tip-dark tip-left" data-tooltip="Pure CSS tooltips">.tip-left</a>
+							<a href="#" class="button tip-dark tip-right" data-tooltip="Pure CSS tooltips">.tip-right</a>
+							<hr>
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+&lt;a&nbsp;href=&quot;#&quot;&nbsp;class=&quot;tip-top&quot;&nbsp;data-tooltip=&quot;Pure&nbsp;CSS&nbsp;tooltips&quot;&gt;.tip-top&lt;/a&gt;
+&lt;a&nbsp;href=&quot;#&quot;&nbsp;class=&quot;tip-bottom&quot;&nbsp;data-tooltip=&quot;Pure&nbsp;CSS&nbsp;tooltips&quot;&gt;.tip-bottom&lt;/a&gt;
+&lt;a&nbsp;href=&quot;#&quot;&nbsp;class=&quot;tip-left&quot;&nbsp;data-tooltip=&quot;Pure&nbsp;CSS&nbsp;tooltips&quot;&gt;.tip-left&lt;/a&gt;
+&lt;a&nbsp;href=&quot;#&quot;&nbsp;class=&quot;tip-right&quot;&nbsp;data-tooltip=&quot;Pure&nbsp;CSS&nbsp;tooltips&quot;&gt;.tip-right&lt;/a&gt;
+&lt;!-- Tips in buttons and dark tips --&gt;
+&lt;a&nbsp;href=&quot;#&quot;&nbsp;class=&quot;button&nbsp;tip-dark&nbsp;tip-top&quot;&nbsp;data-tooltip=&quot;Pure&nbsp;CSS&nbsp;tooltips&quot;&gt;.tip-top&lt;/a&gt;
+&lt;a&nbsp;href=&quot;#&quot;&nbsp;class=&quot;button&nbsp;tip-dark&nbsp;tip-bottom&quot;&nbsp;data-tooltip=&quot;Pure&nbsp;CSS&nbsp;tooltips&quot;&gt;.tip-bottom&lt;/a&gt;
+&lt;a&nbsp;href=&quot;#&quot;&nbsp;class=&quot;button&nbsp;tip-dark&nbsp;tip-left&quot;&nbsp;data-tooltip=&quot;Pure&nbsp;CSS&nbsp;tooltips&quot;&gt;.tip-left&lt;/a&gt;
+&lt;a&nbsp;href=&quot;#&quot;&nbsp;class=&quot;button&nbsp;tip-dark&nbsp;tip-right&quot;&nbsp;data-tooltip=&quot;Pure&nbsp;CSS&nbsp;tooltips&quot;&gt;.tip-right&lt;/a&gt;
+								</pre>
+						</div>
+						<hr>
+						<h4 class="section-title flat violet">Tips on hover with a bit of jQuery</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Demo</h5>
+							<a href="#" class="tip" title="jQuery tooltips">jQuery .tip</a>
+							<hr>
+							<h6 class="title">jQuery tooltips in buttons</h6>
+							<a href="#" class="button tip" title="jQuery tooltips">jQuery .tip</a>
+							<hr>
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+&lt;a&nbsp;href=&quot;#&quot;&nbsp;class=&quot;tip&quot;&nbsp;title=&quot;jQuery&nbsp;tooltips&quot;&gt;jQuery&nbsp;.tip&lt;/a&gt;
+&lt;a&nbsp;href=&quot;#&quot;&nbsp;class=&quot;button&nbsp;tip&quot;&nbsp;title=&quot;jQuery&nbsp;tooltips&quot;&gt;jQuery&nbsp;.tip&lt;/a&gt;
+&lt;script&gt;
+	//&nbsp;Tooltip
+	$(&apos;.tip&apos;).hover(function(){
+		var&nbsp;title&nbsp;=&nbsp;$(this).attr(&apos;title&apos;);
+		$(this).data(&apos;tipText&apos;,&nbsp;title).removeAttr(&apos;title&apos;);
+		$(&apos;&lt;p&nbsp;class=&quot;tooltip&quot;&gt;&lt;/p&gt;&apos;).text(title).appendTo(&apos;body&apos;).fadeIn(&apos;slow&apos;);
+	},&nbsp;function()&nbsp;{
+		$(this).attr(&apos;title&apos;,&nbsp;$(this).data(&apos;tipText&apos;));
+		$(&apos;.tooltip&apos;).remove();
+	}).mousemove(function(e)&nbsp;{
+		var&nbsp;mousex&nbsp;=&nbsp;e.pageX&nbsp;+&nbsp;4;&nbsp;//Get&nbsp;X&nbsp;coordinates
+		var&nbsp;mousey&nbsp;=&nbsp;e.pageY&nbsp;-&nbsp;24;&nbsp;//Get&nbsp;Y&nbsp;coordinates
+		$(&apos;.tooltip&apos;).css({&nbsp;top:&nbsp;mousey,&nbsp;left:&nbsp;mousex&nbsp;})
+	});
+&lt;/script&gt;
+								</pre>
+						</div>
+						<hr>
+					</article>
+
+					<article class="code-sample">
+						<header class="flat violet">
+							<h6><a class="symbol-css" href="../src/css/styles.css">../src/css/styles.css</a></h6>
+							<h3 class="intoc symbol-hyperlink">Show data-link (attr) on hover</h3>
+							<p></p>
+						</header>
+						<h4 class="section-title flat violet">.button-slide[Direction][Effect]</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Demo</h5>
+								<a href="#" data-link="This is a title" class="button button-slideCenter">.button-slideCenter</a>
+								<a href="#" data-link="This is a title" class="button button-slideTop">.button-slideTop</a>
+								<a href="#" data-link="This is a title" class="button button-slideBottom">.button-slideBottom</a>
+								<a href="#" data-link="This is a title" class="button button button-slideLeft">.button-slideLeft</a>
+								<a href="#" data-link="This is a title" class="button button-slideRight">.button-slideRight</a>
+							<hr>
+							<h6>Custom sizes and colors</h6>
+								<a href="#" data-link="This is a title" class="button button-slideCenter flat violet l">.button-slideCenter</a>
+								<a href="#" data-link="This is a title" class="button button-slideTop flat orange l">.button-slideTop</a>
+								<a href="#" data-link="This is a title" class="button button-slideBottom flat blue l">.button-slideBottom</a>
+								<a href="#" data-link="This is a title" class="button button button-slideLeft flat red l">.button-slideLeft</a>
+								<a href="#" data-link="This is a title" class="button button-slideRight flat green l">.button-slideRight</a>
+							<hr>
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+&lt;a&nbsp;href=&quot;#&quot;&nbsp;data-link=&quot;This&nbsp;is&nbsp;a&nbsp;title&quot;&nbsp;class=&quot;button&nbsp;button-slideCenter&quot;&gt;.button-slideCenter&lt;/a&gt;
+&lt;a&nbsp;href=&quot;#&quot;&nbsp;data-link=&quot;This&nbsp;is&nbsp;a&nbsp;title&quot;&nbsp;class=&quot;button&nbsp;button-slideTop&quot;&gt;.button-slideTop&lt;/a&gt;
+&lt;a&nbsp;href=&quot;#&quot;&nbsp;data-link=&quot;This&nbsp;is&nbsp;a&nbsp;title&quot;&nbsp;class=&quot;button&nbsp;button-slideBottom&quot;&gt;.button-slideBottom&lt;/a&gt;
+&lt;a&nbsp;href=&quot;#&quot;&nbsp;data-link=&quot;This&nbsp;is&nbsp;a&nbsp;title&quot;&nbsp;class=&quot;button&nbsp;button&nbsp;button-slideLeft&quot;&gt;.button-slideLeft&lt;/a&gt;
+&lt;a&nbsp;href=&quot;#&quot;&nbsp;data-link=&quot;This&nbsp;is&nbsp;a&nbsp;title&quot;&nbsp;class=&quot;button&nbsp;button-slideRight&quot;&gt;.button-slideRight&lt;/a&gt;
+&lt;!-- Custom sizes and colors --&gt;
+&lt;a&nbsp;href=&quot;#&quot;&nbsp;data-link=&quot;This&nbsp;is&nbsp;a&nbsp;title&quot;&nbsp;class=&quot;button&nbsp;button-slideCenter&nbsp;flat&nbsp;violet&nbsp;l&quot;&gt;.button-slideCenter&lt;/a&gt;
+&lt;a&nbsp;href=&quot;#&quot;&nbsp;data-link=&quot;This&nbsp;is&nbsp;a&nbsp;title&quot;&nbsp;class=&quot;button&nbsp;button-slideTop&nbsp;flat&nbsp;orange&nbsp;l&quot;&gt;.button-slideTop&lt;/a&gt;
+&lt;a&nbsp;href=&quot;#&quot;&nbsp;data-link=&quot;This&nbsp;is&nbsp;a&nbsp;title&quot;&nbsp;class=&quot;button&nbsp;button-slideBottom&nbsp;flat&nbsp;blue&nbsp;l&quot;&gt;.button-slideBottom&lt;/a&gt;
+&lt;a&nbsp;href=&quot;#&quot;&nbsp;data-link=&quot;This&nbsp;is&nbsp;a&nbsp;title&quot;&nbsp;class=&quot;button&nbsp;button&nbsp;button-slideLeft&nbsp;flat&nbsp;red&nbsp;l&quot;&gt;.button-slideLeft&lt;/a&gt;
+&lt;a&nbsp;href=&quot;#&quot;&nbsp;data-link=&quot;This&nbsp;is&nbsp;a&nbsp;title&quot;&nbsp;class=&quot;button&nbsp;button-slideRight&nbsp;flat&nbsp;green&nbsp;l&quot;&gt;.button-slideRight&lt;/a&gt;
+								</pre>
+						</div>
+						<hr>
+					</article>
+
+					<article class="code-sample">
+						<header class="flat violet">
+							<h6><a class="symbol-css" href="../src/css/styles.css">../src/css/styles.css</a></h6>
+							<h3 class="intoc symbol-more">Collapser</h3>
+							<p></p>
+						</header>
+						<h4 class="section-title flat violet">Pure CSS using checkboxes</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Sample</h5>
+							<!-- Result -->
+							<div class="ccollapser">
+								<input class="ctrigger" type="checkbox" id="a-2" name="a" aria-hidden="true" hidden>
+								<label class="button block" for="a-2">Clic<span class="caret"></span></label>
+								<div class="ccollapsed">
+								Content collapsed
+								</div>
+							</div>	
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+	&lt;div class=&quot;ccollapser&quot;&gt;
+		&lt;input class=&quot;ctrigger&quot; type=&quot;checkbox&quot; id=&quot;a-2&quot; name=&quot;a&quot; aria-hidden=&quot;true&quot; hidden&gt;
+		&lt;label class=&quot;button block&quot; for=&quot;a-2&quot;&gt;Clic&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/label&gt;
+		&lt;div class=&quot;ccollapsed&quot;&gt;
+			Content collapsed
+		&lt;/div&gt;
+	&lt;/div&gt;	
+								</pre>
+						</div>
+						<hr>
+						<h4 class="section-title flat violet">With a bit of jQuery</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Sample</h5>
+							<!-- Result -->
+							<div class="jcollapser">
+								<label class="button block jtrigger">Clic<span class="caret"></span></label>
+								<div class="jcollapsed">
+								Content collapsed
+								</div>
+							</div>	
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+&lt;div&nbsp;class=&quot;jcollapser&quot;&gt;
+	&lt;label&nbsp;class=&quot;button&nbsp;block&nbsp;jtrigger&quot;&gt;Clic&lt;span&nbsp;class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/label&gt;
+	&lt;div&nbsp;class=&quot;jcollapsed&quot;&gt;
+	Content&nbsp;collapsed
+	&lt;/div&gt;
+&lt;/div&gt;	
+&lt;script&gt;
+	// Collapse & accordion
+	$('.jcollapser .jcollapsed').toggleClass('closed');
+	$('.jcollapser .jtrigger').click(function(e){
+		$(this).next('.jcollapsed').toggleClass('closed anime anm-fadeIn').siblings('.jcollapsed:visible').toggleClass('closed anime anm-fadeIn');
+	});
+&lt;/script&gt;
+								</pre>
+						</div>
+						<hr>	
+					</article>
+
+					<article class="code-sample">
+						<header class="flat violet">
+							<h6><a class="symbol-css" href="../src/css/styles.css">../src/css/styles.css</a></h6>
+							<h3 class="intoc symbol-more">Accordion</h3>
+							<p></p>
+						</header>
+						<h4 class="section-title flat violet">Pure CSS using checkboxes</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Sample</h5>
+							<!-- Result -->
+							<nav><ul class="list-unlisted">
+								<li>
+									<label class="button block" for="v-1">Clic</label>
+									<input class="ctrigger" type="radio" id="v-1" name="v" aria-hidden="true" hidden>
+									<div class="ccollapsed">
+										content collapsed 2
+									</div>
+								</li>
+								<li>
+									<label class="button block" for="v-2">Clic</label>
+									<input class="ctrigger" type="radio" id="v-2" name="v" aria-hidden="true" hidden>
+									<div class="ccollapsed">
+										content collapsed 2
+									</div>
+								</li>
+								<li>
+									<label class="button block" for="v-3">Clic</label>
+									<input class="ctrigger" type="radio" id="v-3" name="v" aria-hidden="true" hidden>
+									<div class="ccollapsed">
+										content collapsed 2
+									</div>
+								</li>
+							</ul></nav>
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+	&lt;ul class=&quot;list-unlisted&quot;&gt;
+		&lt;li&gt;
+			&lt;label class=&quot;button block&quot; for=&quot;v-1&quot;&gt;Clic&lt;/label&gt;
+			&lt;input class=&quot;ctrigger&quot; type=&quot;radio&quot; id=&quot;v-1&quot; name=&quot;v&quot; aria-hidden=&quot;true&quot; hidden&gt;
+			&lt;div class=&quot;ccollapsed&quot;&gt;
+				content collapsed 2
+			&lt;/div&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;label class=&quot;button block&quot; for=&quot;v-2&quot;&gt;Clic&lt;/label&gt;
+			&lt;input class=&quot;ctrigger&quot; type=&quot;radio&quot; id=&quot;v-2&quot; name=&quot;v&quot; aria-hidden=&quot;true&quot; hidden&gt;
+			&lt;div class=&quot;ccollapsed&quot;&gt;
+				content collapsed 2
+			&lt;/div&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;label class=&quot;button block&quot; for=&quot;v-3&quot;&gt;Clic&lt;/label&gt;
+			&lt;input class=&quot;ctrigger&quot; type=&quot;radio&quot; id=&quot;v-3&quot; name=&quot;v&quot; aria-hidden=&quot;true&quot; hidden&gt;
+			&lt;div class=&quot;ccollapsed&quot;&gt;
+				content collapsed 2
+			&lt;/div&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+								</pre>
+						</div>						
+						<hr>
+						<h4 class="section-title flat violet">With a bit of jQuery</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Sample</h5>
+							<!-- Result -->
+							<div class="jcollapser">
+								<label class="button block jtrigger">Clic</label>
+								<div class="jcollapsed">
+								Content collapsed
+								</div>
+								<label class="button block jtrigger">Clic</label>
+								<div class="jcollapsed">
+								Content collapsed
+								</div>
+								<label class="button block jtrigger">Clic</label>
+								<div class="jcollapsed">
+								Content collapsed
+								</div>
+							</div>	
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+&lt;div&nbsp;class=&quot;jcollapser&quot;&gt;
+	&lt;label&nbsp;class=&quot;button&nbsp;block&nbsp;jtrigger&quot;&gt;Clic&lt;/label&gt;
+	&lt;div&nbsp;class=&quot;jcollapsed&quot;&gt;
+	Content&nbsp;collapsed
+	&lt;/div&gt;
+	&lt;label&nbsp;class=&quot;button&nbsp;block&nbsp;jtrigger&quot;&gt;Clic&lt;/label&gt;
+	&lt;div&nbsp;class=&quot;jcollapsed&quot;&gt;
+	Content&nbsp;collapsed
+	&lt;/div&gt;
+	&lt;label&nbsp;class=&quot;button&nbsp;block&nbsp;jtrigger&quot;&gt;Clic&lt;/label&gt;
+	&lt;div&nbsp;class=&quot;jcollapsed&quot;&gt;
+	Content&nbsp;collapsed
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+	// Collapse & accordion
+	$('.jcollapser .jcollapsed').toggleClass('closed');
+	$('.jcollapser .jtrigger').click(function(e){
+		$(this).next('.jcollapsed').toggleClass('closed anime anm-fadeIn').siblings('.jcollapsed:visible').toggleClass('closed anime anm-fadeIn');
+	});
+&lt;/script&gt;
+								</pre>
+						</div>
+						<hr>
+					</article>
+
+					<article class="code-sample">
+						<header class="flat violet">
+							<h6><a class="symbol-css" href="../src/css/styles.css">../src/css/styles.css</a></h6>
+							<h3 class="intoc symbol-more">Tabs</h3>
+							<p></p>
+						</header>
+						<h4 class="section-title flat violet">Pure CSS using checkboxes</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Sample</h5>
+							<!-- Result -->
+							<div class="tabs">
+								<div class="tabs-control">
+									<label for="tab-1">Tab 1</label>
+									<label for="tab-2">Tab 2</label>
+									<label for="tab-3">Tab 3</label>
+								</div>
+								<ul class="tabs-box">
+									<li>
+										<input class="tabs-check" type="radio" id="tab-1" name="tab-group" aria-hidden="true" hidden checked>
+										<div class="tabs-panel anm-fadeIn">
+											<p>Stuff for Tab One</p>
+										</div>
+									</li>
+									<li>
+										<input class="tabs-check" type="radio" id="tab-2" name="tab-group" aria-hidden="true" hidden>
+										<div class="tabs-panel anm-scaleUp">
+											<p>Stuff for Tab Two</p>
+										</div>
+									</li>
+									<li>
+										<input class="tabs-check" type="radio" id="tab-3" name="tab-group" aria-hidden="true" hidden>
+										<div class="tabs-panel anm-scaleUpDown">
+											<p>Stuff for Tab Three</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+&lt;div&nbsp;class=&quot;tabs&quot;&gt;
+	&lt;div&nbsp;class=&quot;tabs-control&quot;&gt;
+		&lt;label&nbsp;for=&quot;tab-1&quot;&gt;Tab&nbsp;1&lt;/label&gt;
+		&lt;label&nbsp;for=&quot;tab-2&quot;&gt;Tab&nbsp;2&lt;/label&gt;
+		&lt;label&nbsp;for=&quot;tab-3&quot;&gt;Tab&nbsp;3&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;ul&nbsp;class=&quot;tabs-box&quot;&gt;
+		&lt;li&gt;
+			&lt;input&nbsp;class=&quot;tabs-check&quot;&nbsp;type=&quot;radio&quot;&nbsp;id=&quot;tab-1&quot;&nbsp;name=&quot;tab-group&quot;&nbsp;aria-hidden=&quot;true&quot;&nbsp;hidden&nbsp;checked&gt;
+			&lt;div&nbsp;class=&quot;tabs-panel&nbsp;anm-fadeIn&quot;&gt;
+				&lt;p&gt;Stuff&nbsp;for&nbsp;Tab&nbsp;One&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;input&nbsp;class=&quot;tabs-check&quot;&nbsp;type=&quot;radio&quot;&nbsp;id=&quot;tab-2&quot;&nbsp;name=&quot;tab-group&quot;&nbsp;aria-hidden=&quot;true&quot;&nbsp;hidden&gt;
+			&lt;div&nbsp;class=&quot;tabs-panel&nbsp;anm-scaleUp&quot;&gt;
+				&lt;p&gt;Stuff&nbsp;for&nbsp;Tab&nbsp;Two&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;input&nbsp;class=&quot;tabs-check&quot;&nbsp;type=&quot;radio&quot;&nbsp;id=&quot;tab-3&quot;&nbsp;name=&quot;tab-group&quot;&nbsp;aria-hidden=&quot;true&quot;&nbsp;hidden&gt;
+			&lt;div&nbsp;class=&quot;tabs-panel&nbsp;anm-scaleUpDown&quot;&gt;
+				&lt;p&gt;Stuff&nbsp;for&nbsp;Tab&nbsp;Three&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+								</pre>
+						</div>						
+						<hr>
+						<h4 class="section-title flat violet">With a bit of jQuery</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Sample</h5>
+							<!-- Result -->
+							<div class="tabs">
+								<div class="tabs-control">
+									<a class="idtrigger tab-active" href="#one">Tab One</a>
+									<a class="idtrigger" href="#two">Tab Two</a>
+									<a class="idtrigger" href="#three">Tab Three</a>
+								</div>
+								<div class="container">
+									<div class="panel idpanel closed" id="one">
+									   <p>Stuff for Tab One</p>
+									</div> 
+									<div class="panel idpanel" id="two">
+									   <p>Stuff for Tab Two</p>
+   									</div> 
+									<div class="panel idpanel" id="three">
+									   <p>Stuff for Tab Three</p>
+   									</div> 
+								</div>
+							</div>
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+&lt;div&nbsp;class=&quot;tabs&quot;&gt;
+	&lt;div&nbsp;class=&quot;tabs-control&quot;&gt;
+		&lt;a&nbsp;class=&quot;idtrigger&nbsp;tab-active&quot;&nbsp;href=&quot;#one&quot;&gt;Tab&nbsp;One&lt;/a&gt;
+		&lt;a&nbsp;class=&quot;idtrigger&quot;&nbsp;href=&quot;#two&quot;&gt;Tab&nbsp;Two&lt;/a&gt;
+		&lt;a&nbsp;class=&quot;idtrigger&quot;&nbsp;href=&quot;#three&quot;&gt;Tab&nbsp;Three&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;div&nbsp;class=&quot;container&quot;&gt;
+		&lt;div&nbsp;class=&quot;panel&nbsp;idpanel&nbsp;closed&quot;&nbsp;id=&quot;one&quot;&gt;
+		&nbsp;&nbsp;&nbsp;&lt;p&gt;Stuff&nbsp;for&nbsp;Tab&nbsp;One&lt;/p&gt;
+		&lt;/div&gt;&nbsp;
+		&lt;div&nbsp;class=&quot;panel&nbsp;idpanel&quot;&nbsp;id=&quot;two&quot;&gt;
+		&nbsp;&nbsp;&nbsp;&lt;p&gt;Stuff&nbsp;for&nbsp;Tab&nbsp;Two&lt;/p&gt;
+	&lt;/div&gt;&nbsp;
+		&lt;div&nbsp;class=&quot;panel&nbsp;idpanel&quot;&nbsp;id=&quot;three&quot;&gt;
+		&nbsp;&nbsp;&nbsp;&lt;p&gt;Stuff&nbsp;for&nbsp;Tab&nbsp;Three&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+	// Tabs & sliders
+	$('.idpanel').toggleClass('closed');
+	$('.idtrigger').click(function(e){
+		e.preventDefault(); 
+		var currentPanel = $(this).attr('href');
+		$(this).toggleClass('tab-active').siblings('.idtrigger').removeClass('tab-active');
+		$(currentPanel).toggleClass('closed anime anm-fadeIn').siblings('.idpanel:visible').toggleClass('closed anime anm-fadeIn');
+		if ($('.idpanel:visible').length) {
+		} else {
+		}
+	});
+&lt;/script&gt;
+								</pre>
+						</div>
+						<hr>
+					</article>
+
+					<article class="code-sample">
+						<header class="flat violet">
+							<h6><a class="symbol-css" href="../src/css/styles.css">../src/css/styles.css</a></h6>
+							<h3 class="intoc symbol-more">Dialogs</h3>
+							<p></p>
+						</header>
+						<h4 class="section-title flat violet">Pure CSS with checkboxes</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Sample</h5>
+							<!-- Result -->
+							<label class="button" for="modal-one">Open dialog</label>
+							<hr>
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+&lt;input&nbsp;class=&quot;open-dialog&quot;&nbsp;id=&quot;modal-one&quot;&nbsp;type=&quot;checkbox&quot;&nbsp;hidden&gt;
+&lt;section&nbsp;class=&quot;dialog&quot;&nbsp;id=&quot;warning2&quot;&gt;&lt;h4&gt;Warning&nbsp;2&lt;/h4&gt;&lt;label&nbsp;class=&quot;button-close&quot;&nbsp;for=&quot;modal-one&quot;&nbsp;aria-hidden=&quot;true&quot;&gt;&times;&lt;/label&gt;&lt;/section&gt;
+
+&lt;label&nbsp;class=&quot;button&quot;&nbsp;for=&quot;modal-one&quot;&gt;Open&nbsp;dialog&lt;/label&gt;
+								</pre>
+						</div>
+						<hr>
+						<h4 class="section-title flat violet">With a bit of jQuery</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Sample</h5>
+							<!-- Result -->
+							<a class="button button-modal" href="#warning1">Open dialog</a>
+							<hr>
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+&lt;section&nbsp;class=&quot;jdialog&quot;&nbsp;id=&quot;warning1&quot;&gt;&lt;h4&gt;Warning&nbsp;1&lt;/h4&gt;&lt;a&nbsp;class=&quot;button-close&quot;&nbsp;href=&quot;#warning1&quot;&gt;X&lt;/a&gt;&lt;/section&gt;
+
+&lt;a&nbsp;class=&quot;button&nbsp;button-modal&quot;&nbsp;href=&quot;#warning1&quot;&gt;Open&nbsp;dialog&lt;/a&gt;
+
+&lt;script&gt;
+	$('.jdialog').toggleClass('closed');
+	$('.button-modal, .jdialog .button-close').click(function(){
+		var currentDialog = $(this).attr('href');
+		$(currentDialog).toggleClass('closed anime anm-moveFromTop');
+	});
+&lt;/script&gt;
+								</pre>
+						</div>
+						<hr>
+					</article>
+
+					<article class="code-sample">
+						<header class="flat violet">
+							<h6><a class="symbol-css" href="../src/css/styles.css">../src/css/styles.css</a></h6>
+							<h3 class="intoc symbol-more">Alerts and notifications</h3>
+							<p></p>
+						</header>
+						<h4 class="section-title flat violet">Pure CSS with checkboxes</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Sample</h5>
+							<!-- Result -->
+							<input type="checkbox" class="alert-check" id="alert-1" name="alert-1" hidden>
+							<section class="alert lines red">
+								<label class="button-close" for="alert-1">X</label>
+								<header>
+									<h3 class="symbol-warning">Alert: works with checkboxes</h3>
+								</header>
+								<div class="panel">
+									<p>This is a notification/alert with footer</p>
+								</div>
+								<footer class="reverse">
+									<label class="button alert-check lines red" for="alert-1">Accept</label>
+								</footer>
+							</section>
+							<hr>
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+&lt;input&nbsp;type=&quot;checkbox&quot;&nbsp;class=&quot;alert-check&quot;&nbsp;id=&quot;alert-1&quot;&nbsp;name=&quot;alert-1&quot;&nbsp;hidden&gt;
+&lt;section&nbsp;class=&quot;alert&nbsp;lines&nbsp;red&quot;&gt;
+	&lt;label&nbsp;class=&quot;button-close&quot;&nbsp;for=&quot;alert-1&quot;&gt;X&lt;/label&gt;
+	&lt;header&gt;
+		&lt;h3&nbsp;class=&quot;symbol-warning&quot;&gt;Alert:&nbsp;works&nbsp;with&nbsp;checkboxes&lt;/h3&gt;
+	&lt;/header&gt;
+	&lt;div&nbsp;class=&quot;panel&quot;&gt;
+		&lt;p&gt;This&nbsp;is&nbsp;a&nbsp;notification/alert&nbsp;with&nbsp;footer&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&nbsp;class=&quot;reverse&quot;&gt;
+		&lt;label&nbsp;class=&quot;button&nbsp;alert-check&nbsp;lines&nbsp;red&quot;&nbsp;for=&quot;alert-1&quot;&gt;Accept&lt;/label&gt;
+	&lt;/footer&gt;
+&lt;/section&gt;
+								</pre>
+						</div>
+						<hr>
+						<h4 class="section-title flat violet">With a bit of jQuery</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Sample</h5>
+							<!-- Result -->
+							<section class="notification flat green">
+								<label class="button-close">X</label>
+								<header>
+									<h3 class="symbol-ok">Notification: alert clone without checkboxes</h3>
+								</header>
+								<div class="panel"><p>This is a notification/alert, without footer</p></div>
+							</section>
+							<hr>
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+&lt;section&nbsp;class=&quot;notification&nbsp;flat&nbsp;green&quot;&gt;
+	&lt;label&nbsp;class=&quot;button-close&quot;&gt;X&lt;/label&gt;
+	&lt;header&gt;
+		&lt;h3&nbsp;class=&quot;symbol-ok&quot;&gt;Notification:&nbsp;alert&nbsp;clone&nbsp;without&nbsp;checkboxes&lt;/h3&gt;
+	&lt;/header&gt;
+	&lt;div&nbsp;class=&quot;panel&quot;&gt;&lt;p&gt;This&nbsp;is&nbsp;a&nbsp;notification/alert,&nbsp;without&nbsp;footer&lt;/p&gt;&lt;/div&gt;
+&lt;/section&gt;
+&lt;script&gt;
+	// Notification
+	$('.notification .button-close').click(function(){
+		$(this).closest('.notification').toggleClass('closed');
+	});
+&lt;/script&gt;
+								</pre>
+						</div>
+						<hr>
+					</article>
+
+					<article class="code-sample">
+						<header class="flat violet">
+							<h6><a class="symbol-css" href="../src/css/styles.css">../src/css/styles.css</a></h6>
+							<h3 class="intoc symbol-more">Dropmenu and Popmenu</h3>
+							<p></p>
+						</header>
+						<h4 class="section-title flat violet">On hover</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Description</h5>
+							<div class="cell-6">
+								<div class="collapser">
+									<a href="#" class="button">.dropmenu list</a>
+									<ul class="collapsed dropmenu">
+										<li><a href="#">Link</a></li>
+										<li><a href="#">Link</a></li>
+										<li><a href="#">Link</a></li>
+										<li><a href="#">Link</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="cell-6">
+								<div class="collapser">
+									<a href="#" class="button">.popmenu list</a>
+									<ul class="collapsed popmenu">
+										<li><a href="#">Link</a></li>
+										<li><a href="#">Link</a></li>
+										<li><a href="#">Link</a></li>
+										<li><a href="#">Link</a></li>
+									</ul>
+								</div>
+							</div>
+							<hr>	
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+&lt;div class=&quot;collapser&quot;&gt;
+	&lt;a href=&quot;#&quot;&gt;.dropmenu list&lt;/a&gt;
+	&lt;ul class=&quot;collapsed dropmenu&quot;&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+								</pre>
+						</div>						
+						<hr>
+						<h4 class="section-title flat violet">On click with checkboxes</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Description</h5>
+							<div class="cell-6">
+								<div class="button-group">
+									<input class="ctrigger" type="checkbox" id="d-1" name="d" aria-hidden="true" hidden>
+									<label class="button" for="d-1">Dropmenu<span class="caret"></span></label>
+									<ul class="dropmenu ccollapsed">
+										<li><a>OOO</a></li>
+										<li><a>OOO</a></li>
+										<li><a>OOO</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="cell-6">
+								<div class="button-group">
+									<input class="ctrigger" type="checkbox" id="p-1" name="p" aria-hidden="true" hidden>
+									<label class="button" for="p-1">Popmenu<span class="caret up"></span></label>
+									<ul class="popmenu ccollapsed anm-fadeIn delay-200">
+										<li><a>OOO</a></li>
+										<li><a>OOO</a></li>
+										<li><a>OOO</a></li>
+									</ul>
+								</div>
+							</div>
+							<hr>
+							<p class="lines red">Note: it's easy to add animations with <a href="anime.html" title="CSS animations">anime.css</a> as you can see in the popmenu example</p>
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+&lt;div class=&quot;button-group&quot;&gt;
+	&lt;input class=&quot;ctrigger&quot; type=&quot;checkbox&quot; id=&quot;d-1&quot; name=&quot;d&quot; aria-hidden=&quot;true&quot; hidden&gt;
+	&lt;label class=&quot;button&quot; for=&quot;d-1&quot;&gt;Clic&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/label&gt;
+	&lt;ul class=&quot;dropmenu ccollapsed&quot;&gt;
+		&lt;li&gt;&lt;a&gt;OOO&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a&gt;OOO&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a&gt;OOO&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;button-group&quot;&gt;
+	&lt;input class=&quot;ctrigger&quot; type=&quot;checkbox&quot; id=&quot;p-1&quot; name=&quot;p&quot; aria-hidden=&quot;true&quot; hidden&gt;
+	&lt;label class=&quot;button&quot; for=&quot;p-1&quot;&gt;P&lt;span class=&quot;caret up&quot;&gt;&lt;/span&gt;&lt;/label&gt;
+	&lt;ul class=&quot;popmenu ccollapsed anm-fadeIn delay-200&quot;&gt;
+		&lt;li&gt;&lt;a&gt;OOO&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a&gt;OOO&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a&gt;OOO&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+								</pre>
+						</div>						
+						<hr>
+						<h4 class="section-title flat violet">With jQuery</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Description</h5>
+							<div class="button-group">
+								<a class="droptrigger">.dropmenu list</a>
+								<ul class="dropmenu">
+									<li><a href="#">Link</a></li>
+									<li><a href="#">Link</a></li>
+									<li><a href="#">Link</a></li>
+									<li><a href="#">Link</a></li>
+								</ul>
+							</div>
+							<hr>	
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+&lt;div&nbsp;class=&quot;button-group&quot;&gt;
+	&lt;a&nbsp;class=&quot;droptrigger&quot;&gt;.dropmenu&nbsp;list&lt;/a&gt;
+	&lt;ul&nbsp;class=&quot;dropmenu&quot;&gt;
+		&lt;li&gt;&lt;a&nbsp;href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a&nbsp;href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a&nbsp;href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a&nbsp;href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+&lt;script&gt;
+	//&nbsp;Dropmenu	
+	$(&quot;.button-group&nbsp;.droptrigger&quot;).click(function(e)&nbsp;{
+		var&nbsp;others&nbsp;=&nbsp;$(&quot;.dropmenu&quot;).not($(this).next(&apos;.dropmenu&apos;));
+		$(this).next(&apos;.dropmenu&apos;).toggleClass(&apos;opened&nbsp;anime&nbsp;anm-fadeIn&apos;);
+		$(others).removeClass(&apos;opened&nbsp;anime&nbsp;anm-fadeIn&apos;);
+		e.stopPropagation();&nbsp;//stops&nbsp;click&nbsp;event&nbsp;from&nbsp;reaching&nbsp;document
+	});
+	$(document).click(function()&nbsp;{
+	&nbsp;&nbsp;$(&quot;.dropmenu&quot;).removeClass(&apos;opened&nbsp;anime&nbsp;anm-fadeIn&apos;);
+	});
+&lt;/script&gt;
+								</pre>
+						</div>						
+						<hr>	
+					</article>
+					
+					<article class="code-sample">
+						<header class="flat violet">
+							<h6><a class="symbol-css" href="../src/css/styles.css">../src/css/styles.css</a></h6>
+							<h3 class="intoc symbol-pic">Figures</h3>
+							<p></p>
+						</header>
+						<h4 class="section-title flat violet">Basic figures</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Sample</h5>
+							<!-- Result -->
+							<div class="cell-3">
+								<figure class="">
+									<img alt="picture" src="../src/img/picture.jpg">
+									<figcaption class="">Basic figure and captionfigure</figcaption>
+								</figure>
+							</div>
+							<div class="cell-3">
+								<figure class="">
+									<img alt="picture" src="../src/img/picture-1.jpg">
+									<figcaption class="">Basic figure and captionfigure</figcaption>
+								</figure>
+							</div>
+							<div class="cell-3">
+								<figure class="">
+									<img alt="picture" src="../src/img/picture-2.jpg">
+									<figcaption class="">Basic figure and captionfigure</figcaption>
+								</figure>
+							</div>
+							<div class="cell-3">
+								<figure class="">
+									<img alt="picture" src="../src/img/picture-3.jpg">
+									<figcaption class="">Basic figure and captionfigure</figcaption>
+								</figure>
+							</div>
+							<hr>
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+&lt;figure&nbsp;class=&quot;&quot;&gt;
+	&lt;img&nbsp;src=&quot;../src/img/picture-3.jpg&quot;&gt;
+	&lt;figcaption&nbsp;class=&quot;&quot;&gt;Basic&nbsp;figure&nbsp;and&nbsp;captionfigure&lt;/figcaption&gt;
+&lt;/figure&gt;
+								</pre>
+						</div>
+						<hr>
+						<h4 class="section-title flat violet">Height fixed figure with .level-[value]</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Sample</h5>
+							<!-- Result -->
+							<div class="cell-3">
+								<figure class="level-10">
+									<img alt="picture" src="../src/img/picture.jpg">
+								</figure>
+							</div>
+							<div class="cell-3">
+								<figure class="level-10">
+									<img alt="picture" src="../src/img/picture-1.jpg">
+								</figure>
+							</div>
+							<div class="cell-3">
+								<figure class="level-10">
+									<img alt="picture" src="../src/img/picture-2.jpg">
+									<figcaption class="">Height fixed figure and captionfigure</figcaption>
+								</figure>
+							</div>
+							<div class="cell-3">
+								<figure class="level-10">
+									<img alt="picture" src="../src/img/picture-3.jpg">
+									<figcaption class="">Height fixed figure and captionfigure</figcaption>
+								</figure>
+							</div>
+							<hr>
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+&lt;figure&nbsp;class=&quot;level-10&quot;&gt;
+	&lt;img&nbsp;src=&quot;../src/img/picture-3.jpg&quot;&gt;
+	&lt;figcaption&nbsp;class=&quot;&quot;&gt;Basic&nbsp;figure&nbsp;and&nbsp;captionfigure&lt;/figcaption&gt;
+&lt;/figure&gt;
+								</pre>
+						</div>
+						<hr>
+						<h4 class="section-title flat violet">Height regularized figure with .level-blocked</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Sample</h5>
+							<!-- Result -->
+							<div class="cell-3">
+								<figure class="level-12 level-blocked">
+									<img alt="picture" src="../src/img/picture.jpg">
+								</figure>
+							</div>
+							<div class="cell-3">
+								<figure class="level-12 level-blocked">
+									<img alt="picture" src="../src/img/picture-1.jpg">
+								</figure>
+							</div>
+							<div class="cell-3">
+								<figure class="level-12 level-blocked">
+									<img alt="picture" src="../src/img/picture-2.jpg">
+									<figcaption class="">Height fixed figure and captionfigure</figcaption>
+								</figure>
+							</div>
+							<div class="cell-3">
+								<figure class="level-12 level-blocked">
+									<img alt="picture" src="../src/img/picture-3.jpg">
+									<figcaption class="">Height fixed figure and captionfigure</figcaption>
+								</figure>
+							</div>
+							<hr>
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+&lt;figure&nbsp;class=&quot;level-12 level-blocked&quot;&gt;
+	&lt;img&nbsp;src=&quot;../src/img/picture-3.jpg&quot;&gt;
+	&lt;figcaption&nbsp;class=&quot;&quot;&gt;Basic&nbsp;figure&nbsp;and&nbsp;captionfigure&lt;/figcaption&gt;
+&lt;/figure&gt;
+								</pre>
+						</div>
+						<hr>
+						<h4 class="section-title flat violet">Caption on hover</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Sample</h5>
+							<!-- Result -->
+							<div class="cell-4">
+								<figure class="">
+									<img alt="picture" src="../src/img/picture.jpg">
+									<figcaption class="caption-onhover flat black section-title">caption-onhover (default) + flat + black</figcaption>
+								</figure>
+							</div>
+							<div class="cell-4">
+								<figure class="">
+									<img alt="picture" src="../src/img/picture.jpg">
+									<figcaption class="caption-onhover caption-center flat red section-title">caption-onhover + caption-center + flat + red</figcaption>
+								</figure>
+							</div>
+							<div class="cell-4">
+								<figure class="">
+									<img alt="picture" src="../src/img/picture.jpg">
+									<figcaption class="caption-onhover caption-top flat magenta section-title">caption-onhover + caption-top + flat + violet</figcaption>
+								</figure>
+							</div>
+							<div class="cell-4">
+								<figure class="">
+									<img alt="picture" src="../src/img/picture.jpg">
+									<figcaption class="caption-onhover caption-bottom flat violet section-title">caption-onhover + caption-bottom + flat + violet</figcaption>
+								</figure>
+							</div>
+							<div class="cell-4">
+								<figure class="">
+									<img alt="picture" src="../src/img/picture.jpg">
+									<figcaption class="caption-onhover caption-left flat orange section-title">caption-onhover + caption-left + flat + orange</figcaption>
+								</figure>
+							</div>
+							<div class="cell-4">
+								<figure class="">
+									<img alt="picture" src="../src/img/picture.jpg">
+									<figcaption class="caption-onhover caption-right flat green section-title">caption-onhover + caption-right + flat + green</figcaption>
+								</figure>
+							</div>
+							<hr>
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+&lt;div&nbsp;class=&quot;cell-4&quot;&gt;
+	&lt;figure&nbsp;class=&quot;&quot;&gt;
+		&lt;img&nbsp;src=&quot;../src/img/picture.jpg&quot;&gt;
+		&lt;figcaption&nbsp;class=&quot;caption-onhover&nbsp;caption-center&nbsp;flat&nbsp;red&nbsp;section-title&quot;&gt;caption-onhover&nbsp;+&nbsp;caption-center&nbsp;+&nbsp;flat&nbsp;+&nbsp;red&lt;/figcaption&gt;
+	&lt;/figure&gt;
+&lt;/div&gt;
+&lt;div&nbsp;class=&quot;cell-4&quot;&gt;
+	&lt;figure&nbsp;class=&quot;&quot;&gt;
+		&lt;img&nbsp;src=&quot;../src/img/picture.jpg&quot;&gt;
+		&lt;figcaption&nbsp;class=&quot;caption-onhover&nbsp;caption-top&nbsp;flat&nbsp;magenta&nbsp;section-title&quot;&gt;caption-onhover&nbsp;+&nbsp;caption-top&nbsp;+&nbsp;flat&nbsp;+&nbsp;violet&lt;/figcaption&gt;
+	&lt;/figure&gt;
+&lt;/div&gt;
+&lt;div&nbsp;class=&quot;cell-4&quot;&gt;
+	&lt;figure&nbsp;class=&quot;&quot;&gt;
+		&lt;img&nbsp;src=&quot;../src/img/picture.jpg&quot;&gt;
+		&lt;figcaption&nbsp;class=&quot;caption-onhover&nbsp;caption-bottom&nbsp;flat&nbsp;violet&nbsp;section-title&quot;&gt;caption-onhover&nbsp;+&nbsp;caption-bottom&nbsp;+&nbsp;flat&nbsp;+&nbsp;violet&lt;/figcaption&gt;
+	&lt;/figure&gt;
+&lt;/div&gt;
+&lt;div&nbsp;class=&quot;cell-4&quot;&gt;
+	&lt;figure&nbsp;class=&quot;&quot;&gt;
+		&lt;img&nbsp;src=&quot;../src/img/picture.jpg&quot;&gt;
+		&lt;figcaption&nbsp;class=&quot;caption-onhover&nbsp;caption-left&nbsp;flat&nbsp;orange&nbsp;section-title&quot;&gt;caption-onhover&nbsp;+&nbsp;caption-left&nbsp;+&nbsp;flat&nbsp;+&nbsp;orange&lt;/figcaption&gt;
+	&lt;/figure&gt;
+&lt;/div&gt;
+&lt;div&nbsp;class=&quot;cell-4&quot;&gt;
+	&lt;figure&nbsp;class=&quot;&quot;&gt;
+		&lt;img&nbsp;src=&quot;../src/img/picture.jpg&quot;&gt;
+		&lt;figcaption&nbsp;class=&quot;caption-onhover&nbsp;caption-right&nbsp;flat&nbsp;green&nbsp;section-title&quot;&gt;caption-onhover&nbsp;+&nbsp;caption-right&nbsp;+&nbsp;flat&nbsp;+&nbsp;green&lt;/figcaption&gt;
+	&lt;/figure&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+								</pre>
+						</div>
+						<hr>
+						<h4 class="section-title flat violet">Caption inside</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Sample</h5>
+							<!-- Result -->
+							<div class="cell-4">
+								<figure class="">
+									<img alt="picture" src="../src/img/picture.jpg">
+									<figcaption class="caption-inside flat black section-title">caption-inside (default) + flat + black</figcaption>
+								</figure>
+							</div>
+							<div class="cell-4">
+								<figure class="">
+									<img alt="picture" src="../src/img/picture.jpg">
+									<figcaption class="caption-inside caption-center flat red section-title">caption-inside + caption-center + flat + red</figcaption>
+								</figure>
+							</div>
+							<div class="cell-4">
+								<figure class="">
+									<img alt="picture" src="../src/img/picture.jpg">
+									<figcaption class="caption-inside caption-top flat magenta section-title">caption-inside + caption-top + flat + violet</figcaption>
+								</figure>
+							</div>
+							<div class="cell-4">
+								<figure class="">
+									<img alt="picture" src="../src/img/picture.jpg">
+									<figcaption class="caption-inside caption-bottom flat violet section-title">caption-inside + caption-bottom + flat + violet</figcaption>
+								</figure>
+							</div>
+							<div class="cell-4">
+								<figure class="">
+									<img alt="picture" src="../src/img/picture.jpg">
+									<figcaption class="caption-inside caption-left flat orange section-title">caption-inside + caption-left + flat + orange</figcaption>
+								</figure>
+							</div>
+							<div class="cell-4">
+								<figure class="">
+									<img alt="picture" src="../src/img/picture.jpg">
+									<figcaption class="caption-inside caption-right flat green section-title">caption-inside + caption-right + flat + green</figcaption>
+								</figure>
+							</div>
+							<hr>
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+&lt;div&nbsp;class=&quot;cell-4&quot;&gt;
+	&lt;figure&nbsp;class=&quot;&quot;&gt;
+		&lt;img&nbsp;src=&quot;../src/img/picture.jpg&quot;&gt;
+		&lt;figcaption&nbsp;class=&quot;caption-inside&nbsp;caption-center&nbsp;flat&nbsp;red&nbsp;section-title&quot;&gt;caption-inside&nbsp;+&nbsp;caption-center&nbsp;+&nbsp;flat&nbsp;+&nbsp;red&lt;/figcaption&gt;
+	&lt;/figure&gt;
+&lt;/div&gt;
+&lt;div&nbsp;class=&quot;cell-4&quot;&gt;
+	&lt;figure&nbsp;class=&quot;&quot;&gt;
+		&lt;img&nbsp;src=&quot;../src/img/picture.jpg&quot;&gt;
+		&lt;figcaption&nbsp;class=&quot;caption-inside&nbsp;caption-top&nbsp;flat&nbsp;magenta&nbsp;section-title&quot;&gt;caption-inside&nbsp;+&nbsp;caption-top&nbsp;+&nbsp;flat&nbsp;+&nbsp;violet&lt;/figcaption&gt;
+	&lt;/figure&gt;
+&lt;/div&gt;
+&lt;div&nbsp;class=&quot;cell-4&quot;&gt;
+	&lt;figure&nbsp;class=&quot;&quot;&gt;
+		&lt;img&nbsp;src=&quot;../src/img/picture.jpg&quot;&gt;
+		&lt;figcaption&nbsp;class=&quot;caption-inside&nbsp;caption-bottom&nbsp;flat&nbsp;violet&nbsp;section-title&quot;&gt;caption-inside&nbsp;+&nbsp;caption-bottom&nbsp;+&nbsp;flat&nbsp;+&nbsp;violet&lt;/figcaption&gt;
+	&lt;/figure&gt;
+&lt;/div&gt;
+&lt;div&nbsp;class=&quot;cell-4&quot;&gt;
+	&lt;figure&nbsp;class=&quot;&quot;&gt;
+		&lt;img&nbsp;src=&quot;../src/img/picture.jpg&quot;&gt;
+		&lt;figcaption&nbsp;class=&quot;caption-inside&nbsp;caption-left&nbsp;flat&nbsp;orange&nbsp;section-title&quot;&gt;caption-inside&nbsp;+&nbsp;caption-left&nbsp;+&nbsp;flat&nbsp;+&nbsp;orange&lt;/figcaption&gt;
+	&lt;/figure&gt;
+&lt;/div&gt;
+&lt;div&nbsp;class=&quot;cell-4&quot;&gt;
+	&lt;figure&nbsp;class=&quot;&quot;&gt;
+		&lt;img&nbsp;src=&quot;../src/img/picture.jpg&quot;&gt;
+		&lt;figcaption&nbsp;class=&quot;caption-inside&nbsp;caption-right&nbsp;flat&nbsp;green&nbsp;section-title&quot;&gt;caption-inside&nbsp;+&nbsp;caption-right&nbsp;+&nbsp;flat&nbsp;+&nbsp;green&lt;/figcaption&gt;
+	&lt;/figure&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+								</pre>
+						</div>
+						<hr>
+						<h4 class="section-title flat violet">Sliders</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Description</h5>
+							<div class="thumb-3 blocked-half">
+								<figure class="figure-slide-left l">
+									<div class="first"><h1 class="universe">A</h1></div>
+									<div class="second"><h1 class="universe">B</h1></div>
+									<figcaption>from left</figcaption>
+								</figure>
+							</div>
+							<div class="thumb-3 blocked-half">
+								<figure class="figure-slide l">
+									<div class="first"><h1 class="universe">A</h1></div>
+									<div class="second"><h1 class="universe">B</h1></div>
+									<figcaption>from bottom</figcaption>
+								</figure>
+							</div>
+							<hr class="visible-phone">
+							<div class="thumb-3 blocked-half">
+								<figure class="figure-slide-bottom l">
+									<div class="first"><h1 class="universe">A</h1></div>
+									<div class="second"><h1 class="universe">B</h1></div>
+									<figcaption>from top</figcaption>
+								</figure>
+							</div>
+							<div class="thumb-3 blocked-half">
+								<figure class="figure-slide-right l">
+									<div class="first"><h1 class="universe">A</h1></div>
+									<div class="second"><h1 class="universe">B</h1></div>
+									<figcaption>from right</figcaption>
+								</figure>
+							</div>
+							<hr>
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+&lt;div&nbsp;class=&quot;thumb-3&nbsp;blocked-half&quot;&gt;
+	&lt;figure&nbsp;class=&quot;figure-slide-left&nbsp;l&nbsp;din-scaleUpDown&quot;&gt;
+		&lt;div&nbsp;class=&quot;first&quot;&gt;&lt;h1&nbsp;class=&quot;universe&quot;&gt;A&lt;/h1&gt;&lt;/div&gt;
+		&lt;div&nbsp;class=&quot;second&quot;&gt;&lt;h1&nbsp;class=&quot;universe&quot;&gt;B&lt;/h1&gt;&lt;/div&gt;
+		&lt;figcaption&gt;from&nbsp;left&lt;/figcaption&gt;
+	&lt;/figure&gt;
+&lt;/div&gt;
+&lt;div&nbsp;class=&quot;thumb-3&nbsp;blocked-half&quot;&gt;
+	&lt;figure&nbsp;class=&quot;figure-slide&nbsp;l&nbsp;din-scaleUpDown&quot;&gt;
+		&lt;div&nbsp;class=&quot;first&quot;&gt;&lt;h1&nbsp;class=&quot;universe&quot;&gt;A&lt;/h1&gt;&lt;/div&gt;
+		&lt;div&nbsp;class=&quot;second&quot;&gt;&lt;h1&nbsp;class=&quot;universe&quot;&gt;B&lt;/h1&gt;&lt;/div&gt;
+		&lt;figcaption&gt;from&nbsp;bottom&lt;/figcaption&gt;
+	&lt;/figure&gt;
+&lt;/div&gt;
+&lt;hr&nbsp;class=&quot;visible-phone&quot;&gt;
+&lt;div&nbsp;class=&quot;thumb-3&nbsp;blocked-half&quot;&gt;
+	&lt;figure&nbsp;class=&quot;figure-slide-bottom&nbsp;l&nbsp;din-scaleUpDown&quot;&gt;
+		&lt;div&nbsp;class=&quot;first&quot;&gt;&lt;h1&nbsp;class=&quot;universe&quot;&gt;A&lt;/h1&gt;&lt;/div&gt;
+		&lt;div&nbsp;class=&quot;second&quot;&gt;&lt;h1&nbsp;class=&quot;universe&quot;&gt;B&lt;/h1&gt;&lt;/div&gt;
+		&lt;figcaption&gt;from&nbsp;top&lt;/figcaption&gt;
+	&lt;/figure&gt;
+&lt;/div&gt;
+&lt;div&nbsp;class=&quot;thumb-3&nbsp;blocked-half&quot;&gt;
+	&lt;figure&nbsp;class=&quot;figure-slide-right&nbsp;l&nbsp;din-scaleUpDown&quot;&gt;
+		&lt;div&nbsp;class=&quot;first&quot;&gt;&lt;h1&nbsp;class=&quot;universe&quot;&gt;A&lt;/h1&gt;&lt;/div&gt;
+		&lt;div&nbsp;class=&quot;second&quot;&gt;&lt;h1&nbsp;class=&quot;universe&quot;&gt;B&lt;/h1&gt;&lt;/div&gt;
+		&lt;figcaption&gt;from&nbsp;right&lt;/figcaption&gt;
+	&lt;/figure&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+								</pre>
+						</div>						
+						<hr>	
+					</article>
+					
+					<article class="code-sample">
+						<header class="flat violet">
+							<h6><a class="symbol-css" href="../src/css/styles.css">../src/css/styles.css</a></h6>
+							<h3 class="intoc symbol-bi-arrow">Flip panels</h3>
+							<p></p>
+						</header>
+						<h4 class="section-title flat violet">On hover</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Demo</h5>
+							<div class="cell-4">
+								<div class="panel-flip-onhover">
+									<div class="front flat red">
+										<h3>Front of my panel</h3>
+									</div>
+									<div class="back flat green">
+										<h3>Back</h3>
+									</div>
+								</div>
+							</div>
+							<div class="cell-4">
+								<div class="panel-flip-onhover">
+									<div class="front flat yellow">
+										<h3>Front of my panel</h3>
+									</div>
+									<div class="back flat magenta">
+										<h3>Back</h3>
+									</div>
+								</div>
+							</div>
+							<div class="cell-4">
+								<div class="panel-flip-onhover">
+									<div class="front flat orange">
+										<h3>Front of my panel</h3>
+									</div>
+									<div class="back flat violet">
+										<h3>Back</h3>
+									</div>
+								</div>
+							</div>
+							<hr>
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+&lt;div&nbsp;class=&quot;panel-flip-onhover&quot;&gt;
+	&lt;div&nbsp;class=&quot;front&nbsp;flat&nbsp;red&quot;&gt;
+		&lt;h3&gt;Front&nbsp;of&nbsp;my&nbsp;panel&lt;/h3&gt;
+	&lt;/div&gt;
+	&lt;div&nbsp;class=&quot;back&nbsp;flat&nbsp;green&quot;&gt;
+		&lt;h3&gt;Back&lt;/h3&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+								</pre>
+						</div>
+						<hr>
+						<h4 class="section-title flat violet">On click with checkboxes</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Demo</h5>
+							<div class="cell-4">
+								<div class="panel-flip">
+									<input class="fliptrigger" type="checkbox" id="flip-1" name="flip" aria-hidden="true" hidden>
+									<div class="front flat red">
+										<h3>Front of my panel</h3><hr>
+										<label class="button button-flip flat soft-red" for="flip-1">+</label>
+									</div>
+									<div class="back flat green">
+										<h3>Back</h3><hr>
+										<label class="button button-flip flat soft-green" for="flip-1">-</label>
+									</div>
+								</div>
+							</div>
+							<div class="cell-4">
+								<div class="panel-flip">
+									<input class="fliptrigger" type="checkbox" id="flip-2" name="flip" aria-hidden="true" hidden>
+									<div class="front flat yellow">
+										<h3>Front of my panel</h3><hr>
+										<label class="button button-flip flat soft-yellow" for="flip-2">+</label>
+									</div>
+									<div class="back flat magenta">
+										<h3>Back</h3><hr>
+										<label class="button button-flip flat soft-magenta" for="flip-2">-</label>
+									</div>
+								</div>
+							</div>
+							<div class="cell-4">
+								<div class="panel-flip">
+									<input class="fliptrigger" type="checkbox" id="flip-3" name="flip" aria-hidden="true" hidden>
+									<div class="front flat orange">
+										<h3>Front of my panel</h3><hr>
+										<label class="button button-flip flat soft-orange" for="flip-3">+</label>
+									</div>
+									<div class="back flat violet">
+										<h3>Back</h3><hr>
+										<label class="button button-flip flat soft-violet" for="flip-3">-</label>
+									</div>
+								</div>
+							</div>
+							<hr>	
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+&lt;div&nbsp;class=&quot;panel-flip&quot;&gt;
+	&lt;input&nbsp;class=&quot;fliptrigger&quot;&nbsp;type=&quot;checkbox&quot;&nbsp;id=&quot;flip-1&quot;&nbsp;name=&quot;flip&quot;&nbsp;aria-hidden=&quot;true&quot;&nbsp;hidden&gt;
+	&lt;div&nbsp;class=&quot;front&nbsp;flat&nbsp;red&quot;&gt;
+		&lt;h3&gt;Front&nbsp;of&nbsp;my&nbsp;panel&lt;/h3&gt;&lt;hr&gt;
+		&lt;label&nbsp;class=&quot;button&nbsp;button-flip&nbsp;flat&nbsp;soft-red&quot;&nbsp;for=&quot;flip-1&quot;&gt;+&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;div&nbsp;class=&quot;back&nbsp;flat&nbsp;green&quot;&gt;
+		&lt;h3&gt;Back&lt;/h3&gt;&lt;hr&gt;
+		&lt;label&nbsp;class=&quot;button&nbsp;button-flip&nbsp;flat&nbsp;soft-green&quot;&nbsp;for=&quot;flip-1&quot;&gt;-&lt;/label&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+								</pre>
+						</div>						
+						<hr>
+						<h4 class="section-title flat violet">On click with jquery</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Demo</h5>
+							<div class="cell-4">
+								<div class="panel-flip">
+									<div class="panel front line-top red">
+										<h3>Front of my panel</h3><hr>
+										<label class="button button-flip flat soft-red jfliptrigger">+</label>
+									</div>
+									<div class="panel back line-top green">
+										<h3>Back</h3><hr>
+										<label class="button button-flip flat soft-green jfliptrigger">-</label>
+									</div>
+								</div>
+							</div>
+							<div class="cell-4">
+								<div class="panel-flip">
+									<div class="panel front line-top yellow">
+										<h3>Front of my panel</h3><hr>
+										<label class="button button-flip flat soft-yellow jfliptrigger">+</label>
+									</div>
+									<div class="panel back line-top magenta">
+										<h3>Back</h3><hr>
+										<label class="button button-flip flat soft-magenta jfliptrigger">-</label>
+									</div>
+								</div>
+							</div>							
+							<div class="cell-4">
+								<div class="panel-flip">
+									<div class="panel front line-top orange">
+										<h3>Front of my panel</h3><hr>
+										<label class="button button-flip flat soft-orange jfliptrigger">+</label>
+									</div>
+									<div class="panel back line-top violet">
+										<h3>Back</h3><hr>
+										<label class="button button-flip flat soft-violet jfliptrigger">-</label>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<p class="lines red">You can add some margin with the .panel class.</p>
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+&lt;div&nbsp;class=&quot;cell-4&quot;&gt;
+	&lt;div&nbsp;class=&quot;panel-flip&quot;&gt;
+		&lt;div&nbsp;class=&quot;panel&nbsp;front&nbsp;line-top&nbsp;red&quot;&gt;
+			&lt;h3&gt;Front&nbsp;of&nbsp;my&nbsp;panel&lt;/h3&gt;&lt;hr&gt;
+			&lt;label&nbsp;class=&quot;button&nbsp;button-flip&nbsp;flat&nbsp;soft-red&nbsp;jfliptrigger&quot;&gt;+&lt;/label&gt;
+		&lt;/div&gt;
+		&lt;div&nbsp;class=&quot;panel&nbsp;back&nbsp;line-top&nbsp;green&quot;&gt;
+			&lt;h3&gt;Back&lt;/h3&gt;&lt;hr&gt;
+			&lt;label&nbsp;class=&quot;button&nbsp;button-flip&nbsp;flat&nbsp;soft-green&nbsp;jfliptrigger&quot;&gt;-&lt;/label&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;		
+//&nbsp;Flip
+	$(&apos;.jfliptrigger&apos;).click(function(){
+		$(this).closest(&apos;.panel-flip&apos;).toggleClass(&apos;turned&apos;);
+	});
+&lt;/script&gt;
+								</pre>
+						</div>						
+						<hr>	
+					</article>
+					
+	
+					<article class="code-sample">
+						<header class="flat violet">
+							<h6><a class="symbol-css" href="../src/css/styles.css">../src/css/styles.css</a></h6>
+							<h3 class="intoc symbol-pic">Responsive image carousel</h3>
+							<p></p>
+						</header>
+						<h4 class="section-title flat violet">On click with checkboxes</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Demo</h5>
+							<div class="cell-8 pushed-2">
+								<div class="carousel">
+									<ul class="carousel-box">
+										<li>
+											<input class="carousel-check" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden checked>
+											<div class="carousel-slide anm-fadeIn">
+												<img alt="picture" src="../src/img/picture.jpg">
+											</div>
+										</li>
+										<li>
+											<input class="carousel-check" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden>
+											<div class="carousel-slide anm-scaleUp">
+												<img alt="picture" src="../src/img/picture-2.jpg">
+												<label for="carousel-1" class="prev"></label>
+												<label for="carousel-3" class="next"></label>
+											</div>
+										</li>
+										<li>
+											<input class="carousel-check" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden>
+											<div class="carousel-slide anm-scaleUpDown">
+												<img alt="picture" src="../src/img/picture-3.jpg">
+											</div>
+										</li>
+									</ul>
+									<div class="carousel-control">
+										<label for="carousel-1"></label>
+										<label for="carousel-2"></label>
+										<label for="carousel-3"></label>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<p class="lines red">You can add animations with classes determined in <a href="anime.html">anime.css</a>.</p>
+							<p class="lines red">Also you can add next and previous buttons as in the second slide.</p>
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+&lt;div&nbsp;class=&quot;carousel&quot;&gt;
+	&lt;ul&nbsp;class=&quot;carousel-box&quot;&gt;
+		&lt;li&gt;
+			&lt;input&nbsp;class=&quot;carousel-check&quot;&nbsp;type=&quot;radio&quot;&nbsp;id=&quot;carousel-1&quot;&nbsp;name=&quot;carousel&quot;&nbsp;aria-hidden=&quot;true&quot;&nbsp;hidden&nbsp;checked&gt;
+			&lt;div&nbsp;class=&quot;carousel-slide&nbsp;anm-fadeIn&quot;&gt;
+				&lt;img&nbsp;src=&quot;../src/img/picture-1.jpg&quot;&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;input&nbsp;class=&quot;carousel-check&quot;&nbsp;type=&quot;radio&quot;&nbsp;id=&quot;carousel-2&quot;&nbsp;name=&quot;carousel&quot;&nbsp;aria-hidden=&quot;true&quot;&nbsp;hidden&gt;
+			&lt;div&nbsp;class=&quot;carousel-slide&nbsp;anm-scaleUp&quot;&gt;
+				&lt;img&nbsp;src=&quot;../src/img/picture-2.jpg&quot;&gt;
+				&lt;label&nbsp;for=&quot;carousel-1&quot;&nbsp;class=&quot;prev&quot;&gt;&lt;/label&gt;
+				&lt;label&nbsp;for=&quot;carousel-3&quot;&nbsp;class=&quot;next&quot;&gt;&lt;/label&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;input&nbsp;class=&quot;carousel-check&quot;&nbsp;type=&quot;radio&quot;&nbsp;id=&quot;carousel-3&quot;&nbsp;name=&quot;carousel&quot;&nbsp;aria-hidden=&quot;true&quot;&nbsp;hidden&gt;
+			&lt;div&nbsp;class=&quot;carousel-slide&nbsp;anm-scaleUpDown&quot;&gt;
+				&lt;img&nbsp;src=&quot;../src/img/picture-3.jpg&quot;&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;div&nbsp;class=&quot;carousel-control&quot;&gt;
+		&lt;label&nbsp;for=&quot;carousel-1&quot;&gt;&lt;/label&gt;
+		&lt;label&nbsp;for=&quot;carousel-2&quot;&gt;&lt;/label&gt;
+		&lt;label&nbsp;for=&quot;carousel-3&quot;&gt;&lt;/label&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+								</pre>
+						</div>
+						<hr>
+						<h4 class="section-title flat violet">On click with jquery</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Demo</h5>
+							<div class="cell-8 pushed-2">
+								<div class="carousel">
+									<div class="carousel-box">
+											<div class="carousel-jslide anm-fadeIn idpanel closed" id="slide-4">
+												<img alt="picture" src="../src/img/picture.jpg">
+											</div>
+											<div class="carousel-jslide anm-scaleUp idpanel" id="slide-5">
+												<img alt="picture" src="../src/img/picture-2.jpg">
+												<a href="#slide-4" class="prev idtrigger"></a>
+												<a href="#slide-6" class="next idtrigger"></a>
+											</div>
+											<div class="carousel-jslide anm-scaleUpDown idpanel" id="slide-6">
+												<img alt="picture" src="../src/img/picture-3.jpg">
+											</div>
+									</div>
+									<div class="carousel-control">
+										<a href="#slide-4" class="idtrigger"></a>
+										<a href="#slide-5" class="idtrigger"></a>
+										<a href="#slide-6" class="idtrigger"></a>
+									</div>
+								</div>
+							</div>
+							<hr>
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+&lt;div&nbsp;class=&quot;carousel&quot;&gt;
+	&lt;div&nbsp;class=&quot;carousel-box&quot;&gt;
+		&lt;div&nbsp;class=&quot;carousel-jslide&nbsp;anm-fadeIn&nbsp;idpanel&nbsp;closed&quot;&nbsp;id=&quot;slide-4&quot;&gt;
+			&lt;img&nbsp;src=&quot;../src/img/picture-1.jpg&quot;&gt;
+		&lt;/div&gt;
+		&lt;div&nbsp;class=&quot;carousel-jslide&nbsp;anm-scaleUp&nbsp;idpanel&quot;&nbsp;id=&quot;slide-5&quot;&gt;
+			&lt;img&nbsp;src=&quot;../src/img/picture-2.jpg&quot;&gt;
+			&lt;a&nbsp;href=&quot;#slide-4&quot;&nbsp;class=&quot;prev&nbsp;idtrigger&quot;&gt;&lt;/a&gt;
+			&lt;a&nbsp;href=&quot;#slide-6&quot;&nbsp;class=&quot;next&nbsp;idtrigger&quot;&gt;&lt;/a&gt;
+		&lt;/div&gt;
+		&lt;div&nbsp;class=&quot;carousel-jslide&nbsp;anm-scaleUpDown&nbsp;idpanel&quot;&nbsp;id=&quot;slide-6&quot;&gt;
+			&lt;img&nbsp;src=&quot;../src/img/picture-3.jpg&quot;&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div&nbsp;class=&quot;carousel-control&quot;&gt;
+		&lt;a&nbsp;href=&quot;#slide-4&quot;&nbsp;class=&quot;idtrigger&quot;&gt;&lt;/a&gt;
+		&lt;a&nbsp;href=&quot;#slide-5&quot;&nbsp;class=&quot;idtrigger&quot;&gt;&lt;/a&gt;
+		&lt;a&nbsp;href=&quot;#slide-6&quot;&nbsp;class=&quot;idtrigger&quot;&gt;&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+	// Tabs & sliders
+	$('.idpanel').toggleClass('closed');
+	$('.idtrigger').click(function(e){
+		e.preventDefault(); 
+		var currentPanel = $(this).attr('href');
+		$(this).toggleClass('tab-active').siblings('.idtrigger').removeClass('tab-active');
+		$(currentPanel).toggleClass('closed anime anm-fadeIn').siblings('.idpanel:visible').toggleClass('closed anime anm-fadeIn');
+		if ($('.idpanel:visible').length) {
+		} else {
+		}
+	});
+&lt;/script&gt;
+								</pre>
+						</div>						
+						<hr>	
+					</article>
+
+					<article class="code-sample">
+						<header class="flat violet">
+							<h6><a class="symbol-css" href="../src/css/styles.css">../src/css/styles.css</a></h6>
+							<h3 class="intoc symbol-recycle">Responsive iframes for media</h3>
+							<p></p>
+						</header>
+						<h4 class="section-title flat violet">YouTube 16:9 (default)</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Demo</h5>
+							<div class="cell-8 pushed-2">
+								<div class="youtube"><iframe width="560" height="315" src="//www.youtube.com/embed/tRS4X-kVQ1M" allowfullscreen></iframe></div>
+							</div>
+							<hr>
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+&lt;div&nbsp;class=&quot;youtube&quot;&gt;&lt;iframe&nbsp;width=&quot;560&quot;&nbsp;height=&quot;315&quot;&nbsp;src=&quot;//www.youtube.com/embed/tRS4X-kVQ1M&quot;&nbsp;frameborder=&quot;0&quot;&nbsp;allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+								</pre>
+						</div>
+						<hr>
+						<h4 class="section-title flat violet">YouTube 4:3 (.4by3)</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Demo</h5>
+							<div class="cell-8 pushed-2">
+								<div class="youtube ratio-4by3"><iframe width="420" height="315" src="//www.youtube.com/embed/_QkKFEpNiLM" allowfullscreen></iframe></div>
+							</div>
+							<hr>
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+&lt;div&nbsp;class=&quot;youtube&nbsp;ratio-4by3&quot;&gt;&lt;iframe&nbsp;width=&quot;420&quot;&nbsp;height=&quot;315&quot;&nbsp;src=&quot;//www.youtube.com/embed/_QkKFEpNiLM&quot;&nbsp;frameborder=&quot;0&quot;&nbsp;allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+								</pre>
+						</div>
+						<hr>
+					</article>
+
+					<article class="code-sample">
+						<header class="flat violet">
+							<h6><a class="symbol-css" href="../src/css/styles.css">../src/css/styles.css</a></h6>
+							<h3 class="intoc symbol-gear">Viewer</h3>
+							<p></p>
+						</header>
+						<h4 class="section-title flat violet">View settings with checkboxes</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Demo</h5>
+							<hr>
+							<div class="button-tools">
+								<label class="button" for="view-full">Full</label>
+								<label class="button" for="view-listed">Listed</label>
+								<label class="button" for="view-gallery">Gallery</label>
+								<label class="button" for="view-mosaic">Mosaic</label>
+								<label class="button" for="view-resume">Resume</label>
+							</div>
+
+							<input class="view-check" type="radio" id="view-full" name="view" aria-hidden="true" hidden>
+							<input class="view-check" type="radio" id="view-listed" name="view" aria-hidden="true" hidden checked>
+							<input class="view-check" type="radio" id="view-gallery" name="view" aria-hidden="true" hidden>
+							<input class="view-check" type="radio" id="view-mosaic" name="view" aria-hidden="true" hidden>
+							<input class="view-check" type="radio" id="view-resume" name="view" aria-hidden="true" hidden>
+							<hr>
+
+							<div id="views" class="">								
+								  <article>
+									<a class="article-thumb" title="Picture"><img alt="picture" src="../src/img/picture.jpg"></a> 
+									<p class="article-date">July, 14, 1789</p> 
+									<h4 class="article-title"><a href="@url">Article title</a></h4> 
+									<p class="article-lead">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p> 
+									<hr>
+								  </article>
+					  
+								  <article>
+									<a class="article-thumb" title="Picture"><img alt="picture" src="../src/img/picture-1.jpg"></a> 
+									<p class="article-date">July, 14, 1789</p> 
+									<h4 class="article-title"><a href="@url">Article title</a></h4> 
+									<p class="article-lead">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p> 
+									<hr>
+								  </article>
+					  
+								  <article>
+									<a class="article-thumb" title="Picture"><img alt="picture" src="../src/img/picture-2.jpg"></a> 
+									<p class="article-date">July, 14, 1789</p> 
+									<h4 class="article-title"><a href="@url">Article title</a></h4> 
+									<p class="article-lead">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p> 
+									<hr>
+								  </article>
+					  
+								  <article>
+									<a class="article-thumb" title="Picture"><img alt="picture" src="../src/img/picture-3.jpg"></a> 
+									<p class="article-date">July, 14, 1789</p> 
+									<h4 class="article-title"><a href="@url">Article title</a></h4> 
+									<p class="article-lead">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p> 
+									<hr>
+								  </article>
+					  
+								  <article>
+									<a class="article-thumb" title="Picture"><img alt="picture" src="../src/img/picture-1.jpg"></a> 
+									<p class="article-date">July, 14, 1789</p> 
+									<h4 class="article-title"><a href="@url">Article title</a></h4> 
+									<p class="article-lead">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p> 
+									<hr>
+								  </article>
+					  
+								  <article>
+									<a class="article-thumb" title="Picture"><img alt="picture" src="../src/img/picture-2.jpg"></a> 
+									<p class="article-date">July, 14, 1789</p> 
+									<h4 class="article-title"><a href="@url">Article title</a></h4> 
+									<p class="article-lead">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p> 
+									<hr>
+								  </article>
+
+								  <article>
+									<a class="article-thumb" title="Picture"><img alt="picture" src="../src/img/picture-3.jpg"></a> 
+									<p class="article-date">July, 14, 1789</p> 
+									<h4 class="article-title"><a href="@url">Article title</a></h4> 
+									<p class="article-lead">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p> 
+									<hr>
+								  </article>
+
+								  <article>
+									<a class="article-thumb" title="Picture"><img alt="picture" src="../src/img/picture.jpg"></a> 
+									<p class="article-date">July, 14, 1789</p> 
+									<h4 class="article-title"><a href="@url">Article title</a></h4> 
+									<p class="article-lead">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p> 
+									<hr>
+								  </article>
+
+								  <article>
+									<a class="article-thumb" title="Picture"><img alt="picture" src="../src/img/picture-1.jpg"></a> 
+									<p class="article-date">July, 14, 1789</p> 
+									<h4 class="article-title"><a href="@url">Article title</a></h4> 
+									<p class="article-lead">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p> 
+									<hr>
+								  </article>
+					  
+								  <article>
+									<a class="article-thumb" title="Picture"><img alt="picture" src="../src/img/picture-2.jpg"></a> 
+									<p class="article-date">July, 14, 1789</p> 
+									<h4 class="article-title"><a href="@url">Article title</a></h4> 
+									<p class="article-lead">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p> 
+									<hr>
+								  </article>
+					  
+								  <article>
+									<a class="article-thumb" title="Picture"><img alt="picture" src="../src/img/picture-3.jpg"></a> 
+									<p class="article-date">July, 14, 1789</p> 
+									<h4 class="article-title"><a href="@url">Article title</a></h4> 
+									<p class="article-lead">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p> 
+									<hr>
+								  </article>
+
+								<hr>
+							</div>
+							<hr>
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+&lt;div&nbsp;class=&quot;button-tools&quot;&gt;
+	&lt;label&nbsp;class=&quot;button&quot;&nbsp;for=&quot;view-full&quot;&gt;Full&lt;/label&gt;
+	&lt;label&nbsp;class=&quot;button&quot;&nbsp;for=&quot;view-listed&quot;&gt;Listed&lt;/label&gt;
+	&lt;label&nbsp;class=&quot;button&quot;&nbsp;for=&quot;view-gallery&quot;&gt;Gallery&lt;/label&gt;
+	&lt;label&nbsp;class=&quot;button&quot;&nbsp;for=&quot;view-mosaic&quot;&gt;Mosaic&lt;/label&gt;
+	&lt;label&nbsp;class=&quot;button&quot;&nbsp;for=&quot;view-resume&quot;&gt;Resume&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;input&nbsp;class=&quot;view-check&quot;&nbsp;type=&quot;radio&quot;&nbsp;id=&quot;view-full&quot;&nbsp;name=&quot;view&quot;&nbsp;aria-hidden=&quot;true&quot;&nbsp;hidden&gt;
+&lt;input&nbsp;class=&quot;view-check&quot;&nbsp;type=&quot;radio&quot;&nbsp;id=&quot;view-listed&quot;&nbsp;name=&quot;view&quot;&nbsp;aria-hidden=&quot;true&quot;&nbsp;hidden&nbsp;checked&gt;
+&lt;input&nbsp;class=&quot;view-check&quot;&nbsp;type=&quot;radio&quot;&nbsp;id=&quot;view-gallery&quot;&nbsp;name=&quot;view&quot;&nbsp;aria-hidden=&quot;true&quot;&nbsp;hidden&gt;
+&lt;input&nbsp;class=&quot;view-check&quot;&nbsp;type=&quot;radio&quot;&nbsp;id=&quot;view-mosaic&quot;&nbsp;name=&quot;view&quot;&nbsp;aria-hidden=&quot;true&quot;&nbsp;hidden&gt;
+&lt;input&nbsp;class=&quot;view-check&quot;&nbsp;type=&quot;radio&quot;&nbsp;id=&quot;view-resume&quot;&nbsp;name=&quot;view&quot;&nbsp;aria-hidden=&quot;true&quot;&nbsp;hidden&gt;
+
+&lt;div&nbsp;id=&quot;views&quot;&nbsp;class=&quot;&quot;&gt;
+									
+	&lt;article&gt;
+	&lt;a&nbsp;href=&quot;../src/ics/hipertextos.png&quot;&nbsp;class=&quot;article-thumb&quot;&nbsp;title=&quot;Picture&quot;&gt;&lt;img&nbsp;src=&quot;../src/img/picture.jpg&quot;&gt;&lt;/a&gt;&nbsp;
+	&lt;p&nbsp;class=&quot;article-date&quot;&gt;July,&nbsp;14,&nbsp;1789&lt;/p&gt;&nbsp;
+	&lt;h4&nbsp;class=&quot;article-title&quot;&gt;&lt;a&nbsp;href=&quot;@url&quot;&gt;Article&nbsp;title&lt;/a&gt;&lt;/h4&gt;&nbsp;
+	&lt;p&nbsp;class=&quot;article-lead&quot;&gt;Nam&nbsp;liber&nbsp;tempor&nbsp;cum&nbsp;soluta&nbsp;nobis&nbsp;eleifend&nbsp;option&nbsp;congue&nbsp;nihil&nbsp;imperdiet&nbsp;doming&nbsp;id&nbsp;quod&nbsp;mazim&nbsp;placerat&nbsp;facer&nbsp;possim&nbsp;assum.&lt;/p&gt;&nbsp;
+	&lt;hr&nbsp;/&gt;
+	&lt;/article&gt;
+
+	&lt;article&gt;
+		...
+	&lt;/article&gt;
+	
+	...
+	&lt;hr&nbsp;/&gt;
+&lt;/div&gt;
+								</pre>
+						</div>
+						<hr>
+						<h4 class="section-title flat violet">Tips on hover with a bit of jQuery</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Demo</h5>
+							<hr>
+							<div class="button-tools">
+								<label id="viewer-full" class="button">Full</label>
+								<label id="viewer-listed" class="button">Listed</label>
+								<label id="viewer-gallery" class="button">Gallery</label>
+								<label id="viewer-mosaic" class="button">Mosaic</label>
+								<label id="viewer-resume" class="button">Resume</label>
+							</div>
+							<hr>
+							<div id="viewer" class="listed">
+								  <article>
+									<a class="article-thumb" title="Picture"><img alt="picture" src="../src/img/picture.jpg"></a> 
+									<p class="article-date">July, 14, 1789</p> 
+									<h4 class="article-title"><a href="@url">Article title</a></h4> 
+									<p class="article-lead">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p> 
+									<hr>
+								  </article>
+					  
+								  <article>
+									<a class="article-thumb" title="Picture"><img alt="picture" src="../src/img/picture-1.jpg"></a> 
+									<p class="article-date">July, 14, 1789</p> 
+									<h4 class="article-title"><a href="@url">Article title</a></h4> 
+									<p class="article-lead">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p> 
+									<hr>
+								  </article>
+					  
+								  <article>
+									<a class="article-thumb" title="Picture"><img alt="picture" src="../src/img/picture-2.jpg"></a> 
+									<p class="article-date">July, 14, 1789</p> 
+									<h4 class="article-title"><a href="@url">Article title</a></h4> 
+									<p class="article-lead">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p> 
+									<hr>
+								  </article>
+					  
+								  <article>
+									<a class="article-thumb" title="Picture"><img alt="picture" src="../src/img/picture-3.jpg"></a> 
+									<p class="article-date">July, 14, 1789</p> 
+									<h4 class="article-title"><a href="@url">Article title</a></h4> 
+									<p class="article-lead">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p> 
+									<hr>
+								  </article>
+					  
+								  <article>
+									<a class="article-thumb" title="Picture"><img alt="picture" src="../src/img/picture-1.jpg"></a> 
+									<p class="article-date">July, 14, 1789</p> 
+									<h4 class="article-title"><a href="@url">Article title</a></h4> 
+									<p class="article-lead">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p> 
+									<hr>
+								  </article>
+					  
+								  <article>
+									<a class="article-thumb" title="Picture"><img alt="picture" src="../src/img/picture-2.jpg"></a> 
+									<p class="article-date">July, 14, 1789</p> 
+									<h4 class="article-title"><a href="@url">Article title</a></h4> 
+									<p class="article-lead">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p> 
+									<hr>
+								  </article>
+
+								  <article>
+									<a class="article-thumb" title="Picture"><img alt="picture" src="../src/img/picture-3.jpg"></a> 
+									<p class="article-date">July, 14, 1789</p> 
+									<h4 class="article-title"><a href="@url">Article title</a></h4> 
+									<p class="article-lead">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p> 
+									<hr>
+								  </article>
+
+								  <article>
+									<a class="article-thumb" title="Picture"><img alt="picture" src="../src/img/picture.jpg"></a> 
+									<p class="article-date">July, 14, 1789</p> 
+									<h4 class="article-title"><a href="@url">Article title</a></h4> 
+									<p class="article-lead">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p> 
+									<hr>
+								  </article>
+
+								  <article>
+									<a class="article-thumb" title="Picture"><img alt="picture" src="../src/img/picture-1.jpg"></a> 
+									<p class="article-date">July, 14, 1789</p> 
+									<h4 class="article-title"><a href="@url">Article title</a></h4> 
+									<p class="article-lead">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p> 
+									<hr>
+								  </article>
+					  
+								  <article>
+									<a class="article-thumb" title="Picture"><img alt="picture" src="../src/img/picture-2.jpg"></a> 
+									<p class="article-date">July, 14, 1789</p> 
+									<h4 class="article-title"><a href="@url">Article title</a></h4> 
+									<p class="article-lead">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p> 
+									<hr>
+								  </article>
+					  
+								  <article>
+									<a class="article-thumb" title="Picture"><img alt="picture" src="../src/img/picture-3.jpg"></a> 
+									<p class="article-date">July, 14, 1789</p> 
+									<h4 class="article-title"><a href="@url">Article title</a></h4> 
+									<p class="article-lead">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p> 
+									<hr>
+								  </article>
+
+								<hr>
+								<p class="lines red">May use cookies to set viewer preferences using <a href="../src/js/views.js" title="Javascript file">views.js</a>. The file includes <a href="https://github.com/carhartl/jquery-cookie" title="Klaus Hartl Cookies Jquery plugin">Klaus Hartl Cookies Jquery plugin</a>. Released under the MIT license.</p>
+							</div>
+							<hr>
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+&lt;nav&nbsp;class=&quot;nav-inline&quot;&gt;
+&lt;a&nbsp;id=&quot;view-full&quot;&nbsp;href=&quot;#controller&quot;&nbsp;title=&quot;Full&nbsp;view&quot;&gt;Full&lt;/a&gt;
+&lt;a&nbsp;id=&quot;view-listed&quot;&nbsp;href=&quot;#controller&quot;&nbsp;title=&quot;Listed&nbsp;view&quot;&gt;Listed&lt;/a&gt;
+&lt;a&nbsp;id=&quot;view-gallery&quot;&nbsp;href=&quot;#controller&quot;&nbsp;title=&quot;Gallery&nbsp;view&quot;&gt;Gallery&lt;/a&gt;
+&lt;a&nbsp;id=&quot;view-mosaic&quot;&nbsp;href=&quot;#controller&quot;&nbsp;title=&quot;Mosaic&nbsp;view&quot;&gt;Mosaic&lt;/a&gt;
+&lt;a&nbsp;id=&quot;view-resume&quot;&nbsp;href=&quot;#controller&quot;&nbsp;title=&quot;Resume&nbsp;view&quot;&gt;Resume&lt;/a&gt;
+&lt;/nav&gt;
+
+&lt;div&nbsp;id=&quot;viewer&quot;&nbsp;class=&quot;&quot;&gt;
+
+	&lt;article&gt;
+		&lt;a&nbsp;href=&quot;../src/ics/hipertextos.png&quot;&nbsp;class=&quot;article-thumb&quot;&nbsp;title=&quot;Picture&quot;&gt;&lt;img&nbsp;src=&quot;../src/img/picture.jpg&quot;&gt;&lt;/a&gt;&nbsp;
+		&lt;p&nbsp;class=&quot;article-date&quot;&gt;July,&nbsp;14,&nbsp;1789&lt;/p&gt;&nbsp;
+		&lt;h4&nbsp;class=&quot;article-title&quot;&gt;&lt;a&nbsp;href=&quot;@url&quot;&gt;Article&nbsp;title&lt;/a&gt;&lt;/h4&gt;&nbsp;
+		&lt;p&nbsp;class=&quot;article-lead&quot;&gt;Nam&nbsp;liber&nbsp;tempor&nbsp;cum&nbsp;soluta&nbsp;nobis&nbsp;eleifend&nbsp;option&nbsp;congue&nbsp;nihil&nbsp;imperdiet&nbsp;doming&nbsp;id&nbsp;quod&nbsp;mazim&nbsp;placerat&nbsp;facer&nbsp;possim&nbsp;assum.&lt;/p&gt;&nbsp;
+		&lt;hr&nbsp;/&gt;
+	&lt;/article&gt;
+
+	&lt;article&gt;
+		...
+	&lt;/article&gt;
+	...
+&lt;hr&nbsp;/&gt;
+&lt;/div&gt;
+&lt;script&gt;
+	//&nbsp;Viewer
+	$('#viewer-resume').click(function(){
+		$('#viewer').removeClass();
+		$('#viewer').addClass('resume');
+	});
+	$('#viewer-listed').click(function(){
+		$('#viewer').removeClass();
+		$('#viewer').addClass('listed');
+	});
+	$('#viewer-gallery').click(function(){
+		$('#viewer').removeClass();
+		$('#viewer').addClass('gallery');
+	});
+	$('#viewer-mosaic').click(function(){
+		$('#viewer').removeClass();
+		$('#viewer').addClass('mosaic');
+	});
+	$('#viewer-full').click(function(){
+		$('#viewer').removeClass();
+		$('#viewer').addClass('full');
+	});
+&lt;/script&gt;
+								</pre>
+						</div>
+						<hr>
+					</article>
+
+					<hr>
+					<div class="button-centered xm">
+						<a class="button lines grey" href="framework.html" title="Framework index">HiperCSS framework</a>
+						<br>
+						<a class="button-icon circled flat green anm-moveFromLeftFade delay-1000" href="pages.html">pages</a>
+						<a class="button-icon circled flat turquoise anm-moveFromBottomFade delay-1000" href="styles.html">styles</a>
+						<a class="button-icon circled flat blue anm-moveFromTopFade delay-1000" href="skins.html">skins</a>
+						<a class="button-icon circled flat violet anm-moveFromBottomFade delay-1000" href="objects.html">objects</a>
+						<br class="visible-phone">
+						<a class="button-icon circled flat magenta anm-moveFromTopFade delay-1000" href="effects.html">effects</a>
+						<a class="button-icon circled flat red anm-moveFromBottomFade delay-1000" href="icons.html">icons</a>
+						<a class="button-icon circled flat orange anm-moveFromTopFade delay-1000" href="anime.html">anime</a>
+						<a class="button-icon circled flat yellow anm-moveFromRightFade delay-1000" href="download.html">get</a>
+					</div>
+					<hr>
+					
+				</div>
+			</main>
+			
+  			<footer class="flat black universe thin">
+				<div class="content">
+					<p class="symbol-copyright">2014 Hipertextos. Code & content writers from Barcelona.</p>
+				</div>
+			</footer>
+ 		</div>
+ 		<script src="../src/js/ga.js" type="text/javascript"></script>
+ 		<script src="../src/js/jquery.js" type="text/javascript"></script>
+ 		<script src="../src/js/jquery.toc.js" type="text/javascript"></script>
+ 		<script>
+			// Collapse & accordion
+			$('.jcollapser .jcollapsed').toggleClass('closed');
+			$('.jcollapser .jtrigger').click(function(e){
+				$(this).next('.jcollapsed').toggleClass('closed anime anm-fadeIn').siblings('.jcollapsed:visible').toggleClass('closed anime anm-fadeIn');
+			});
+			// Dropmenu
+			$('.button-group .droptrigger').click(function(e) {
+				var others = $('.dropmenu').not($(this).next('.dropmenu'));
+				$(this).next('.dropmenu').toggleClass('opened anime anm-fadeIn');
+				$(others).removeClass('opened anime anm-fadeIn');
+				e.stopPropagation(); //stops click event from reaching document
+			});
+			$(document).click(function() {
+			  $(".dropmenu").removeClass('opened anime anm-fadeIn');
+			});
+ 			// Notification
+			$('.notification .button-close').click(function(){
+				$(this).closest('.notification').toggleClass('closed');
+			});
+ 			// Flip
+			$('.jfliptrigger').click(function(){
+				$(this).closest('.panel-flip').toggleClass('turned');
+			});
+			// Collapse horizontal nav in small devices
+			$('#nav-collapse').toggleClass('nav-collapsed');
+			$('nav .toggle').click(function(){
+				$('#nav-collapse').toggleClass('nav-collapsed');
+			});
+			// Tabs
+			$('.idpanel').toggleClass('closed');
+			$('.idtrigger').click(function(e){
+				e.preventDefault(); 
+				var currentPanel = $(this).attr('href');
+				$(this).toggleClass('tab-active').siblings('.idtrigger').removeClass('tab-active');
+				$(currentPanel).toggleClass('closed anime anm-fadeIn').siblings('.idpanel:visible').toggleClass('closed anime anm-fadeIn');
+				if ($('.idpanel:visible').length) {
+				} else {
+				}
+			});
+			// Dialogs
+			$('.button-modal, .jdialog .button-close').click(function(){
+				var currentDialog = $(this).attr('href');
+				$(currentDialog).toggleClass('closed anime anm-moveFromTop');
+			});
+			
+			// Code-get collapsing in small devices
+			$('.code-get h5').click(function(e){
+				$(this).next('.code-get pre').toggleClass('opened');
+			});
+			// Tooltip
+			$('.tip').hover(function(){
+				var title = $(this).attr('title');
+				$(this).data('tipText', title).removeAttr('title');
+				$('<p class="tooltip"></p>').text(title).appendTo('body').fadeIn('slow');
+			}, function() {
+				$(this).attr('title', $(this).data('tipText'));
+				$('.tooltip').remove();
+			}).mousemove(function(e) {
+				var mousex = e.pageX + 4; //Get X coordinates
+				var mousey = e.pageY - 24; //Get Y coordinates
+				$('.tooltip').css({ top: mousey, left: mousex })
+			});
+			// TOC-persist on top
+			$pos = $('#thetoc').offset().top;
+			$(window).on('scroll', function(){
+				if($(window).scrollTop() >= $pos) {
+					$('#thetoc').addClass('persist paper flat soft-violet');
+					$('#thetoc .jcollapsed').addClass('paper-back closed level-20 scrollable');
+				} else {
+					$('#thetoc').removeClass('persist paper flat soft-violet');
+					$('#thetoc .jcollapsed').removeClass('paper-back closed level-20 scrollable');
+				}
+			});
+			// Viewer
+			$('#viewer-resume').click(function(){
+				$('#viewer').removeClass();
+				$('#viewer').addClass('resume');
+			});
+			$('#viewer-listed').click(function(){
+				$('#viewer').removeClass();
+				$('#viewer').addClass('listed');
+			});
+			$('#viewer-gallery').click(function(){
+				$('#viewer').removeClass();
+				$('#viewer').addClass('gallery');
+			});
+			$('#viewer-mosaic').click(function(){
+				$('#viewer').removeClass();
+				$('#viewer').addClass('mosaic');
+			});
+			$('#viewer-full').click(function(){
+				$('#viewer').removeClass();
+				$('#viewer').addClass('full');
+			});
+ 		</script>
+	</body>
+</html>

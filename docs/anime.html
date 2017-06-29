@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<!-- Metadata: Basic -->
+		<title>Anime</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="CSS animations">
+		<meta name="keywords" content="Copywriting Web design Barcelona">
+		<meta name="author" content="Hipertextos">
+		<!-- Metadata: GeoTags -->
+		<meta name="geo.region" content="ES-CT">
+		<meta name="geo.placename" content="Barcelona">
+		<meta name="geo.position" content="41.426812;2.234972">
+		<meta name="ICBM" content="41.426812;2.234972">
+		<!-- Screen styles -->
+		<link href="../src/css/styles.css" rel="stylesheet" media="screen">
+		<link href="../src/css/anime.css" rel="stylesheet" media="screen">
+		<link href="../src/css/anime-demo.css" rel="stylesheet" media="screen">
+		<!-- Print styles -->
+		<link href="../src/css/print.css" rel="stylesheet" media="print">
+		<!-- If iexplorer :( -->
+		<!--[if lt IE 9]><script src="../src/js/html5shiv.js"></script><![endif]-->
+		<!--[if IE]><link rel="stylesheet" type="text/css" href="../src/css/iexplorer.css" /><![endif]-->
+		<!-- If JS disabled -->
+		<noscript><link href="../src/css/noscript.css" rel="stylesheet" media="screen"></noscript>
+		<!-- Page Icons -->
+		<link rel="shortcut icon" href="../src/ics/favicon.ico">
+		<link rel="apple-touch-icon" sizes="57x57" href="../src/ics/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="../src/ics/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="../src/ics/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="../src/ics/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="../src/ics/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="../src/ics/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="../src/ics/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="../src/ics/apple-touch-icon-152x152.png">
+		<link rel="icon" type="image/png" href="../src/ics/favicon-196x196.png" sizes="196x196">
+		<link rel="icon" type="image/png" href="../src/ics/favicon-160x160.png" sizes="160x160">
+		<link rel="icon" type="image/png" href="../src/ics/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="../src/ics/favicon-16x16.png" sizes="16x16">
+		<link rel="icon" type="image/png" href="../src/ics/favicon-32x32.png" sizes="32x32">
+		<meta name="msapplication-TileColor" content="#dddddd">
+		<meta name="msapplication-TileImage" content="../src/ics/mstile-144x144.png">
+		<meta name="msapplication-config" content="../src/ics/browserconfig.xml">
+	</head>
+	<body>
+	  	<section class="jdialog closed" id="warning1"><h4>Warning 1</h4><a class="button-close" href="#warning1">X</a></section>
+  		<div class="page" id="page">
+			<nav class="universe thin nav-inline">
+				<div class="content">
+						<a href="index.html" class="current-parent anm-moveFromLeftFade delay-500" title="Hipertextos">Hipertextos</a>
+						<a href="http://articles.hipertextos.net" class="anm-moveFromTopFade delay-500" title="Blog">Blog</a>
+						<a href="http://code.hipertextos.net" class="anm-moveFromBottomFade delay-500" title="Code">Code</a>
+				</div>
+			</nav>
+			<header class="header-cover flat orange universe">
+				<div class="content">
+					<h1 class="g anm-zoomInDown">Anime</h1>
+					<h6 class="l anm-scaleUpDown">CSS animations library</h6>
+					<hr>
+					<div class="button-centered xm">
+						<a class="button lines white anm-scaleUp delay-2000" href="framework.html" title="Framework index">HiperCSS framework</a>
+						<br>
+						<a class="button-icon circled flat green anm-moveFromLeftFade delay-1000" href="pages.html">pages</a>
+						<a class="button-icon circled flat turquoise anm-moveFromBottomFade delay-1000" href="styles.html">styles</a>
+						<a class="button-icon circled flat blue anm-moveFromTopFade delay-1000" href="skins.html">skins</a>
+						<a class="button-icon circled flat violet anm-moveFromBottomFade delay-1000" href="objects.html">objects</a>
+						<br class="visible-phone">
+						<a class="button-icon circled flat magenta anm-moveFromTopFade delay-1000" href="effects.html">effects</a>
+						<a class="button-icon circled flat red anm-moveFromBottomFade delay-1000" href="icons.html">icons</a>
+						<a class="button-icon circled flat orange anm-moveFromTopFade delay-1000" href="anime.html">anime</a>
+						<a class="button-icon circled flat yellow anm-moveFromRightFade delay-1000" href="download.html">get</a>
+					</div>
+					<hr>
+				</div>
+			</header>
+			<main id="content">
+				<div class="content">
+				
+					<div id="thetoc">
+						<div class="jcollapser universe">
+							<h4 class="jtrigger">Table of content<span class="caret"></span></h4>
+							<nav class="jcollapsed closed paper-back level-20 scrollable"><div id="intoc"></div><hr></nav>
+						</div>
+					</div>
+					
+					<section class="flat orange">
+						<header>
+							<h2>CSS Anime</h2>
+							<p class="lead">Anime is a CSS library to build animations, inspired on <a href="http://daneden.me/animate/" title="http://daneden.me/animate/">Dan Eden's Animate.css</a>, <a href="http://tympanus.net/codrops/2013/05/07/a-collection-of-page-transitions/" title="http://tympanus.net/codrops/2013/05/07/a-collection-of-page-transitions/">Codrops</a> and <a href="http://dan-silver.github.io/ElementTransitions.js/" title="http://dan-silver.github.io/ElementTransitions.js/">ElementTransitions.js</a>.</p>
+							<p>Create beautiful animations and cool slides with a simple HTML markup. Also, Animate can be used in combination with javascript to create slides, models and everything you can imagine.</p>
+						</header>
+						<div class="container">
+							<pre contentEditable="true">
+	&lt;link href=&quot;../src/css/anime.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;
+	&lt;!-- Jquery is needed to use slides and animation on scroll --&gt;	
+	&lt;script src=&quot;../src/js/jquery.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;../src/js/anime.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+							</pre>
+						</div>
+					</section>
+				
+
+					<article class="code-sample">
+						<header class="flat orange">
+							<h6>
+								<a class="symbol-css" href="../src/css/anime.css">../src/css/anime.css</a> + 
+							</h6>
+							<h3 class="intoc intoc symbol-gear">Ways to animate</h3>
+						</header>
+						<h4 class="section-title flat orange intoc">In the HTML markup</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Sample</h5>
+							<!-- Result -->
+							<div class="anm-tada">content</div>
+							<div class="anm-shake">content</div>
+							<hr><button class="button-reload">Reload to see the animation</button>
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+	&lt;!-- Syntax --&gt;
+	&lt;div class=&quot;anm-[animationName]&quot;&gt;content&lt;/div&gt;
+
+	&lt;!-- Example --&gt;
+	&lt;div class=&quot;anm-tada&quot;&gt;content&lt;/div&gt;
+	&lt;div class=&quot;anm-shake&quot;&gt;content&lt;/div&gt;
+							</pre>
+						</div>
+						<h4 class="section-title flat orange intoc">With jquery: on load</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Sample</h5>
+							<!-- Result -->
+							<div id="animation1">#animation1</div>
+							<hr><button class="button-reload">Reload to see the animation</button>
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+	&lt;!-- Snippets --&gt;
+	&lt;div id=&quot;animation1&quot;&gt;#animation1&lt;/div&gt;
+
+	&lt;!-- jQuery --&gt;
+	&lt;script&gt;
+	$(document).ready(function(){
+		$('#animation1').addClass('anm-fadeIn');
+	});
+	&lt;/script&gt;
+								</pre>
+						</div>
+						<h4 class="section-title flat orange intoc">With jquery: on click</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Sample</h5>
+							<!-- Result -->
+							<button id="clickthis">#clickthis</button>
+							<div id="animation2">#animation2</div>
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+	&lt;!-- Snippets --&gt;
+	&lt;button id=&quot;clickthis&quot;&gt;#clickthis&lt;/button&gt;
+	&lt;div id=&quot;animation2&quot;&gt;#animation2&lt;/div&gt;
+
+	&lt;!-- jQuery --&gt;
+	&lt;script&gt;
+		$('#clickthis').click(function(){
+			$('#animation2').toggleClass('anm-fadeIn');
+		});
+	&lt;/script&gt;
+								</pre>
+						</div>
+						<h4 class="section-title flat orange intoc">Applying animations in collapse, tabs and modals</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Sample</h5>
+							<!-- Result -->
+							<div class="accordion">
+								<h4>Cite</h4>
+								<section>Quid te vis alicui præferre; cum plures doctiores te inveniantur, et magis in lege periti. Si vis utiliter aliquid scire et discere: ama nesciri et pro nihilo reputari.</section>
+								<h4>Cite</h4>
+								<section>Quid te vis alicui præferre; cum plures doctiores te inveniantur, et magis in lege periti. Si vis utiliter aliquid scire et discere: ama nesciri et pro nihilo reputari.</section>
+								<h4>Cite</h4>
+								<section>Quid te vis alicui præferre; cum plures doctiores te inveniantur, et magis in lege periti. Si vis utiliter aliquid scire et discere: ama nesciri et pro nihilo reputari.</section>
+							</div>
+							<div class="tabs">
+								<div class="tab">
+									<a class="idtrigger tab-active" href="#one">Tab One</a>
+									<a class="idtrigger" href="#two">Tab Two</a>
+									<a class="idtrigger" href="#three">Tab Three</a>
+								</div>
+								<div class="container">
+									<div class="tab-panel idpanel closed" id="one">
+									   <p>Stuff for Tab One</p>
+									</div> 
+									<div class="tab-panel idpanel" id="two">
+									   <p>Stuff for Tab Two</p>
+   									</div> 
+									<div class="tab-panel idpanel" id="three">
+									   <p>Stuff for Tab Three</p>
+   									</div> 
+								</div>
+							</div>
+							<hr>
+							<a class="button button-modal" href="#warning1">Open dialog</a>
+							<hr>
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+&lt;!-- Accordion demo --&gt;
+&lt;div class=&quot;accordion&quot;&gt;
+	&lt;h4&gt;Cite&lt;/h4&gt;
+	&lt;section&gt;Quid te vis alicui pr&aelig;ferre; cum plures doctiores te inveniantur, et magis in lege periti. Si vis utiliter aliquid scire et discere: ama nesciri et pro nihilo reputari.&lt;/section&gt;
+	&lt;h4&gt;Cite&lt;/h4&gt;
+	&lt;section&gt;Quid te vis alicui pr&aelig;ferre; cum plures doctiores te inveniantur, et magis in lege periti. Si vis utiliter aliquid scire et discere: ama nesciri et pro nihilo reputari.&lt;/section&gt;
+	&lt;h4&gt;Cite&lt;/h4&gt;
+	&lt;section&gt;Quid te vis alicui pr&aelig;ferre; cum plures doctiores te inveniantur, et magis in lege periti. Si vis utiliter aliquid scire et discere: ama nesciri et pro nihilo reputari.&lt;/section&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+$(function() {
+	$('.accordion section').toggleClass('closed');
+	$('.accordion h4').click(function(e){
+		$(this).next('section').toggleClass('closed anm-shake')
+		.siblings('section:visible').toggleClass('closed anm-shake');
+		e.preventDefault();
+	});
+});
+&lt;/script&gt;
+
+&lt;!-- Tabs demo --&gt;
+&lt;div&nbsp;class=&quot;tabs&quot;&gt;
+	&lt;div&nbsp;class=&quot;tab&quot;&gt;
+		&lt;label&nbsp;class=&quot;idtrigger&nbsp;tab-active&quot;&nbsp;href=&quot;#one&quot;&gt;Tab&nbsp;One&lt;/label&gt;
+		&lt;label&nbsp;class=&quot;idtrigger&quot;&nbsp;href=&quot;#two&quot;&gt;Tab&nbsp;Two&lt;/label&gt;
+		&lt;label&nbsp;class=&quot;idtrigger&quot;&nbsp;href=&quot;#three&quot;&gt;Tab&nbsp;Three&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;div&nbsp;class=&quot;container&quot;&gt;
+		&lt;div&nbsp;class=&quot;tab-panel&nbsp;idpanel&nbsp;closed&quot;&nbsp;id=&quot;one&quot;&gt;
+		&nbsp;&nbsp;&nbsp;&lt;p&gt;Stuff&nbsp;for&nbsp;Tab&nbsp;One&lt;/p&gt;
+		&lt;/div&gt;&nbsp;
+		&lt;div&nbsp;class=&quot;tab-panel&nbsp;idpanel&quot;&nbsp;id=&quot;two&quot;&gt;
+		&nbsp;&nbsp;&nbsp;&lt;p&gt;Stuff&nbsp;for&nbsp;Tab&nbsp;Two&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;
+&lt;/div&gt;&nbsp;
+		&lt;div&nbsp;class=&quot;tab-panel&nbsp;idpanel&quot;&nbsp;id=&quot;three&quot;&gt;
+		&nbsp;&nbsp;&nbsp;&lt;p&gt;Stuff&nbsp;for&nbsp;Tab&nbsp;Three&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;
+&lt;/div&gt;&nbsp;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+	// Tabs & sliders
+	$('.idpanel').toggleClass('closed');
+	$('.idtrigger').click(function(e){
+		e.preventDefault(); 
+		var currentPanel = $(this).attr('href');
+		$(this).toggleClass('tab-active').siblings('.idtrigger').removeClass('tab-active');
+		$(currentPanel).toggleClass('closed anm-fadeIn').siblings('.idpanel:visible').toggleClass('closed anm-fadeIn');
+		if ($('.idpanel:visible').length) {
+		} else {
+		}
+	});
+&lt;/script&gt;
+
+	&lt;!-- Dialog --&gt;
+	&lt;a class=&quot;button button-modal&quot; href=&quot;#warning1&quot;&gt;Open dialog&lt;/a&gt;
+	&lt;section class=&quot;dialog&quot; id=&quot;warning1&quot;&gt;&lt;h4&gt;Warning 1&lt;/h4&gt;&lt;a class=&quot;button-close&quot; href=&quot;#warning1&quot;&gt;X&lt;/a&gt;&lt;/section&gt;
+
+	&lt;script&gt;
+	$(function() {
+		$('.dialog').toggleClass('closed');
+		$('.button-modal, .dialog .button-close').click(function(){
+			var currentDialog = $(this).attr('href');
+			$('.overlay').toggleClass('closed anm-fadeIn');
+			$(currentDialog).toggleClass('closed anm-moveFromTop');
+		});
+	});
+	&lt;/script&gt;
+								</pre>
+						</div>
+						<h4 class="section-title flat orange intoc">On scroll page with jquery</h4>
+						<p>On scroll with jQuery (and re-when come back to top).</p>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Sample</h5>
+							<!-- Result -->
+							<div class="universe">
+								<label class="animeonscroll button flat red">.animeonscroll</label>
+								<label id="animeonscroll" class="button flat green">#animeonscroll</label>
+								<hr>
+								<p class="lead lines red"><a class='current-parent' href="index.html" title="iChing principles">Demo</a></p>
+							</div>
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+	&lt;!-- Snippets --&gt;
+	&lt;label class=&quot;animeinscroll button flat red&quot;&gt;.animeinscroll&lt;/label&gt;
+	&lt;label id=&quot;animeinscroll&quot;&gt;#animeinscroll&lt;/label&gt;
+
+	&lt;!-- jQuery --&gt;
+	&lt;script&gt;
+		// Animations on scroll
+		// Create a window variable to set the scroll
+		var win = $(window);
+		// Create a variable for .anim
+		var variable1 = $('.animeonscroll');
+		var variable2 = $('#animeonscroll');
+		// Apply the animations on scroll
+		win.scroll(function(event) {
+		  variable1.each(function(i, el) {
+			var el = $(el);
+			if (el.visible(true)) {
+			  el.addClass('anm-moveFromLeftFade slow'); 
+			} else {
+			  el.removeClass('anm-moveFromLeftFade slow'); 
+			} 
+		  });
+		});
+		win.scroll(function(event) {
+		  variable2.each(function(i, el) {
+			var el = $(el);
+			if (el.visible(true)) {
+			  el.addClass('anm-moveFromRightFade slow'); 
+			} else {
+			  el.removeClass('anm-moveFromRightFade slow'); 
+			} 
+		  });
+		});
+	&lt;/script&gt;
+								</pre>
+						</div>
+						<h4 class="section-title flat orange intoc">As a slide transitions</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Sample</h5>
+							<!-- Result -->
+							<p>Slides are explained in the next chapter: <a href="#slides" class="lines orange">Slides</a>.</p>
+						</div>
+
+						<hr>				
+					</article>
+				
+				
+					<article class="code-sample" id="slides">
+						<header class="flat orange">
+							<h6>
+								<a class="symbol-css" href="../src/css/anime.css">../src/css/anime.css</a> + 
+								<a class="symbol-js" href="../src/js/anime.js">../src/js/anime.js</a>
+							</h6>
+							<h3 class="intoc symbol-pic">Slides</h3>
+						</header>
+						<h4 class="section-title flat orange">Default</h4>
+						<p>A start point to build CSS animations. With a small jQuery scripts can be used to build presentations and transitions between panels. Based on <a class="symbol-hyperlink" href="http://daneden.me/animate/">Dan Eden's Animate.css</a>, <a class="symbol-hyperlink" href="http://tympanus.net/codrops/2013/05/07/a-collection-of-page-transitions/">Codrops</a> and <a class="symbol-hyperlink" href="http://dan-silver.github.io/ElementTransitions.js/">ElementTransitions.js</a>. Distribute under the MIT license.</p>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Sample</h5>
+							<!-- Result -->
+							<div class="layout">
+								<div class="cell-4">
+									<h5 class="title">Simple slides</h5>
+									<div class="slide-wrapper slide-trigger" slide-in="rotateSlideIn" slide-out="rotateSlideOut">
+										<div class="flat green slide-page">
+										   <h2>Page 1</h2>
+										</div>
+										<div class="flat soft-green slide-page">
+											<h2>Page 2</h2>
+										</div>
+									</div>
+								</div>
+								<div class="cell-4">
+									<h5 class="title">Slides with buttons</h5>
+									<div class="slide-wrapper">
+										<button class="flat violet slide-trigger" slide-in="rotateCubeRightIn" slide-out="rotateCubeRightOut">Next</button>	
+										<div class="flat soft-violet slide-page">
+											<h2>Page 1</h2>
+										</div>
+										<div class="flat orange slide-page">
+											<h2>Page 2</h2>
+										</div>
+									</div>
+								</div>
+								<div class="cell-4">
+									<h5 class="title">Combining animations and steps</h5>
+									<div class="slide-wrapper">
+										<div class="flat violet slide-page">
+											<h2>Page 1</h2>
+											<button class="flat blue slide-trigger previous" slide-step="-1" slide-in="rotateInNewspaper" slide-out="rotateOutNewspaper">Prev</button>	
+											<button class="flat blue slide-trigger" slide-in="rotateInNewspaper" slide-out="rotateOutNewspaper">Next</button>	
+										</div>
+										<div class="flat sky slide-page">
+											<h2>Page 2</h2>
+											<button class="flat blue slide-trigger previous" slide-step="-1" slide-in="rotateInNewspaper" slide-out="rotateOutNewspaper">Prev</button>	
+											<button class="flat blue slide-trigger" slide-in="flipInRight delay500" slide-out="flipOutLeft">Next</button>	
+										</div>
+										<div class="flat soft-sky slide-page">
+											<h2>Page 3</h2>
+											<button class="flat blue slide-trigger previous" slide-step="-1" slide-in="rotateInNewspaper" slide-out="rotateOutNewspaper">Prev</button>	
+											<button class="flat blue slide-trigger" slide-in="rotateCubeRightIn" slide-out="rotateCubeRightOut">Next</button>	
+										</div>
+									</div>
+								</div>
+								<hr>
+								<p class="lead universe lines red"><a href="services.html" title="hipertextos services">Demo</a></p>
+							</div>
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+	&lt;!-- Simple slides --&gt;
+	&lt;div class=&quot;slide-wrapper slide-trigger&quot; slide-in=&quot;rotateSlideIn&quot; slide-out=&quot;rotateSlideOut&quot;&gt;
+		&lt;div class=&quot;flat orange slide-page&quot;&gt;
+		   &lt;h2&gt;Page 1&lt;/h2&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;flat soft-violet slide-page&quot;&gt;
+			&lt;h2&gt;Page 2&lt;/h2&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;!-- Slides with buttons --&gt;
+	&lt;div class=&quot;slide-wrapper&quot;&gt;
+		&lt;button class=&quot;flat violet slide-trigger&quot; slide-in=&quot;rotateCubeRightIn&quot; slide-out=&quot;rotateCubeRightOut&quot;&gt;Next&lt;/button&gt;	
+		&lt;div class=&quot;flat soft-yellow slide-page&quot;&gt;
+			&lt;h2&gt;Page 1&lt;/h2&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;flat soft-violet slide-page&quot;&gt;
+			&lt;h2&gt;Page 2&lt;/h2&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;!-- Combining animations and steps --&gt;
+	&lt;div class=&quot;slide-wrapper&quot;&gt;
+		&lt;div class=&quot;flat violet slide-page&quot;&gt;
+			&lt;h2&gt;Page 1&lt;/h2&gt;
+			&lt;button class=&quot;flat blue slide-trigger previous&quot; slide-step=&quot;-1&quot; slide-in=&quot;rotateInNewspaper&quot; slide-out=&quot;rotateOutNewspaper&quot;&gt;Prev&lt;/button&gt;	
+			&lt;button class=&quot;flat blue slide-trigger&quot; slide-in=&quot;rotateInNewspaper&quot; slide-out=&quot;rotateOutNewspaper&quot;&gt;Next&lt;/button&gt;	
+		&lt;/div&gt;
+		&lt;div class=&quot;flat sky slide-page&quot;&gt;
+			&lt;h2&gt;Page 2&lt;/h2&gt;
+			&lt;button class=&quot;flat blue slide-trigger previous&quot; slide-step=&quot;-1&quot; slide-in=&quot;rotateInNewspaper&quot; slide-out=&quot;rotateOutNewspaper&quot;&gt;Prev&lt;/button&gt;	
+			&lt;button class=&quot;flat blue slide-trigger&quot; slide-in=&quot;flipInRight delay500&quot; slide-out=&quot;flipOutLeft&quot;&gt;Next&lt;/button&gt;	
+		&lt;/div&gt;
+		&lt;div class=&quot;flat soft-sky slide-page&quot;&gt;
+			&lt;h2&gt;Page 3&lt;/h2&gt;
+			&lt;button class=&quot;flat blue slide-trigger previous&quot; slide-step=&quot;-1&quot; slide-in=&quot;rotateInNewspaper&quot; slide-out=&quot;rotateOutNewspaper&quot;&gt;Prev&lt;/button&gt;	
+			&lt;button class=&quot;flat blue slide-trigger&quot; slide-in=&quot;rotateCubeRightIn&quot; slide-out=&quot;rotateCubeRightOut&quot;&gt;Next&lt;/button&gt;	
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+								</pre>
+						</div>
+						<hr>					
+					</article>
+				
+					<article class="code-sample">
+						<header class="flat orange">
+							<h6>
+								<a class="symbol-css" href="../src/css/anime.css">../src/css/anime.css</a> + 
+							</h6>
+							<h3 class="intoc intoc symbol-flag">Custom delay</h3>
+						</header>
+						<h4 class="section-title flat orange">.delay-[value]</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Sample</h5>
+							<!-- Result -->
+							<div class="anm-bounce delay-100">anm-bounce delay-100</div>
+							<div class="anm-bounce delay-200">anm-bounce delay-200</div>
+							<div class="anm-bounce delay-300">anm-bounce delay-300</div>
+							<div class="anm-bounce delay-400">anm-bounce delay-400</div>
+							<div class="anm-bounce delay-500">anm-bounce delay-500</div>
+							<div class="anm-bounce delay-600">anm-bounce delay-600</div>
+							<div class="anm-bounce delay-700">anm-bounce delay-700</div>
+							<div class="anm-bounce delay-800">anm-bounce delay-800</div>
+							<div class="anm-bounce delay-900">anm-bounce delay-900</div>
+							<div class="anm-bounce delay-1000">anm-bounce delay-1000</div>
+							<div class="anm-bounce delay-2000">anm-bounce delay-2000</div>
+							<div class="anm-bounce delay-3000">anm-bounce delay-3000</div>
+							<div class="anm-bounce delay-4000">anm-bounce delay-4000</div>
+							<div class="anm-bounce delay-5000">anm-bounce delay-5000</div>
+							<div class="anm-bounce delay-6000">anm-bounce delay-6000</div>
+							<div class="anm-bounce delay-7000">anm-bounce delay-7000</div>
+							<div class="anm-bounce delay-8000">anm-bounce delay-8000</div>
+							<div class="anm-bounce delay-9000">anm-bounce delay-9000</div>
+							<hr><button class="button-reload">Reload to see the animation</button>
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+	&lt;!-- Snippets --&gt;
+	&lt;div class=&quot;anm-bounce delay-100&quot;&gt;.anm-bounce delay-100&lt;/div&gt;
+	&lt;div class=&quot;anm-bounce delay-200&quot;&gt;.anm-bounce delay-200&lt;/div&gt;
+	&lt;div class=&quot;anm-bounce delay-300&quot;&gt;.anm-bounce delay-300&lt;/div&gt;
+	&lt;div class=&quot;anm-bounce delay-400&quot;&gt;.anm-bounce delay-400&lt;/div&gt;
+	&lt;div class=&quot;anm-bounce delay-500&quot;&gt;.anm-bounce delay-500&lt;/div&gt;
+	&lt;div class=&quot;anm-bounce delay-600&quot;&gt;.anm-bounce delay-600&lt;/div&gt;
+	&lt;div class=&quot;anm-bounce delay-700&quot;&gt;.anm-bounce delay-700&lt;/div&gt;
+	&lt;div class=&quot;anm-bounce delay-800&quot;&gt;.anm-bounce delay-800&lt;/div&gt;
+	&lt;div class=&quot;anm-bounce delay-900&quot;&gt;.anm-bounce delay-900&lt;/div&gt;
+	&lt;div class=&quot;anm-bounce delay-1000&quot;&gt;.anm-bounce delay-1000&lt;/div&gt;
+	&lt;div class=&quot;anm-bounce delay-2000&quot;&gt;.anm-bounce delay-2000&lt;/div&gt;
+	&lt;div class=&quot;anm-bounce delay-3000&quot;&gt;.anm-bounce delay-3000&lt;/div&gt;
+	&lt;div class=&quot;anm-bounce delay-4000&quot;&gt;.anm-bounce delay-4000&lt;/div&gt;
+	&lt;div class=&quot;anm-bounce delay-5000&quot;&gt;.anm-bounce delay-5000&lt;/div&gt;
+	&lt;div class=&quot;anm-bounce delay-6000&quot;&gt;.anm-bounce delay-6000&lt;/div&gt;
+	&lt;div class=&quot;anm-bounce delay-7000&quot;&gt;.anm-bounce delay-7000&lt;/div&gt;
+	&lt;div class=&quot;anm-bounce delay-8000&quot;&gt;.anm-bounce delay-8000&lt;/div&gt;
+	&lt;div class=&quot;anm-bounce delay-9000&quot;&gt;.anm-bounce delay-9000&lt;/div&gt;
+								</pre>
+						</div>
+						<hr>				
+					</article>			
+				
+					<article class="code-sample">
+						<header class="flat orange">
+							<h6>
+								<a class="symbol-css" href="../src/css/anime.css">../src/css/anime.css</a> + 
+							</h6>
+							<h3 class="intoc intoc symbol-flag">Custom speed</h3>
+						</header>
+						<h4 class="section-title flat orange">.[speed]</h4>
+						<div class="code-result">
+							<h5 class="title symbol-gear">Sample</h5>
+							<!-- Result -->
+							<div class="anm-bounce extra-fast">anm-bounce extra-fast</div>
+							<div class="anm-bounce fast">anm-bounce fast</div>
+							<div class="anm-bounce slow">anm-bounce slow</div>
+							<div class="anm-bounce extra-slow">anm-bounce extra-slow</div>
+							<hr><button class="button-reload">Reload to see the animation</button>
+						</div>
+						<div class="code-get">
+							<h5 class="title symbol-scissors">Markup</h5>
+								<pre contentEditable="true">
+	&lt;!-- Snippets --&gt;
+	&lt;div class=&quot;anm-bounce delay-100&quot;&gt;.anm-bounce delay-100&lt;/div&gt;
+	&lt;div class=&quot;anm-bounce delay-200&quot;&gt;.anm-bounce delay-200&lt;/div&gt;
+	&lt;div class=&quot;anm-bounce delay-300&quot;&gt;.anm-bounce delay-300&lt;/div&gt;
+	&lt;div class=&quot;anm-bounce delay-400&quot;&gt;.anm-bounce delay-400&lt;/div&gt;
+	&lt;div class=&quot;anm-bounce delay-500&quot;&gt;.anm-bounce delay-500&lt;/div&gt;
+	&lt;div class=&quot;anm-bounce delay-600&quot;&gt;.anm-bounce delay-600&lt;/div&gt;
+	&lt;div class=&quot;anm-bounce delay-700&quot;&gt;.anm-bounce delay-700&lt;/div&gt;
+	&lt;div class=&quot;anm-bounce delay-800&quot;&gt;.anm-bounce delay-800&lt;/div&gt;
+	&lt;div class=&quot;anm-bounce delay-900&quot;&gt;.anm-bounce delay-900&lt;/div&gt;
+	&lt;div class=&quot;anm-bounce delay-1000&quot;&gt;.anm-bounce delay-1000&lt;/div&gt;
+	&lt;div class=&quot;anm-bounce delay-2000&quot;&gt;.anm-bounce delay-2000&lt;/div&gt;
+	&lt;div class=&quot;anm-bounce delay-3000&quot;&gt;.anm-bounce delay-3000&lt;/div&gt;
+	&lt;div class=&quot;anm-bounce delay-4000&quot;&gt;.anm-bounce delay-4000&lt;/div&gt;
+	&lt;div class=&quot;anm-bounce delay-5000&quot;&gt;.anm-bounce delay-5000&lt;/div&gt;
+	&lt;div class=&quot;anm-bounce delay-6000&quot;&gt;.anm-bounce delay-6000&lt;/div&gt;
+	&lt;div class=&quot;anm-bounce delay-7000&quot;&gt;.anm-bounce delay-7000&lt;/div&gt;
+	&lt;div class=&quot;anm-bounce delay-8000&quot;&gt;.anm-bounce delay-8000&lt;/div&gt;
+	&lt;div class=&quot;anm-bounce delay-9000&quot;&gt;.anm-bounce delay-9000&lt;/div&gt;
+								</pre>
+						</div>
+						<hr>				
+					</article>
+				
+					<article class="code-sample">
+						<header class="flat orange">
+							<h6>
+								<a class="symbol-css" href="../src/css/anime.css">../src/css/anime.css</a> + 
+								<a class="symbol-js" href="../src/js/anime.js">../src/js/anime.js</a>
+							</h6>
+							<h3 class="intoc symbol-gear">The animations</h3>
+								<div id="persist">
+									<div id="animateTest">
+										<a class="button-icon xl flat blue" href="#animateTest">Anime!</a>	
+									</div>
+								</div>
+						</header>
+						<h4 class="section-title flat orange">Basic animations</h4>
+						<div class="code-result universe">
+							<hr>
+							<!-- Result -->
+								<a class="button flat orange" data-test="anm-flash">anm-flash</a>	
+								<a class="button flat orange" data-test="anm-shake">anm-shake</a>	
+								<a class="button flat orange" data-test="anm-bounce">anm-bounce</a>	
+								<a class="button flat orange" data-test="anm-tada">anm-tada</a>	
+								<a class="button flat orange" data-test="anm-wobble">anm-wobble</a>	
+								<a class="button flat orange" data-test="anm-pulse">anm-pulse</a>					
+								<a class="button flat orange" data-test="anm-fall">anm-fall</a>
+						</div>				
+						<h4 class="section-title flat orange">Entry</h4>
+						<div class="code-result">
+							<!-- Result -->
+								<h5 class="title">Entry fade</h5>
+								<a class="button flat orange" data-test="anm-fadeIn">anm-fadeIn</a>	
+								<h5 class="title">Scale entry animations</h5>
+								<a class="button flat orange" data-test="anm-scaleUp">anm-scaleUp</a>	
+								<a class="button flat orange" data-test="anm-scaleUpDown">anm-scaleUpDown</a>	
+								<a class="button flat orange" data-test="anm-scaleUpCenter">anm-scaleUpCenter</a>	
+								<h5 class="title">Direction entry animations:</h5>
+								<a class="button flat orange" data-test="anm-moveFromLeft">anm-moveFromLeft</a>	
+								<a class="button flat orange" data-test="anm-moveFromRight">anm-moveFromRight</a>	
+								<a class="button flat orange" data-test="anm-moveFromTop">anm-moveFromTop</a>	
+								<a class="button flat orange" data-test="anm-moveFromBottom">anm-moveFromBottom</a>	
+								<h5 class="title">Direction entry animations with fade</h5>
+								<a class="button flat orange" data-test="anm-moveFromLeftFade">anm-moveFromLeftFade</a>	
+								<a class="button flat orange" data-test="anm-moveFromRightFade">anm-moveFromRightFade</a>	
+								<a class="button flat orange" data-test="anm-moveFromTopFade">anm-moveFromTopFade</a>	
+								<a class="button flat orange" data-test="anm-moveFromBottomFade">anm-moveFromBottomFade</a>	
+								<h5 class="title">Direction entry animations with easing</h5>
+								<a class="button flat orange" data-test="anm-moveFromLeftEasing">anm-moveFromLeftEasing</a>	
+								<a class="button flat orange" data-test="anm-moveFromRightEasing">anm-moveFromRightEasing</a>	
+								<a class="button flat orange" data-test="anm-moveFromTopEasing">anm-moveFromTopEasing</a>	
+								<a class="button flat orange" data-test="anm-moveFromBottomEasing">anm-moveFromBottomEasing</a>	
+								<h5 class="title">Zoom entry animations</h5>
+								<a class="button flat orange" data-test="anm-zoomIn">anm-zoomIn</a>	
+								<a class="button flat orange" data-test="anm-zoomInLeft">anm-zoomInLeft</a>	
+								<a class="button flat orange" data-test="anm-zoomInRight">anm-zoomInRight</a>	
+								<a class="button flat orange" data-test="anm-zoomInUp">anm-zoomInUp</a>	
+								<a class="button flat orange" data-test="anm-zoomInDown">anm-zoomInDown</a>	
+								<h5 class="title">Rotate entry animations</h5>
+								<a class="button flat orange" data-test="anm-rotateIn">anm-rotateIn</a>	
+								<a class="button flat orange" data-test="anm-rotateInDownLeft">anm-rotateInDownLeft</a>	
+								<a class="button flat orange" data-test="anm-rotateInDownRight">anm-rotateInDownRight</a>	
+								<a class="button flat orange" data-test="anm-rotateInUpLeft">anm-rotateInUpLeft</a>	
+								<a class="button flat orange" data-test="anm-rotateInUpRight">anm-rotateInUpRight</a>	
+								<h5 class="title">Pull entry animations</h5>
+								<a class="button flat orange" data-test="anm-rotatePullLeft">anm-rotatePullLeft</a>	
+								<a class="button flat orange" data-test="anm-rotatePullRight">anm-rotatePullRight</a>	
+								<a class="button flat orange" data-test="anm-rotatePullTop">anm-rotatePullTop</a>	
+								<a class="button flat orange" data-test="anm-rotatePullBottom">anm-rotatePullBottom</a>	
+								<h5 class="title">Unfold entry animations</h5>
+								<a class="button flat orange" data-test="anm-rotateUnfoldLeft">anm-rotateUnfoldLeft</a>	
+								<a class="button flat orange" data-test="anm-rotateUnfoldRight">anm-rotateUnfoldRight</a>	
+								<a class="button flat orange" data-test="anm-rotateUnfoldTop">anm-rotateUnfoldTop</a>	
+								<a class="button flat orange" data-test="anm-rotateUnfoldBottom">anm-rotateUnfoldBottom</a>	
+								<h5 class="title">Flip entry animations</h5>
+								<a class="button flat orange" data-test="anm-flip">anm-flip</a>	
+								<a class="button flat orange" data-test="anm-flipInLeft">anm-flipInLeft</a>	
+								<a class="button flat orange" data-test="anm-flipInRight">anm-flipInRight</a>	
+								<a class="button flat orange" data-test="anm-flipInTop">anm-flipInTop</a>	
+								<a class="button flat orange" data-test="anm-flipInBottom">anm-flipInBottom</a>	
+								<h5 class="title">Room entry  animations</h5>
+								<a class="button flat orange" data-test="anm-rotateRoomLeftIn">anm-rotateRoomLeftIn</a>	
+								<a class="button flat orange" data-test="anm-rotateRoomRightIn">anm-rotateRoomRightIn</a>	
+								<a class="button flat orange" data-test="anm-rotateRoomTopIn">anm-rotateRoomTopIn</a>	
+								<a class="button flat orange" data-test="anm-rotateRoomBottomIn">anm-rotateRoomBottomIn</a>	
+								<h5 class="title">Cube entry animations</h5>
+								<a class="button flat orange" data-test="anm-rotateCubeLeftIn">anm-rotateCubeLeftIn</a>	
+								<a class="button flat orange" data-test="anm-rotateCubeRightIn">anm-rotateCubeRightIn</a>	
+								<a class="button flat orange" data-test="anm-rotateCubeTopIn">anm-rotateCubeTopIn</a>	
+								<a class="button flat orange" data-test="anm-rotateCubeBottomIn">anm-rotateCubeBottomIn</a>	
+								<h5 class="title">Carousel entry animations</h5>
+								<a class="button flat orange" data-test="anm-rotateCarouselLeftIn">anm-rotateCarouselLeftIn</a>	
+								<a class="button flat orange" data-test="anm-rotateCarouselRightIn">anm-rotateCarouselRightIn</a>	
+								<a class="button flat orange" data-test="anm-rotateCarouselTopIn">anm-rotateCarouselTopIn</a>	
+								<a class="button flat orange" data-test="anm-rotateCarouselBottomIn">anm-rotateCarouselBottomIn</a>	
+								<h5 class="title">Side entry animations</h5>
+								<a class="button flat orange" data-test="anm-rotateSidesIn">anm-rotateSidesIn</a>	
+								<h5 class="title">Extra rotate animations</h5>
+								<a class="button flat orange" data-test="anm-rotateInNewspaper">anm-rotateInNewspaper</a>	
+
+						</div>					
+						<h4 class="section-title flat orange">Exit animations</h4>
+						<div class="code-result antiverse">
+							<!-- Result -->
+								<h5 class="title">Exit fade</h5>
+								<a class="button flat orange" data-test="anm-fadeOut">anm-fadeOut</a>	
+								<h5 class="title">Scale exit animations</h5>
+								<a class="button flat orange" data-test="anm-scaleDown">anm-scaleDown</a>	
+								<a class="button flat orange" data-test="anm-scaleDownCenter">anm-scaleDownCenter</a>	
+								<a class="button flat orange" data-test="anm-scaleDownUp">anm-scaleDownUp</a>	
+								<h5 class="title">Direction exit animations</h5>
+								<a class="button flat orange" data-test="anm-moveToLeft">anm-moveToLeft</a>	
+								<a class="button flat orange" data-test="anm-moveToRight">anm-moveToRight</a>	
+								<a class="button flat orange" data-test="anm-moveToTop">anm-moveToTop</a>	
+								<a class="button flat orange" data-test="anm-moveToBottom">anm-moveToBottom</a>	
+								<h5 class="title">Direction exit animations with fade</h5>
+								<a class="button flat orange" data-test="anm-moveToLeftFade">anm-moveToLeftFade</a>	
+								<a class="button flat orange" data-test="anm-moveToRightFade">anm-moveToRightFade</a>	
+								<a class="button flat orange" data-test="anm-moveToTopFade">anm-moveToTopFade</a>	
+								<a class="button flat orange" data-test="anm-moveToBottomFade">anm-moveToBottomFade</a>	
+								<h5 class="title">Direction exit animations with easing</h5>
+								<a class="button flat orange" data-test="anm-moveToLeftEasing">anm-moveToLeftEasing</a>	
+								<a class="button flat orange" data-test="anm-moveToRightEasing">anm-moveToRightEasing</a>	
+								<a class="button flat orange" data-test="anm-moveToTopEasing">anm-moveToTopEasing</a>	
+								<a class="button flat orange" data-test="anm-moveToBottomEasing">anm-moveToBottomEasing</a>	
+								<h5 class="title">Zoom exit animations</h5>
+								<a class="button flat orange" data-test="anm-zoomOut">anm-zoomOut</a>	
+								<a class="button flat orange" data-test="anm-zoomOutLeft">anm-zoomOutLeft</a>	
+								<a class="button flat orange" data-test="anm-zoomOutRight">anm-zoomOutRight</a>	
+								<a class="button flat orange" data-test="anm-zoomOutUp">anm-zoomOutUp</a>	
+								<a class="button flat orange" data-test="anm-zoomOutDown">anm-zoomOutDown</a>	
+								<h5 class="title">Rotate exit animations</h5>
+								<a class="button flat orange" data-test="anm-rotateOut">anm-rotateOut</a>	
+								<a class="button flat orange" data-test="anm-rotateOutDownLeft">anm-rotateOutDownLeft</a>	
+								<a class="button flat orange" data-test="anm-rotateOutDownRight">anm-rotateOutDownRight</a>	
+								<a class="button flat orange" data-test="anm-rotateOutUpLeft">anm-rotateOutUpLeft</a>	
+								<a class="button flat orange" data-test="anm-rotateOutUpRight">anm-rotateOutUpRight</a>	
+								<h5 class="title">Push exit animations</h5>
+								<a class="button flat orange" data-test="anm-rotatePushLeft">anm-rotatePushLeft</a>	
+								<a class="button flat orange" data-test="anm-rotatePushRight">anm-rotatePushRight</a>	
+								<a class="button flat orange" data-test="anm-rotatePushTop">anm-rotatePushTop</a>	
+								<a class="button flat orange" data-test="anm-rotatePushBottom">anm-rotatePushBottom</a>	
+								<h5 class="title">Fold exit animations</h5>
+								<a class="button flat orange" data-test="anm-rotateFoldLeft">anm-rotateFoldLeft</a>	
+								<a class="button flat orange" data-test="anm-rotateFoldRight">anm-rotateFoldRight</a>	
+								<a class="button flat orange" data-test="anm-rotateFoldTop">anm-rotateFoldTop</a>	
+								<a class="button flat orange" data-test="anm-rotateFoldBottom">anm-rotateFoldBottom</a>	
+								<h5 class="title">Flip exit animations</h5>
+								<a class="button flat orange" data-test="anm-flipOutLeft">anm-flipOutLeft</a>	
+								<a class="button flat orange" data-test="anm-flipOutRight">anm-flipOutRight</a>	
+								<a class="button flat orange" data-test="anm-flipOutTop">anm-flipOutTop</a>	
+								<a class="button flat orange" data-test="anm-flipOutBottom">anm-flipOutBottom</a>	
+								<h5 class="title">Room exit animations</h5>
+								<a class="button flat orange" data-test="anm-rotateRoomLeftOut">anm-rotateRoomLeftOut</a>	
+								<a class="button flat orange" data-test="anm-rotateRoomRightOut">anm-rotateRoomRightOut</a>	
+								<a class="button flat orange" data-test="anm-rotateRoomTopOut">anm-rotateRoomTopOut</a>	
+								<a class="button flat orange" data-test="anm-rotateRoomBottomOut">anm-rotateRoomBottomOut</a>	
+								<h5 class="title">Cube exit animations</h5>
+								<a class="button flat orange" data-test="anm-rotateCubeLeftOut">anm-rotateCubeLeftOut</a>	
+								<a class="button flat orange" data-test="anm-rotateCubeRightOut">anm-rotateCubeRightOut</a>	
+								<a class="button flat orange" data-test="anm-rotateCubeTopOut">anm-rotateCubeTopOut</a>	
+								<a class="button flat orange" data-test="anm-rotateCubeBottomOut">anm-rotateCubeBottomOut</a>	
+								<h5 class="title">Carousel exit animations</h5>
+								<a class="button flat orange" data-test="anm-rotateCarouselLeftOut">anm-rotateCarouselLeftOut</a>	
+								<a class="button flat orange" data-test="anm-rotateCarouselRightOut">anm-rotateCarouselRightOut</a>	
+								<a class="button flat orange" data-test="anm-rotateCarouselTopOut">anm-rotateCarouselTopOut</a>	
+								<a class="button flat orange" data-test="anm-rotateCarouselBottomOut">anm-rotateCarouselBottomOut</a>	
+								<h5 class="title">Side exit animations</h5>
+								<a class="button flat orange" data-test="anm-rotateSidesOut">anm-rotateSidesOut</a>	
+								<h5 class="title">Side direction exit animations</h5>
+								<a class="button flat orange" data-test="anm-rotateRightSideFirst">anm-rotateRightSideFirst</a>	
+								<a class="button flat orange" data-test="anm-rotateLeftSideFirst">anm-rotateLeftSideFirst</a>	
+								<a class="button flat orange" data-test="anm-rotateTopSideFirst">anm-rotateTopSideFirst</a>	
+								<a class="button flat orange" data-test="anm-rotateBottomSideFirst">anm-rotateBottomSideFirst</a>	
+								<h5 class="title">Extra rotate animations</h5>
+								<a class="button flat orange" data-test="anm-rotateFall">anm-rotateFall</a>	
+								<a class="button flat orange" data-test="anm-rotateOutNewspaper">anm-rotateOutNewspaper</a>	
+						</div>				
+						<h4 class="section-title flat orange">Loops animations</h4>
+						<p class="lines orange symbol-warning l">Don't combine loops with .anm-... class!</p>
+						<div class="code-result">
+							<br>
+							<!-- Result -->
+								<div class="button-centeorange">
+									<button class="button-large flat orange loopRotate">loopRotate</button>
+									<button class="button-large flat green loopRotateX">loopRotateX</button>
+									<button class="button-large flat blue loopRotateY">loopRotateY</button>
+									<button class="button-large flat orange loopExpandFade">loopExpandFade</button>
+									<hr>
+									<h6>Other loops</h6>
+									<ul>
+										<li>loopToLeft</li>
+										<li>loopToRight</li>
+										<li>loopToBottom</li>
+										<li>loopToTop</li>
+									</ul>
+									<div class="overflow-hidden">
+									<button class="button-large flat orange loopToLeft">loopToLeft</button>
+									<button class="button-large flat green loopToRight">loopToRight</button>
+									<button class="button-large flat blue loopToBottom">loopToBottom</button>
+									<button class="button-large flat orange loopToTop">loopToTop</button>
+
+									</div>
+								</div>
+						</div>				
+						<hr>					
+					</article>
+					
+					<hr>
+					<div class="button-centered xm">
+						<a class="button lines grey" href="framework.html" title="Framework index">HiperCSS framework</a>
+						<br>
+						<a class="button-icon circled flat green anm-moveFromLeftFade delay-1000" href="pages.html">pages</a>
+						<a class="button-icon circled flat turquoise anm-moveFromBottomFade delay-1000" href="styles.html">styles</a>
+						<a class="button-icon circled flat blue anm-moveFromTopFade delay-1000" href="skins.html">skins</a>
+						<a class="button-icon circled flat violet anm-moveFromBottomFade delay-1000" href="objects.html">objects</a>
+						<br class="visible-phone">
+						<a class="button-icon circled flat magenta anm-moveFromTopFade delay-1000" href="effects.html">effects</a>
+						<a class="button-icon circled flat red anm-moveFromBottomFade delay-1000" href="icons.html">icons</a>
+						<a class="button-icon circled flat orange anm-moveFromTopFade delay-1000" href="anime.html">anime</a>
+						<a class="button-icon circled flat yellow anm-moveFromRightFade delay-1000" href="download.html">get</a>
+					</div>
+					
+				</div><!-- /.content -->
+			</main>
+  			<footer class="flat black universe thin">
+				<div class="content">
+					<p class="symbol-copyright">2014 Hipertextos. Code & content writers from Barcelona.</p>
+				</div>
+			</footer>
+ 		 </div>
+ 		 
+ 		<script src="../src/js/jquery.js" type="text/javascript"></script>
+		<script src="../src/js/anime.js" type="text/javascript"></script>
+ 		<script src="../src/js/jquery.toc.js" type="text/javascript"></script>
+		<script>
+			$(document).ready(function(){
+				$('#animation1').addClass('anm-fadeIn');
+			});
+			$('#clickthis').click(function(){
+				$('#animation2').toggleClass('anm-fadeIn');
+			});
+			// Animations on scroll
+			// Create a window variable to set the scroll
+			var win = $(window);
+			// Create a variable for .anim
+			var variable1 = $('.animeonscroll');
+			var variable2 = $('#animeonscroll');
+			// Apply the animations on scroll
+			win.scroll(function(event) {
+			  variable1.each(function(i, el) {
+				var el = $(el);
+				if (el.visible(true)) {
+				  el.addClass('anm-moveFromLeftFade slow'); 
+				} else {
+				  el.removeClass('anm-moveFromLeftFade slow'); 
+				} 
+			  });
+			});
+			win.scroll(function(event) {
+			  variable2.each(function(i, el) {
+				var el = $(el);
+				if (el.visible(true)) {
+				  el.addClass('anm-moveFromRightFade slow'); 
+				} else {
+				  el.removeClass('anm-moveFromRightFade slow'); 
+				} 
+			  });
+			});
+		</script>
+		<script>
+			function testAnim(x) {
+				$('#animateTest').removeClass().addClass(x);
+				var wait = window.setTimeout( function(){
+					$('#animateTest').removeClass()},
+					1300
+				);
+			}
+			$(document).ready(function(){
+				$('a[data-test]').click(function(){
+					var anim = $(this).attr('data-test');
+					testAnim(anim);
+				});
+
+				// .nav-persist on top
+	
+				$pos = $('#persist').offset().top;
+				$(window).on('scroll', function(){
+					if($(window).scrollTop() >= $pos) {
+						$('#persist').addClass('persist-2');
+					} else {
+						$('#persist').removeClass('persist-2');
+					}
+				});
+				// Collapse, accordion and tabs
+				$('.jcollapser .jcollapsed').toggleClass('closed');
+				$('.jcollapser .jtrigger').click(function(e){
+					$(this).next('.jcollapsed').toggleClass('closed anime anm-fadeIn').siblings('.jcollapsed:visible').toggleClass('closed anime anm-fadeIn');
+				});
+				// Code-get collapsing in small devices
+				$('.code-get h5').click(function(e){
+					$(this).next('.code-get pre').toggleClass('opened');
+				});
+				// TOC-persist on top
+				$posi = $('#thetoc').offset().top;
+				$(window).on('scroll', function(){
+					if($(window).scrollTop() >= $posi) {
+						$('#thetoc').addClass('persist paper flat soft-orange');
+						$('#thetoc .jcollapsed').addClass('closed');
+					} else {
+						$('#thetoc').removeClass('persist paper flat soft-orange');
+						$('#thetoc .jcollapsed').removeClass('closed');
+					}
+				});
+			});
+		</script>
+		<script>
+			$(function() {
+				// Full page 
+				$("#fullpage-example").toggleClass("closed");
+				$('.view-fullpage-example').click(function(){
+					$('#fullpage-example').toggleClass('closed');
+				});
+			});
+		    // Reload button
+			$('.button-reload').click(function() {
+				location.reload();
+			});
+			// Demo animation on collapsers
+			$('.accordion section').toggleClass('closed');
+			$('.accordion h4').click(function(e){
+				$(this).next('section').toggleClass('closed anm-shake')
+				.siblings('section:visible').toggleClass('closed anm-shake');
+				e.preventDefault();
+			});
+			// Tabs
+			$('.idpanel').toggleClass('closed');
+			$('.idtrigger').click(function(e){
+				e.preventDefault(); 
+				var currentPanel = $(this).attr('href');
+				$(this).toggleClass('tab-active').siblings('.idtrigger').removeClass('tab-active');
+				$(currentPanel).toggleClass('closed anime anm-fadeIn').siblings('.idpanel:visible').toggleClass('closed anime anm-fadeIn');
+				if ($('.idpanel:visible').length) {
+				} else {
+				}
+			});
+			// Dialogs
+			$('.button-modal, .jdialog .button-close').click(function(){
+				var currentDialog = $(this).attr('href');
+				$(currentDialog).toggleClass('closed anime anm-moveFromTop');
+			});
+		</script>
+ 		<script src="../src/js/ga.js" type="text/javascript"></script>
+	</body>
+</html>
