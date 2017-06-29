@@ -1,6 +1,21 @@
 /* Hipertextos print.css */
 /* by Acozar - www.hipertextos.net */
 
+
+@page {
+  size: A4 portrait;
+  margin: 2cm;
+}
+@page {
+  @bottom-right { 
+    border-top: .25pt solid #666;
+    content: counter(page);
+  }
+  @bottom-left {
+    content:  string(doctitle);
+  }
+}
+
 body {
 	background: white;
 	color: #000;
@@ -21,8 +36,8 @@ body {
 	width: 100%;
 	word-break: break-word;
 }
-h1 { font-size: 32pt; }
-h2 { font-size: 24pt; }
+h1 { font-size: 22pt; }
+h2 { font-size: 20pt; }
 h3 { font-size: 18pt; }
 h4 { font-size: 16pt; }
 h5 { font-size: 14pt; }
@@ -34,7 +49,9 @@ h3,
 h4,
 h5,
 h6 {
-	border-bottom: thin solid #ddd;
+	border-bottom: thin solid #333;
+	line-height: 1.25em;
+	page-break-after: avoid;
 }
 h1,
 h2,
@@ -52,19 +69,41 @@ a, a:link, a:visited {
 	font-weight: bold; 
 	text-decoration: underline; 
 }
-a:link:after { 
+a:after { 
 	content: " (" attr(href) ") "; 
 }
-nav,
-footer,
-style,
-script,
+img, figure {
+	display: block;
+	margin: 1em auto;
+	width: 80%;
+    page-break-before: auto;
+    page-break-after: auto;
+    page-break-inside: avoid;
+}
+#header,
+#header-site,
+#footer,
+#footer-social,
+#footer-terms,
+button,
 dialog,
+embed,
+form,
+iframe,
+input,
+nav,
 progress,
+script,
+style,
 .no-js,
+.pagination,
+[class*='blogger'],
+[class*='prev'],
+[class*='next'],
 [class*='alert'],
-[class*='menu'],
-[class*='dialog'] {
+[class*='button'],
+[class*='dialog'],
+[class*='menu'] {
 	display: none;
 }
 pre {
@@ -75,12 +114,15 @@ pre {
 	padding: 2%;
 	width: 92%;
 }
+pre, code {
+	font-family: monospace;
+}
 pre *, code, code *, cite, small, strong,
 i, em, span {
 	display: inline;
 	word-break:break-word;
 }
-table, thead, tr { display: table; width: 100%; }
+table, thead, tr { display: table; width: 100%; page-break-after: avoid; }
 th { border: 1px solid #ddd; display: table-cell; width: auto; }
 
 .slide-wrapper {
@@ -96,4 +138,16 @@ th { border: 1px solid #ddd; display: table-cell; width: auto; }
 	height: 1em;
 	margin: 0 .5em;
 	width: 1em;
+}
+.verse {
+	text-align: left;
+}
+.reverse {
+	text-align: right;
+}
+.universe {
+	text-align: center;
+}
+.prose {
+	text-align: justify;
 }
