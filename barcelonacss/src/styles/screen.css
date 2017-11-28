@@ -987,7 +987,6 @@ figure div {
 	padding-top: 0;
 	height: 0;
 	overflow: hidden;
-	z-index: 5;
 }
 figure div iframe {
 	position: absolute;
