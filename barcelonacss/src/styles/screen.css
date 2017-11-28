@@ -172,6 +172,7 @@ h6 u:after {
 @media (max-width: 767px) {
 	h1 {
 		font-size: 2em;
+		line-height: 48px;
 	}
 	h2 {
 		font-size: 1.8em;
@@ -188,15 +189,14 @@ h6 u:after {
 	h6 {
 		font-size: 1em;
 	}
-	h1, 
 	h2, 
 	h3 {
-		line-height: 64px;
+		line-height: 32px;
 	}
 	h4,
 	h5,
 	h6 {
-		line-height: 32px;
+		line-height: 24px;
 	}
 }
 
