@@ -27,6 +27,9 @@
 #layout article h3 a:hover {
 	text-decoration: underline;
 }
+#layout article strong {
+	padding: 0 4px;
+}
 #layout article nav {
 	border: none;
 	margin: 1px;
@@ -342,6 +345,7 @@ article > div {
 }
 .cards article strong,
 #layout-cards:checked ~ #layout-result article strong {
+	color: currentColor;
 	height: 16px;
 	padding: 0 4px;
 	overflow: hidden;
@@ -413,6 +417,7 @@ article > div {
 	height: 256px;
 	opacity: 1;
 	text-decoration: none;
+	z-index: 10;
 }
 .tiles article strong,
 #layout-tiles:checked ~ #layout-result article strong {
