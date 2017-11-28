@@ -1,29 +1,25 @@
-/* Blogger hacks */
+/* Blogger Hacks by acozar (gmail) */
+
 
 /* Blogger labels */
 
-article .blogger-labels {
-	display: none;
-}
 .blogger-labels {
 	display: block;
 	clear: both;
-	color: #333;
 	font-size: 0;
-	margin: 16px 0 0;
+	margin: 12px 0 0;
 	text-align: center;
 }
 .blogger-labels:before {
 	border-bottom: 1px solid currentColor;
 	display: block;
-	content: 'Tags';
+	content: 'Etiquetes';
 	font-size: 16px;
 	margin: 16px;
 }
 .blogger-labels a {
-	border: 1px solid currentColor;
-	border-radius: 2em;
-	color: #ffffff !important;
+	border: thin solid currentColor;
+	border-radius: 1em;
 	font-size: 16px;
 	margin: 0 .25em;
 	padding: .25em 1em;
@@ -32,11 +28,22 @@ article .blogger-labels {
 	-moz-hyphens: none;
 	hyphens: none;
 }
-.blogger-labels a:hover {
-	background-color: #000;
-	color: #fff;
+article .blogger-labels,
+article .blogger-labels,
+article .blogger-labels {
+	display: none;
 }
 
+/* Twitter */
+
+.twitter-timeline,
+.twitter-tweet {
+	display: block;
+	margin: 0 auto;
+}
+.tw-tools {
+	padding: 6px;
+}
 
 /* Prev/next */
 
@@ -62,21 +69,21 @@ article .blogger-labels {
 	visibility: hidden;
 }
 .prev-next .blog-paging-control-container .blog-paging-control:nth-child(1) {
-	left: 0; right: auto;
+	left: 4px; right: auto;
 }
 .prev-next .blog-paging-control-container .blog-paging-control:nth-child(2),
 .prev-next .blog-paging-control-container .blog-paging-control:only-child {
-	right: 0; left: auto;
+	right: 10px; left: auto;
 }
 .prev-next .blog-paging-control-container .blog-paging-control:nth-child(1):after,
 .prev-next .blog-paging-control-container .blog-paging-control:nth-child(2):after {
-	border: thin solid #ccc;
+	border: thin solid currentColor;
 	border-radius: 50%;
-	color: #bbb;
+	color: #aaa;
 	display: block;
 	font-size: 1.2em;
-	font-weight: bold;
-	line-height: 1.9em;
+	font-weight: normal;
+	line-height: 1.8em;
 	height: 2em;
 	width: 2em;
 	visibility: visible;
@@ -89,8 +96,10 @@ article .blogger-labels {
 	content: '>';
 }
 
+/* Pagination */
+
 .pagination {
-	margin: 2em auto 3em;
+	margin: 3em auto 1em;
 }
 .pagination a {
 	visibility: hidden;
@@ -109,19 +118,36 @@ article .blogger-labels {
 .pagination a:only-child:after {
 	content: ' Anterior >';
 }
-.pagination a:after,
-.prev-next .blog-paging-control-container .blog-paging-control:after {
-	background: #000;
-	color: #fff;
+
+/* Colors */ 
+
+.blogger-labels a:hover,
+.pagination a:after {
+
 }
+.blogger-labels a,
+article div a,
 .pagination a:hover:after,
+.pagination a:visited:hover:after,
 .prev-next .blog-paging-control-container .blog-paging-control:hover:after {
-	background: #3AB16C;
-	color: #fff;
+
 }
+article div a:visited,
 .pagination a:visited:hover:after,
 .prev-next .blog-paging-control-container .blog-paging-control:visited:hover:after {
-	background: #dd0000;
+
+}
+.blogger-labels a:visited:hover,
+.pagination a:visited:after {
+
+}
+.blogger-labels a:focus,
+.pagination a:focus {
+
+}
+.blogger-labels a:visited:focus,
+.pagination a:visited:focus {
+
 }
 
 /* Cookies info */
@@ -149,9 +175,4 @@ article .blogger-labels {
 	color: #ffffff !important;
 }
 
-/* Twitter timeline */
-
-.twitter-timeline {
-	display: block;
-	margin: 0 auto;
-}
+/* The End */
