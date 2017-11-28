@@ -1102,6 +1102,9 @@ dialog,
 	height: 48px;
 	width: 48px;
 }
+#tools-switcher label {
+	margin: 16px 8px 8px;
+}
 #tools-nav #label-light { background-color: #fff; }
 #tools-nav #label-soft { background-color: rgba(214,208,255,1); }
 #tools-nav #label-dark { background-color: #000; }
