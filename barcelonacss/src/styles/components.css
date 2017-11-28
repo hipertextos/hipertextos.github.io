@@ -384,17 +384,20 @@ article > div {
 .tiles article h3,
 #layout-tiles:checked ~ #layout-result article h3 {
 	background-color: rgba(255,255,255,.1);
+	color: transparent;
 	font-size: 16px;
 	line-height: 16px;
 	padding: 96px 16px;
 	z-index: 9;
-	opacity: .5;
+	opacity: 0;
 }
 .tiles article:hover h3,
 #layout-tiles:checked ~ #layout-result article:hover h3 {
-	background-color: rgba(255,255,255,.8);
+	background-color: rgba(255,255,255,1);
+	color: #000;
 	height: 256px;
 	opacity: 1;
+	text-decoration: none;
 }
 .tiles article strong,
 #layout-tiles:checked ~ #layout-result article strong {
@@ -423,11 +426,14 @@ article > div {
 }
 .tiles article nav a,
 #layout-tiles:checked ~ #layout-result article nav a {
-	border-color: rgba(255,255,255,.2);
+	border-radius: 50%;
+	color: transparent;
+	margin: 0 auto;
+	width: 64px;
 }
-.tiles article nav a:hover,
-#layout-tiles:checked ~ #layout-result article nav a:hover {
-	color: #fff;
+.tiles article:hover a,
+#layout-tiles:checked ~ #layout-result article:hover a {
+	color: #dd0000;
 }
 
 @media (max-width: 960px) {
@@ -484,7 +490,7 @@ article > div {
 	display: block;
 	padding: 0 2em;
 	position: relative;
-}a
+}
 .nav-smart strong label {
 	display: none;
 	padding-right: 26px;
