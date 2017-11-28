@@ -30,6 +30,9 @@
 #layout article strong {
 	padding: 0 4px;
 }
+#layout article > div * {
+	pointer-events: none;
+}
 #layout article nav {
 	border: none;
 	margin: 1px;
