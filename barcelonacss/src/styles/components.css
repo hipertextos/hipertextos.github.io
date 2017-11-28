@@ -386,6 +386,10 @@ article > div {
 	overflow: hidden;
 	width: 24.9999999999%; 
 }
+.tiles article:hover,
+#layout-tiles:checked ~ #layout-result article:hover {
+	box-shadow: 0 0 4px rgba(0,0,0,.5);
+}
 .tiles article h3,
 .tiles article strong,
 .tiles article div,
