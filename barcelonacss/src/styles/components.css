@@ -425,6 +425,10 @@ article > div {
 #layout-tiles:checked ~ #layout-result article:hover nav {
 	opacity: 1;
 }
+.tiles article:hover nav,
+#layout-tiles:checked ~ #layout-result article:hover nav {
+	z-index: 10;
+}
 .tiles article strong,
 #layout-tiles:checked ~ #layout-result article strong {
 	top: 16px;
