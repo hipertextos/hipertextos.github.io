@@ -360,16 +360,15 @@ article > div {
 }
 .cards article nav,
 #layout-cards:checked ~ #layout-result article nav {
-	border-color: transparent;
-	font-size: 32px;
-	height: 32px;
-	line-height: 32px;
-	width: 32px;
-	text-align: center;
+
 }
 .cards article nav a,
 #layout-cards:checked ~ #layout-result article nav a {
 	border-color: transparent;
+	height: 32px;
+	line-height: 32px;
+	padding: 4px 0;
+	width: 32px;
 }
 
 /* Tiles view */
