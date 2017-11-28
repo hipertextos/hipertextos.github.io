@@ -136,10 +136,6 @@ article > div {
 	object-fit: cover;	
 	width: 128px;
 }
-.list article div figure,
-#layout-list:checked ~ #layout-result article div figure {
-	border-radius: 0;
-}
 .list article nav,
 #layout-list:checked ~ #layout-result article nav {
 	border-color: transparent;
