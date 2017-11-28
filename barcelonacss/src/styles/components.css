@@ -29,6 +29,7 @@
 	margin: 1px;
 }
 #layout article nav a {
+	border-color: currentColor;
 	border-radius: 50%;
 	display: block;
 	height: 62px;
@@ -1071,7 +1072,6 @@ dialog,
 #tools-switcher,
 #tools-nav {
 	text-align: right;
-	padding: 16px 8px;
 	position: fixed;
 	bottom: -2px; left: 0; right: 0;
 	z-index: 8;
@@ -1080,6 +1080,7 @@ dialog,
 	background-color: rgba(0,0,0,.75);
 	color: #fff;
 	display: none;
+	padding: 8px;	
 	z-index: 9;
 }
 #tools-check:checked ~ #tools-nav {
@@ -1101,9 +1102,6 @@ dialog,
 	line-height: 40px;
 	height: 48px;
 	width: 48px;
-}
-#tools-switcher label {
-	margin: 16px 8px 8px;
 }
 #tools-nav #label-light { background-color: #fff; }
 #tools-nav #label-soft { background-color: rgba(214,208,255,1); }
