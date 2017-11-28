@@ -54,7 +54,8 @@ article > div {
 #layout-free:checked ~ #layout-result article {
 	border: none;
 	margin: 0 auto 32px;
-	width: 65%;	
+	width: 80%;
+	max-width: 800px;
 }
 
 /* Simple view */
