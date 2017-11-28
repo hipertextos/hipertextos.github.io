@@ -57,11 +57,12 @@ article .blogger-labels {
 .prev-next .blog-paging-control-container .blog-paging-control,
 .prev-next .blog-paging-control-container .blog-paging-control:after {
 	display: block;
-	height: 2em;
-	width: 2em;
+	height: 32px;
+	width: 32px;
 	position: absolute;
 	text-decoration: none;
-	top: -.25em;
+	top: -24px;
+	text-align: center;
 	z-index: 1;
 }
 .prev-next .blog-paging-control-container .blog-paging-control:nth-child(1),
@@ -69,11 +70,11 @@ article .blogger-labels {
 	visibility: hidden;
 }
 .prev-next .blog-paging-control-container .blog-paging-control:nth-child(1) {
-	left: 4px; right: auto;
+	left: 12px; right: auto;
 }
 .prev-next .blog-paging-control-container .blog-paging-control:nth-child(2),
 .prev-next .blog-paging-control-container .blog-paging-control:only-child {
-	right: 10px; left: auto;
+	right: 32px; left: auto;
 }
 .prev-next .blog-paging-control-container .blog-paging-control:nth-child(1):after,
 .prev-next .blog-paging-control-container .blog-paging-control:nth-child(2):after {
@@ -99,7 +100,9 @@ article .blogger-labels {
 /* Pagination */
 
 .pagination {
+	display: block;
 	margin: 3em auto 1em;
+	text-align: center;
 }
 .pagination a {
 	visibility: hidden;
