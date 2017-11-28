@@ -1090,7 +1090,6 @@ dialog,
 	background-color: rgba(0,0,0,.75);
 	color: #fff;
 	display: none;
-	padding: 4px;	
 	z-index: 9;
 }
 #tools-check:checked ~ #tools-nav {
