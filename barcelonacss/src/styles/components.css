@@ -34,6 +34,14 @@ article > div {
 	padding: 4px;
 }
 
+/* Free view */
+
+.free article,
+#layout-free:checked ~ #layout-result article {
+	margin: 0 auto 32px;
+	width: 65%;	
+}
+
 /* Simple view */
 
 .simple article,
