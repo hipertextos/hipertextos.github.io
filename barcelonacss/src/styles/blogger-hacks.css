@@ -24,12 +24,12 @@
 .blogger-labels:before {
 	border-bottom: 1px solid currentColor;
 	display: block;
-	content: 'Etiquetes';
+	content: 'Etiquetas';
 	font-size: 16px;
 	margin: 16px;
 }
 .blogger-labels a {
-	border: thin solid currentColor;
+	border: 4px solid currentColor;
 	border-radius: 1em;
 	font-size: 16px;
 	margin: 0 .25em;
@@ -89,12 +89,12 @@ article .blogger-labels {
 }
 .prev-next .blog-paging-control-container .blog-paging-control:nth-child(1):after,
 .prev-next .blog-paging-control-container .blog-paging-control:nth-child(2):after {
-	border: thin solid currentColor;
+	border: 4px solid currentColor;
 	border-radius: 50%;
 	color: #aaa;
 	display: block;
 	font-size: 1.2em;
-	font-weight: normal;
+	font-weight: bold;
 	line-height: 1.8em;
 	height: 2em;
 	width: 2em;
