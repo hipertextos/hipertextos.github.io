@@ -13,9 +13,11 @@
 	letter-spacing: .1em;
 	line-height: 16px;
 }
-#layout article h3 a {
+#layout article h3 {
 	font-size: 24px;
 	line-height: 32px;
+}
+#layout article h3 a {
 	text-decoration: none;
 }
 #layout article h3 a:hover {
