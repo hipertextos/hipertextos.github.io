@@ -3,20 +3,35 @@
 
 /* ------------------------------------------------------------ Layouts */
 
+
 #layout > nav {
 	margin-bottom: 2px;
 }
-#layout strong {
-	font-size: 16px;
+#layout article strong {
+	font-size: 12px;
 	font-weight: 200;
 	letter-spacing: .1em;
 	line-height: 16px;
 }
-#layout h3 a {
+#layout article h3 a {
+	color: #000;
 	text-decoration: none;
 }
-#layout h3 a:hover {
+#layout article h3 a:hover {
 	text-decoration: underline;
+}
+#layout article nav {
+	border: none;
+	margin: 1px;
+}
+#layout article nav a {
+	display: block;
+	margin:4px;
+	text-align: center;
+	text-decoration: none;
+}
+article > div {
+	padding: 4px;
 }
 
 /* Simple view */
@@ -31,7 +46,7 @@
 #layout-simple:checked ~ #layout-result article h3 {
 	margin: 0;
 }
-.simple articlestrong,
+.simple article strong,
 #layout-simple:checked ~ #layout-result article strong {
 	margin: 0;
 }
@@ -238,17 +253,10 @@
 .gallery article h3,
 #layout-gallery:checked ~ #layout-result article h3 {
 	font-size: 16px;
-	height: 32px;
-	line-height: 32px;
+	height: 56px;
+	line-height: 16px;
 	margin: 0;
 	overflow: hidden;
-	text-overflow: ellipsis;
-}
-.gallery article strong,
-#layout-gallery:checked ~ #layout-result article strong {
-	font-size: 12px;
-	height: 16px;
-	line-height: 32px;
 }
 .gallery article div,
 #layout-gallery:checked ~ #layout-result article div {
@@ -268,8 +276,9 @@
 	font-size: 16px;
 	line-height: 32px;
 	position: absolute;
-	bottom: 0; left: 0;
-	width: 100%;
+	bottom: 0; left: 35%;
+	width: 30%;
+	z-index: 15;
 }
 .gallery article nav a,
 #layout-gallery:checked ~ #layout-result article nav a {
@@ -475,7 +484,7 @@
 	display: block;
 	padding: 0 2em;
 	position: relative;
-}
+}a
 .nav-smart strong label {
 	display: none;
 	padding-right: 26px;
@@ -494,7 +503,7 @@
 	position: sticky; 
 	top: 0;
 	left: 0;
-	z-index: 5;
+	z-index: 15;
 }
 @media (max-width: 767px) {
 	.nav-sticky,
