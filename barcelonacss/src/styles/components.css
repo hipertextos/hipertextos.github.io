@@ -362,7 +362,9 @@ article > div {
 #layout-cards:checked ~ #layout-result article nav {
 	border-color: transparent;
 	font-size: 16px;
+	height: 16px;
 	line-height: 16px;
+	width: 16px;
 	text-align: center;
 }
 .cards article nav a,
