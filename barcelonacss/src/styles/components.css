@@ -316,9 +316,9 @@ article > div {
 }
 .cards article h3,
 #layout-cards:checked ~ #layout-result article h3 {
-	font-size: 24px;
+	font-size: 16px;
 	height: 64px;
-	line-height: 32px;
+	line-height: 16px;
 	margin: 0;
 	padding: 0 4px;
 	overflow: hidden;
@@ -383,16 +383,16 @@ article > div {
 }
 .tiles article h3,
 #layout-tiles:checked ~ #layout-result article h3 {
-	background-color: rgba(0,0,0,.1);
-	font-size: 24px;
-	line-height: 32px;
+	background-color: rgba(255,255,255,.1);
+	font-size: 16px;
+	line-height: 16px;
 	padding: 96px 16px;
 	z-index: 9;
 	opacity: .5;
 }
 .tiles article:hover h3,
 #layout-tiles:checked ~ #layout-result article:hover h3 {
-	background-color: rgba(0,0,0,.8);
+	background-color: rgba(255,255,255,.8);
 	height: 256px;
 	opacity: 1;
 }
@@ -1087,6 +1087,7 @@ dialog,
 	margin: 0 8px;
 	padding: 0;
 	text-align: center;
+	text-decoration: none;
 	line-height: 40px;
 	height: 48px;
 	width: 48px;
