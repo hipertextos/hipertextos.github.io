@@ -1,5 +1,16 @@
 /* Blogger Hacks by acozar (gmail) */
 
+/* Headers */ 
+
+#page-section-article-header {
+	padding-top: 64px;
+}
+#page-header,
+#page-nav {
+	text-align: center;
+}
+
+
 
 /* Blogger labels */
 
