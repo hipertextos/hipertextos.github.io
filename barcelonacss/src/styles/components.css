@@ -14,7 +14,8 @@
 	line-height: 16px;
 }
 #layout article h3 a {
-	color: #000;
+	font-size: 24px;
+	line-height: 32px;
 	text-decoration: none;
 }
 #layout article h3 a:hover {
@@ -26,8 +27,9 @@
 	margin: 1px;
 }
 #layout article nav a {
+	border-radius: 50%;
 	display: block;
-	margin: 4px;
+	margin: 4px auto;
 	text-align: center;
 	text-decoration: none;
 }
@@ -77,9 +79,6 @@ article > div {
 }
 .simple article nav a,
 #layout-simple:checked ~ #layout-result article nav a {
-	background-color: #000;
-	border-radius: 50%;
-	color: #fff;
 	height: 62px;
 	line-height: 64px;
 	padding: 0;
@@ -134,9 +133,7 @@ article > div {
 }
 .list article nav a,
 #layout-list:checked ~ #layout-result article nav a {
-	background: #000;
 	border-color: transparent;
-	color: #fff;
 	line-height: 32px;
 	height: 48px;
 	padding: 8px 0;
@@ -201,8 +198,7 @@ article > div {
 }
 .table article nav a,
 #layout-table:checked ~ #layout-result article nav a {
-	background-color: #000;
-	color: #fff;
+
 }
 @media (max-width: 767px) {
 	.table article,
@@ -291,15 +287,11 @@ article > div {
 }
 .gallery article nav a,
 #layout-gallery:checked ~ #layout-result article nav a {
-	background-color: transparent;
-	border-color: transparent;
-	color: #fff;
+	color: transparent;
 }
 .gallery article:hover nav a,
 #layout-gallery:checked ~ #layout-result article:hover nav a {
 	background-color: #fff;
-	border-radius: 50%;
-	border-color: #fff;
 	color: #000;
 }	
 
@@ -307,8 +299,7 @@ article > div {
 
 .cards article,
 #layout-cards:checked ~ #layout-result article {
-	background-color: #fff;
-	border-color: #fff;
+	background-color: inherit;
 	border-radius: 2px;
 	box-shadow: 0 1px 2px rgba(0,0,0,.8);
 	color: #000;
@@ -386,14 +377,13 @@ article > div {
 #layout-tiles:checked ~ #layout-result article div,
 #layout-tiles:checked ~ #layout-result article nav {
 	border: none;
-	color: #fff;
 	text-align: center;
 	position: absolute;
 	top: 0; right: 0; left: 0; bottom: 0;
 }
 .tiles article h3,
 #layout-tiles:checked ~ #layout-result article h3 {
-	background-color: rgba(255,255,255,.1);
+	background-color: rgba(255,255,255,1);
 	color: transparent;
 	font-size: 16px;
 	line-height: 16px;
@@ -403,7 +393,6 @@ article > div {
 }
 .tiles article:hover h3,
 #layout-tiles:checked ~ #layout-result article:hover h3 {
-	background-color: rgba(255,255,255,1);
 	color: #000;
 	height: 256px;
 	opacity: 1;
