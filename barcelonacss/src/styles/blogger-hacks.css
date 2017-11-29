@@ -45,23 +45,30 @@ article .blogger-labels,
 article .blogger-labels {
 	display: none;
 }
-#page-section-article-content .blogger-labels {
+#page-section-article-content figure .blogger-labels {
 	display: block;
 	clear: both;
 	font-size: 0;
 	margin: 12px auto 0;
 	text-align: center;
 	position: absolute;
-	bottom: 0;
-	z-index: 12;
-	width: 50%;
+	bottom: 48px;
+	opacity: 0;
+}#page-section-article-content figure:hover .blogger-labels {
+	opacity: 1;
 }
-#page-section-article-content .blogger-labels:before {
+#page-section-article-content figure .blogger-labels:before {
+	border: none;
+	color: rgba(255,255,255,.8);
 	display: block;
 	float: left;
+	font-weight: bold;
 	content: 'Etiquetas';
 	font-size: 16px;
 	margin: 0 16px;
+}
+#page-section-article-content figure .blogger-labels a {
+	background-color: rgba(255,255,255,.8);
 }
 
 /* Twitter */
