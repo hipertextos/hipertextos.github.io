@@ -45,7 +45,7 @@ article .blogger-labels,
 article .blogger-labels {
 	display: none;
 }
-page-section-article-content .blogger-labels {
+#page-section-article-content .blogger-labels {
 	display: block;
 	clear: both;
 	font-size: 0;
@@ -55,7 +55,7 @@ page-section-article-content .blogger-labels {
 	bottom: 0;
 	z-index: 12;
 }
-page-section-article-content .blogger-labels:before {
+#page-section-article-content .blogger-labels:before {
 	display: block;
 	float: left;
 	content: 'Etiquetas';
