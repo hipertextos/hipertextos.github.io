@@ -151,6 +151,12 @@ article .blogger-labels {
 	content: ' Anterior >';
 }
 
+/* Youtube thumbnail hack */
+
+figure iframe {
+	display: none;
+}
+
 /* Colors */ 
 
 .blogger-labels a:hover,
