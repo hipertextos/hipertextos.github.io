@@ -4,7 +4,7 @@
 
 
 img, div, a, input { 
-	behavior: url('http://code.hipertextos.net/src/css/iepngfix.htc') 
+	behavior: url('https://hipertextos.github.io/src/css/iepngfix.htc') 
 }
 .headline,
 .title,
