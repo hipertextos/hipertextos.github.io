@@ -30,11 +30,13 @@ nav {
     line-height: 1em;
     margin: 64px auto;
     padding: 0 10%;
-    display: none;
 }
 #page-header p {
     margin: 0 auto 32px;
     width: 320px;
+}
+.main-header h1 {
+    display: none;
 }
 #site-nav {
     font-family: "Special Elite", serif;
@@ -101,6 +103,9 @@ nav {
         font-size: 32px;
         line-height: 32px;
         margin: 128px 0 72px;
+    }
+    .main-header p {
+        display: none;
     }
     #site-nav {
         position: absolute;
