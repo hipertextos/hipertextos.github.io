@@ -69,10 +69,12 @@ nav {
 }
 .agit-logo, .agit-logo:hover {
     background-color: #ffffff !important;
+    border-color: #000000 !important;
     color: #000000 !important;
 }
 .prop-logo, .prop-logo:hover {
     background-color: #000000 !important;
+    border-color: #ffffff !important;
     color: #ffffff !important;
 }
 #page-footer div {
