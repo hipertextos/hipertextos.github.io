@@ -15,26 +15,10 @@ nav {
     border-color: transparent;
     text-align: center;
 }
-.logo {
-    border-radius: 50%;
-    height: 72px;
-    margin: 8px 0;
-    padding: 8px 0;
-    width: 72px;
-}
-.logo img {
-    height: 72px;
-    min-width: 72px;
-    opacity: .5;
-}
-.logo:hover img {
-    transform: scale(1.2);
-}
-.main-header {
-    display: none;
-}
+
 #page-header {
     padding: 64px 0;
+    font-family: "Special Elite", serif;
 }
 #page-header h1 {
     -webkit-text-stroke: 1px rgba(255,255,255,1);
@@ -46,33 +30,44 @@ nav {
     line-height: 1em;
     margin: 64px auto;
     padding: 0 10%;
+    display: none;
 }
 #page-header p {
-    background: rgba(255,255,255,.5);
     margin: 0 auto 32px;
     width: 320px;
 }
 #site-nav {
     font-family: "Special Elite", serif;
+    font-size: 24px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    padding-top: 24px;
     z-index: 1;
 }
-#site-nav a, #site-nav a:hover {
+#site-nav a {
     border-color: transparent;
+    padding: 12px;
 }
 .agitprop-logo {
-    background-color: transparent;
-    border-radius 50%;
+    border-radius: 50%;
+}
+.agitprop-logo img {
+    transform: scale(2);
+}
+.agitprop-logo:hover img {
+    transform: scale(3);
 }
 .agit-logo, .prop-logo {
     border-radius: 6px;
 }
+.agit-logo:hover {
+    background-color: #ffffff;
+}
 .agit-logo {
     background-color: #ffffff;
-    color: #000000;
+    color: #000000 !important;
 }
 .prop-logo {
     background-color: #000000;
@@ -94,6 +89,9 @@ nav {
 #page-footer em a {
     border-radius: 12px;
     margin: 32px 2px;
+}
+#page-footer img {
+    width: 72px;
 }
 @media (max-width: 768px) {
     #page-header {
