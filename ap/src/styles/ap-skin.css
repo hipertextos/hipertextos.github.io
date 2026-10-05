@@ -1,4 +1,4 @@
-/* Criptica skin */
+/* AP skin */
 
 body {
     font-family: "Newsreader", Book Antiqua, Baskerville, serif;
@@ -30,16 +30,19 @@ nav {
 .logo:hover img {
     transform: scale(1.2);
 }
+.main-header {
+    display: none;
+}
 #page-header {
     padding: 64px 0;
 }
 #page-header h1 {
     -webkit-text-stroke: 1px rgba(255,255,255,1);
-        -webkit-hyphens: none !important;
-        -moz-hyphens: none !important;
-        -ms-hyphens: none !important;
-        -o-hyphens: none !important;
-        hyphens: none !important;
+    -webkit-hyphens: none !important;
+    -moz-hyphens: none !important;
+    -ms-hyphens: none !important;
+    -o-hyphens: none !important;
+    hyphens: none !important;
     line-height: 1em;
     margin: 64px auto;
     padding: 0 10%;
@@ -56,6 +59,24 @@ nav {
     left: 0;
     right: 0;
     z-index: 1;
+}
+#site-nav a, #site-nav a:hover {
+    border-color: transparent;
+}
+.agitprop-logo {
+    background-color: transparent;
+    border-radius 50%;
+}
+.agit-logo, .prop-logo {
+    border-radius: 6px;
+}
+.agit-logo {
+    background-color: #ffffff;
+    color: #000000;
+}
+.prop-logo {
+    background-color: #000000;
+    color: #ffffff;
 }
 #page-footer div {
     padding: 0 5%;
