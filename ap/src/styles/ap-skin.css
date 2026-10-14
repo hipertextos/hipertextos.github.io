@@ -281,6 +281,11 @@ nav {
 
 /* Item body */
 
+.item-body h3 {
+    font-weight: 500;
+    line-height: 1.2em;
+    margin: 48px 0 32px;
+}
 .item-body p {
     margin-bottom: 32px;
 }
