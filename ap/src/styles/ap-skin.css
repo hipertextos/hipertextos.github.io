@@ -166,8 +166,8 @@ nav {
     margin: 16px 32px;    
 }
 .stream article img {
-    border-top-left-radius: 24px;
-    border-top-right-radius: 24px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     overflow: hidden;
     width: 100%;
     opacity: .9;
