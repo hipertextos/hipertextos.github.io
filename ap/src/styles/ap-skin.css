@@ -200,9 +200,11 @@ nav {
 .share-box a:hover svg {
     transform: scale(1.4);
 }
+.stream-news {
+    margin-top: 64px;
+}
 @media (min-width: 1200px) {
     .stream-news {
-        margin-top: 64px;
         display: grid;
         grid-template-columns: 48% 48%;
     }
