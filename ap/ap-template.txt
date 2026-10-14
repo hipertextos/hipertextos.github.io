@@ -27,6 +27,7 @@
 		<!-- Screen styles -->
 		<link href="https://hipertextos.github.io/ap/src/styles/screen.components.min.css" rel="stylesheet" media="screen">
 		<link href="https://hipertextos.github.io/ap/src/styles/ap-skin.css" rel="stylesheet" media="screen">
+		<link href="https://acozar.github.io/src/styles/simple-lightbox.min.css" rel="stylesheet" media="screen">
 		
 		<!-- Font styles -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -246,5 +247,11 @@
 		================================================== -->
 		<script src="https://hipertextos.github.io/ap/src/scripts/jquery.js" type="text/javascript"></script>
 		<script src="https://hipertextos.github.io/ap/src/scripts/scripts.js" type="text/javascript"></script>
+		<script src="https://acozar.github.io/src/scripts/simple-lightbox.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		$(function() {
+			var lightbox = new SimpleLightbox('a[href$=".jpeg"]', { /* options */ });
+		});
+   		 </script> 
 	</body>
 </html>

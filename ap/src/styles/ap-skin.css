@@ -21,7 +21,7 @@ nav {
     font-family: "Special Elite", serif;
 }
 #page-header h1 {
-    -webkit-text-stroke: 1px rgba(255,255,255,1);
+    -webkit-text-stroke: 1px rgba(255,255,255,.5);
     -webkit-hyphens: none !important;
     -moz-hyphens: none !important;
     -ms-hyphens: none !important;
@@ -146,7 +146,7 @@ nav {
 }
 .stream article {
     background-color: inherit;
-    border-radius: 24px;
+    border-radius: 8px;
     -webkit-box-shadow: 0px 0px 6px rgba(0,0,0,.6);
             box-shadow: 0px 0px 6px rgba(0,0,0,.6);
     border: 1px solid rgba(255,255,255,.4);
@@ -214,14 +214,14 @@ nav {
     .stream-news article img {
         object-fit: cover;
         height: 320px;
-        opacity: .1;
-    }
-    .stream-news article:hover img {
         opacity: .2;
     }
+    .stream-news article:hover img {
+        opacity: .5;
+    }
     .stream-news article h3 {
-        font-size: 24px !important;
-        line-height: 28px !important;
+        font-size: 32px !important;
+        line-height: 36px !important;
         margin: 12px;
         margin-top: -320px;
         height: 192px;
