@@ -6,7 +6,7 @@
 		<title><$BlogTitle$></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="<$BlogDescription$>">
-		<meta name="keywords" content="<$BlogTitle$>, <$BlogDescription$> by <$BlogAuthor$>">
+		<meta name="keywords" content="<$BlogTitle$>, <$BlogDescription$>">
 		<meta name="author" content="AgitProp">
 		
 		<!-- Metadata: Twitter Cards -->
@@ -73,9 +73,9 @@
 		<div id="page" data-mode="page">
 			<nav id="site-nav">
 				<div>
-					<a class="agit-logo" href="" title="Agitación">AGIT</a>
+					<a class="agit-logo" href="<$BlogUrl$>search/label/Agitación" title="Agitación">AGIT</a>
 					<a class="agitprop-logo" href="<$BlogUrl$>" title="<$BlogTitle$>"><img src="https://hipertextos.github.io/ap/src/ics/agitprop-icon.png" alt="<$BlogTitle$>"></a>
-					<a class="prop-logo" href="" title="Propaganda">PROP</a>
+					<a class="prop-logo" href="<$BlogUrl$>search/label/Propaganda" title="Propaganda">PROP</a>
 				 </div>
 			</nav>
 			<MainOrArchivePage>
@@ -90,7 +90,6 @@
 			<header id="page-header">
 				<Blogger><span class="image-bg" style="background-image: url('<$BlogItemUrl$>');"></span></Blogger>
 				<div>
-					<div class="prev-next anm-fadeIn delay-3000"><$BlogPaginationLinks$></div>
 					<Blogger>
 					<h1><$BlogItemTitle$> </h1>
 					<p><$BlogItemDateTime$></p>
@@ -169,7 +168,6 @@
 								</article>
 								</Blogger>
 							</div>
-                            <nav class="pagination"><$BlogPaginationLinks$></nav>
 						</div>
 						</MainOrArchivepage>
 						<ItemPage>
@@ -199,8 +197,10 @@
 									</BlogItemCommentsEnabled>	
 								</div>
 							</div>
-                            <nav class="pagination"><$BlogPaginationLinks$></nav>
 							</Blogger>
+							<hr>
+                            <nav class="pagination"><$BlogPaginationLinks$></nav>
+                            <hr>
 						</div>
 						</ItemPage>
 						<div class="sections sections-right">
@@ -212,11 +212,6 @@
 									<li><a href="mailto:info@agitprop.net"><svg version="1.1" id="mail-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 483.3 483.3" style="enable-background:new 0 0 483.3 483.3;" xml:space="preserve"><g><g><path d="M424.3,57.75H59.1c-32.6,0-59.1,26.5-59.1,59.1v249.6c0,32.6,26.5,59.1,59.1,59.1h365.1c32.6,0,59.1-26.5,59.1-59.1	v-249.5C483.4,84.35,456.9,57.75,424.3,57.75z M456.4,366.45c0,17.7-14.4,32.1-32.1,32.1H59.1c-17.7,0-32.1-14.4-32.1-32.1v-249.5	 c0-17.7,14.4-32.1,32.1-32.1h365.1c17.7,0,32.1,14.4,32.1,32.1v249.5H456.4z"/><path d="M304.8,238.55l118.2-106c5.5-5,6-13.5,1-19.1c-5-5.5-13.5-6-19.1-1l-163,146.3l-31.8-28.4c-0.1-0.1-0.2-0.2-0.2-0.3	c-0.7-0.7-1.4-1.3-2.2-1.9L78.3,112.35c-5.6-5-14.1-4.5-19.1,1.1c-5,5.6-4.5,14.1,1.1,19.1l119.6,106.9L60.8,350.95			c-5.4,5.1-5.7,13.6-0.6,19.1c2.7,2.8,6.3,4.3,9.9,4.3c3.3,0,6.6-1.2,9.2-3.6l120.9-113.1l32.8,29.3c2.6,2.3,5.8,3.4,9,3.4			c3.2,0,6.5-1.2,9-3.5l33.7-30.2l120.2,114.2c2.6,2.5,6,3.7,9.3,3.7c3.6,0,7.1-1.4,9.8-4.2c5.1-5.4,4.9-14-0.5-19.1L304.8,238.55z"	/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg> <span>Contacta</span></a></li>
 								</ul>
 							</nav>
-							<div class="widgets-box">
-								<MainPage>
-
-								</MainPage>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -250,7 +245,7 @@
 		<script src="https://acozar.github.io/src/scripts/simple-lightbox.min.js" type="text/javascript"></script>
 		<script type="text/javascript">
 		$(function() {
-			var lightbox = new SimpleLightbox('a[href$=".jpeg"]', { /* options */ });
+			var lightbox = new SimpleLightbox('a[href$=".jpg"]', { /* options */ });
 		});
    		 </script> 
 	</body>
