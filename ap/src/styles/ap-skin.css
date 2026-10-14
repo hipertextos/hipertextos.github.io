@@ -130,7 +130,7 @@ nav {
 .streamapp {
     display: grid;
     grid-template-columns: 20% 60% 20%;
-    margin: -64px 0 0;
+    margin: 0;
     min-height: 100%;
     position: relative;
 }
@@ -199,9 +199,6 @@ nav {
 .stream article footer a:hover svg,
 .share-box a:hover svg {
     transform: scale(1.4);
-}
-.stream-news {
-    margin-top: 64px;
 }
 @media (min-width: 1200px) {
     .stream-news {
