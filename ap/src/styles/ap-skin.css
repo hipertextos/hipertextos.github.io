@@ -340,7 +340,7 @@ nav {
     padding: 12px;
     min-width: 110%;  
 }
-.itembody a[href*=".jpg"] {
+.item-body a[href*=".jpg"] {
     cursor: zoom-in;
 }
 figcaption {
