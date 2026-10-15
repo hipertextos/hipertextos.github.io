@@ -286,7 +286,7 @@ nav {
     content: '';
     position: absolute;
     left: 42px;
-    top: 36px;
+    top: 34px;
     vertical-align:middle
 }
 @media (min-width: 768px) {
