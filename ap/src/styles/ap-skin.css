@@ -286,6 +286,11 @@ nav {
 #configuration:checked ~ #configuration-list{
     display: block;
 }
+@media (max-height: 828px) {
+    .sections nav {
+        position: absolute;
+    }
+}
 
 /* Item body */
 
