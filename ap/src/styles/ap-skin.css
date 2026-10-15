@@ -276,6 +276,30 @@ nav {
 .sections nav label:hover {
     border: 1px solid currentColor;
 }
+.sections nav label mark {
+    background-color: transparent;
+    border-top: 4px solid currentColor;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    border-bottom: none;
+    color: inherit;
+    content: '';
+    position: absolute;
+    left: 42px;
+    top: 36px;
+    vertical-align:middle
+}
+@media (min-width: 768px) {
+    .sections nav label mark {
+        left: 140px;
+    }
+}
+@media (min-width: 1200px) {
+    .sections nav label mark {
+        left: 180px;
+        top:28px;
+    }
+}
 #hashtags-list,
 #sections-list,
 #configuration-list{
@@ -283,7 +307,7 @@ nav {
 }
 #hashtags:checked ~ #hashtags-list,
 #sections:checked ~ #sections-list,
-#configuration:checked ~ #configuration-list{
+#configuration:checked ~ #configuration-list {
     display: block;
 }
 @media (max-height: 828px) {
