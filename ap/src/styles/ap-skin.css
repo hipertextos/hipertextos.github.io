@@ -208,6 +208,10 @@ nav {
 .stream-news {
     margin-top: 64px;
 }
+.tag-title {
+    font-weight: 100;
+    text-align: center;
+}
 @media (min-width: 1200px) {
     .stream-news {
         display: grid;
@@ -285,19 +289,24 @@ nav {
     color: inherit;
     content: '';
     position: absolute;
-    left: 36px;
+    right: 2px;
     top: 34px;
     vertical-align:middle
 }
 @media (min-width: 768px) {
     .sections nav label mark {
-        left: 140px;
+        right: 10px;
     }
 }
 @media (min-width: 1200px) {
     .sections nav label mark {
-        left: 180px;
+        right: 2px;
         top:28px;
+    }
+}
+@media (max-height: 828px) {
+    .sections nav {
+        position: absolute;
     }
 }
 #hashtags-list,
@@ -309,11 +318,6 @@ nav {
 #sections:checked ~ #sections-list,
 #configuration:checked ~ #configuration-list {
     display: block;
-}
-@media (max-height: 828px) {
-    .sections nav {
-        position: absolute;
-    }
 }
 
 /* Item body */
